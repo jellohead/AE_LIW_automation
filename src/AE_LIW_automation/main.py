@@ -5,7 +5,7 @@ from config.constants import DATASET_FILE_PATH, PPTX_INPUT_FILE, PPTX_OUTPUT_FIL
 from helper_modules.read_data import read_data
 from helper_modules.get_chart_object_by_name import get_chart_object_by_name
 from slide_updaters import slide_1_updater, slide_3_updater, slide_4_updater, slide_6_updater, slide_14_updater
-from slide_updaters import slide_17_updater, slide_24_updater, slide_25_updater
+from slide_updaters import slide_17_updater, slide_24_updater, slide_25_updater, slide_30_updater
 
 
 def main():
@@ -19,6 +19,7 @@ def main():
     slide_17_updater(df, prs)
     slide_24_updater(df, prs)
     slide_25_updater(df, prs)
+    slide_30_updater(df, prs)
 
     prs.save(PPTX_OUTPUT_FILE)
     # df_labeled.to_excel(EXCEL_FILE)
