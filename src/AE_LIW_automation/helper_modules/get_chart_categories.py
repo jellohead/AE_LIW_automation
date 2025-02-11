@@ -1,4 +1,6 @@
 from pptx.enum.chart import XL_CHART_TYPE
+
+
 def get_chart_categories(chart):
     '''
     Provide a chart object and return the list of categories from the slide.
