@@ -11,7 +11,7 @@ from helper_modules import get_chart_object_by_name
 
 
 def slide_1_updater(df, prs) -> object:
-    global text_holder
+    # global text_holder
     print('updating slide 1')
     slide_index = 0
     slide = prs.slides[slide_index]
