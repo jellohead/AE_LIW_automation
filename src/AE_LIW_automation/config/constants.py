@@ -7,9 +7,9 @@ OUTPUT_PATH = './output/'
 
 # File paths
 DATASET_FILE_PATH = './resources/9826 Low Income Weatherization FY24Q4.sav'
-PPTX_INPUT_FILE = './resources/9826 LIW Report FY2024 Q4 working copy.pptx'
+PPTX_INPUT_FILE = './resources/9751 LIW Report FY2024 Q3 11232024.pptx'
 PPTX_OUTPUT_FILE = './output/AE_LIW_updated.pptx'
-EXCEL_FILE = './output/AE_LIW_ExceL_output.xlsx'
+EXCEL_FILE = './output/AE_LIW_Excel_output.xlsx'
 
 # Date constants
 CURRENT_MONTH_TEXT = 'February'
