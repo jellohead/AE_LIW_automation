@@ -11,6 +11,8 @@ from slide_updaters import slide_35_updater, slide_43_updater, slide_50_updater
 
 
 def main():
+    print(f'In main')
+
     df, meta, df_labeled = read_data(DATASET_FILE_PATH)
     prs = pptx.Presentation(PPTX_INPUT_FILE)
     slide_1_updater(df, prs)
@@ -18,7 +20,7 @@ def main():
     slide_4_updater(df, prs)
     slide_6_updater(df, prs)
     # slide_7_updater(df, prs)
-    # slide_8_updater(df, prs)
+    slide_8_updater(df, prs)
     slide_14_updater(df, prs)
     slide_17_updater(df, prs)
     slide_24_updater(df, prs)
