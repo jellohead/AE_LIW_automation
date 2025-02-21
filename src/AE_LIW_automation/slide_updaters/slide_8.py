@@ -1,5 +1,8 @@
 # slide_8.py
 # update the data table on slide 8
+# TODO: Break style_cell function into a module
+# TODO: Break style_cell_old_text function into a module
+# TODO: Fix styling to center text vertically in cells
 from pandas import DataFrame
 import pandas as pd
 from pptx.util import Inches, Pt
@@ -12,6 +15,8 @@ from config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT
 def style_cell(cell, text, font_size=12, bold=False, color=RGBColor(0, 0, 0), bg_color=None, align=PP_ALIGN.CENTER):
     """Applies font size, boldness, color, and background to a cell."""
     cell.text = text
+    # text_frame = cell.text_frame
+    # text_frame.vertical_anchor = MSO_ANCHOR.MIDDLE
     paragraph = cell.text_frame.paragraphs[0]
     paragraph.alignment = align
     if paragraph.runs:
@@ -22,7 +27,24 @@ def style_cell(cell, text, font_size=12, bold=False, color=RGBColor(0, 0, 0), bg
     if bg_color:
         cell.fill.solid()
         cell.fill.fore_color.rgb = bg_color
+    # cell.text_frame.vertical_anchor = MSO_ANCHOR.MIDDLE
 
+# Function to apply styling to a table cell with existing text
+def style_cell_old_text(cell, font_size=12, bold=False, color=RGBColor(0, 0, 0), bg_color=None, align=PP_ALIGN.CENTER):
+    """Applies font size, boldness, color, and background to a cell."""
+    # previous_text = cell.text
+    # cell.text = text
+    paragraph = cell.text_frame.paragraphs[0]
+    paragraph.alignment = align
+    if paragraph.runs:
+        run = paragraph.runs[0]
+        run.font.size = Pt(font_size)
+        run.font.bold = bold
+        run.font.color.rgb = color
+    if bg_color:
+        cell.fill.solid()
+        cell.fill.fore_color.rgb = bg_color
+    # cell.text_frame.vertical_anchor = MSO_ANCHOR.MIDDLE
 
 def slide_8_updater(df, prs):
     print('\n\tslide_8_updater\n')
@@ -58,6 +80,7 @@ def slide_8_updater(df, prs):
 
     # sort the combined df and put Base at the bottom
     base_row = q19_df_combined[q19_df_combined.index == 'Base:']
+    print(f'{type(base_row) = }')
     not_base_rows = q19_df_combined[q19_df_combined.index != 'Base:'].sort_values(by=f'{REPORTING_PERIOD} {REPORTING_YEAR}', ascending=False)
     q19_df_combined = pd.concat([not_base_rows, base_row], axis=0).fillna(0).astype(int)    # q19_df_other_rows = q19_df_combined.loc[q19_df_combined.index != 'Base:'].sort_values(f'{REPORTING_PERIOD} {REPORTING_YEAR}', ascending=False)
 
@@ -72,17 +95,17 @@ def slide_8_updater(df, prs):
     rows, cols = q19_df_combined.shape
 
     # Define styling properties
-    header_bg_color = RGBColor(0, 51, 102)  # Dark Blue
+    header_bg_color = RGBColor(90,	128,184)  # Dark Blue
     header_text_color = RGBColor(255, 255, 255)  # White
     row_bg_color = RGBColor(224, 235, 255)  # Light Blue (Alternating Rows)
-    last_row_bg_color = RGBColor(0, 51, 102)  # Dark Blue for Last Row
+    last_row_bg_color = RGBColor(90,	128,	184)  # Dark Blue for Last Row
     data_text_color = RGBColor(0, 0, 0) # Black text
-    data_bg_color = RGBColor(224, 235, 255) # Light blue for data rows
+    data_bg_color = RGBColor(224,	229,	240) # Light blue for data rows
 
 
 
     # Add one more column for the index
-    table_shape = slide.shapes.add_table(rows + 1, cols + 1, Inches(1), Inches(1.5), Inches(8), Inches(3)).table
+    table_shape = slide.shapes.add_table(rows + 1, cols + 1, Inches(.5), Inches(1.7), Inches(6.5), Inches(5)).table
 
     # Step 4: Insert column headers (including index column)
     # add styling to the header row
@@ -98,7 +121,7 @@ def slide_8_updater(df, prs):
         # table_shape.cell(row_idx + 1, 0).text = str(index_value)  # First column for index
         style_cell(table_shape.cell(row_idx + 1, 0),
                    str(index_value),
-                   font_size=12,
+                   font_size=13,
                    bold=False,
                    color=data_text_color,
                    bg_color=data_bg_color,
@@ -107,7 +130,7 @@ def slide_8_updater(df, prs):
             # table_shape.cell(row_idx + 1, col_idx + 1).text = str(value)  # Shifted by +1
             style_cell(table_shape.cell(row_idx + 1, col_idx + 1),
                        str(value),
-                       font_size=12,
+                       font_size=13,
                        bold=False,
                        color=data_text_color,
                        bg_color=data_bg_color,
@@ -115,9 +138,26 @@ def slide_8_updater(df, prs):
 
     # TODO pull data from the correct location for last row
     # add styling to the last row of the table
-    style_cell(table_shape.cell(len((q19_df_combined)), 0), text='', font_size=12, bold=True, color=header_text_color,
+    style_cell(table_shape.cell(len((q19_df_combined)), 0), text=base_row.index[0], font_size=12, bold=True, color=header_text_color,
                bg_color=header_bg_color, align=PP_ALIGN.LEFT)
-    for col_idx, col_name in enumerate(q19_df_combined):
-        style_cell(table_shape.cell(len(q19_df_combined), col_idx + 1), col_name, font_size=14, bold=True, color=header_text_color,
-                   bg_color=header_bg_color, align=PP_ALIGN.CENTER)
+
+
+    for col_number, value in enumerate(q19_df_combined.loc['Base:']):
+        # def style_cell_old_text(cell, font_size=12, bold=False, color=RGBColor(0, 0, 0), bg_color=None,
+        #                         align=PP_ALIGN.CENTER):90	128	184
+
+        style_cell_old_text(table_shape.cell(len(q19_df_combined), col_number + 1),
+                                             font_size=13,
+                                             bold=False,
+                                             color=header_text_color,
+                                             bg_color=header_bg_color,
+                                             align=PP_ALIGN.CENTER),
+        print(f'{value = }')
+        # style_cell(table_shape.cell(len(q19_df_combined), index + 1),
+        #            value,
+        #            font_size=14,
+        #            bold=True,
+        #            color=header_text_color,
+        #            bg_color=header_bg_color,
+        #            align=PP_ALIGN.CENTER)
 
