@@ -2,3 +2,6 @@
 *.pptx
 *.xlsx
 *.sav
+
+__pycache__/
+*.py[cod]
