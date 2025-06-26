@@ -2,8 +2,8 @@
 # This file contains the functions for updating the slide 43 of the PowerPoint file
 import pandas as pd
 from pptx.chart.data import CategoryChartData
-from config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
-from helper_modules import get_chart_object_by_name, get_chart_categories, get_chart_series_data
+from src.AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
+from src.AE_LIW_automation.helper_modules import get_chart_object_by_name, get_chart_categories, get_chart_series_data
 
 
 # TODO slide 43 and possibly 44 not working

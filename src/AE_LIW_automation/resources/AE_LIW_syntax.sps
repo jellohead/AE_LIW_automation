@@ -114,3 +114,32 @@ FREQUENCIES VARIABLES=Q28_1
   /ORDER=ANALYSIS.
 
 Filter OFF.
+
+* Export Output in Excel format.
+BEGIN PROGRAM PYTHON3.
+import spss, spssaux
+import os
+
+# Get dataset information
+Data_Info_path = str(spssaux.GetDatasetInfo())
+print(f'Data_Info_path: {Data_Info_path}')
+
+# Extract the directory path and modify the filename
+directory_path = os.path.dirname(Data_Info_path)
+file_name = os.path.basename(Data_Info_path).replace('.sav', ' Excel output.xlsx')
+data_info_path_revised = os.path.join(directory_path, file_name)
+print(f'data_info_path_revised: {data_info_path_revised}')
+
+# Define the SPSS syntax for exporting output to Excel
+spss_syntax = f"""
+OUTPUT EXPORT
+  /CONTENTS EXPORT=ALL LAYERS=PRINTSETTING MODELVIEWS=PRINTSETTING
+  /XLSX DOCUMENTFILE='{data_info_path_revised}'
+     OPERATION=CREATEFILE
+     LOCATION=LASTCOLUMN NOTESCAPTIONS=YES.
+"""
+
+# Submit the SPSS syntax
+spss.Submit(spss_syntax)
+
+END PROGRAM.

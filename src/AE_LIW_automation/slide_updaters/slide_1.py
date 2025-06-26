@@ -1,5 +1,5 @@
 # slide_1.py
-# This file contains the functions for updating the slide 1 of the Powerpoint file.
+# This file contains the functions for updating slide 1 of the PowerPoint file.
 
 
 from pptx.enum.text import PP_ALIGN

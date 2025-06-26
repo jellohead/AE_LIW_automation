@@ -1,7 +1,10 @@
+import logging
+
 import pandas as pd
 import pyreadstat
 import pptx
 from config.constants import DATASET_FILE_PATH, PPTX_INPUT_FILE, PPTX_OUTPUT_FILE, EXCEL_FILE
+from config.logging_config import setup_logging
 from helper_modules.read_data import read_data
 from helper_modules.get_chart_object_by_name import get_chart_object_by_name
 from slide_updaters import slide_1_updater, slide_3_updater, slide_4_updater, slide_6_updater, slide_7_updater
@@ -10,14 +13,18 @@ from slide_updaters import slide_17_updater, slide_24_updater, slide_25_updater,
 from slide_updaters import slide_35_updater, slide_43_updater, slide_50_updater
 
 
+logger = logging.getLogger(__name__)
+
 def main():
+    setup_logging()
+    logger.info('Starting AE LIW Automation')
     print(f'In main')
 
     df, meta, df_labeled = read_data(DATASET_FILE_PATH)
     prs = pptx.Presentation(PPTX_INPUT_FILE)
     slide_1_updater(df, prs)
     slide_3_updater(df, prs)
-    slide_4_updater(df, prs)
+    slide_4_updater(meta, df, df_labeled, prs)
     slide_6_updater(df, prs)
     # slide_7_updater(df, prs)
     slide_8_updater(df, prs)

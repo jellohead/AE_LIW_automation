@@ -15,3 +15,5 @@ from .get_chart_object import get_chart_object
 from .get_chart_series_data import get_chart_series_data
 from .get_table_object import get_table_object
 from .get_table_object_incl_old_table_ref import get_table_object_incl_old_table_ref
+from .update_paragraphs import update_paragraphs
+from .format_paragraph_xml import format_paragraph_xml
