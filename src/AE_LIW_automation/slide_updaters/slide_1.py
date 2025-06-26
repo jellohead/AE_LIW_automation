@@ -9,6 +9,7 @@ from pptx.util import Pt
 from config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
 from helper_modules import get_chart_object_by_name
 
+# TODO Text color is wrong
 
 def slide_1_updater(df, prs) -> object:
     # global text_holder

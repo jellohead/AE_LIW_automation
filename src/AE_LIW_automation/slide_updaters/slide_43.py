@@ -6,6 +6,8 @@ from config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT
 from helper_modules import get_chart_object_by_name, get_chart_categories, get_chart_series_data
 
 
+# TODO slide 43 and possibly 44 not working
+
 def slide_43_updater(df, meta, df_labeled, prs) -> object:
     print('updating slide 43')
     slide_index = 42
