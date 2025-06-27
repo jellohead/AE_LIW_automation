@@ -34,7 +34,6 @@ from pptx.dml.color import RGBColor
 from typing import List, Optional
 from pptx.text.text import TextFrame
 from AE_LIW_automation.helper_modules.format_paragraph_xml import format_paragraph_xml
-# from src.Mahindra_ROXOR_CSAT_automation.helper_modules import update_paragraphs
 
 def update_paragraphs(paragraph_strings: List[str],
                       text_holder: TextFrame,
@@ -80,10 +79,6 @@ def update_paragraphs(paragraph_strings: List[str],
     # shape.fill.fore_color.rgb = RGBColor(230, 230, 250)
 
     for i, para_string in enumerate(paragraph_strings):
-        # if para_string is ' ':
-        #     clean_text = para_string
-        # else:
-        #     clean_text = re.sub(r'^[+-]', '', para_string).strip()
         clean_text = re.sub(r'^[+-]', '', para_string).strip()
 
         # check if paragraph is empty to prevent adding an extra line at the head of the text block

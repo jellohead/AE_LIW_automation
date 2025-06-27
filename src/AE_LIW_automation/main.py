@@ -26,7 +26,7 @@ def main():
     slide_3_updater(df, prs)
     slide_4_updater(meta, df, df_labeled, prs)
     slide_6_updater(df, prs)
-    # slide_7_updater(df, prs)
+    slide_7_updater(df, prs)
     slide_8_updater(df, prs)
     slide_14_updater(df, prs)
     slide_17_updater(df, prs)

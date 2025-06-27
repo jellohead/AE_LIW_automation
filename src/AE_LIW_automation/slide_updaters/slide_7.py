@@ -1,20 +1,26 @@
 # slide_7.py
 # This file contains the functions for updating the slide 7 of the Powerpoint file
 
+import logging
 from pptx.chart.data import CategoryChartData
-from config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
-from helper_modules import get_chart_object_by_name, get_chart_categories, get_chart_series_data, get_chart_object
+from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
+from AE_LIW_automation.helper_modules import get_chart_object_by_name, get_chart_categories, get_chart_series_data, get_chart_object
 
 
+logger = logging.getLogger(__name__)
 # TODO Slide 7 script is not working
 
 def slide_7_updater(df, prs) -> object:
-    print('updating slide 7')
     slide_index = 6
+    print(
+        f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
+    logger.info(f'Updating slide {slide_index + 1}')
+
     slide = prs.slides[slide_index]
-    # chart = get_chart_object_by_name(slide, 'Content Placeholder 10')
-    chart = get_chart_object(slide)
-    print(f'{chart = }')
+    chart_name = 'Content Placeholder 10'
+    # chart = get_chart_object(slide)
+    chart = get_chart_object_by_name(slide, chart_name)
+    # print(f'{chart = }')
     old_categories = get_chart_categories(chart)
     print(f'{old_categories = }')
     existing_series_data = get_chart_series_data(chart)
