@@ -80,6 +80,10 @@ def update_paragraphs(paragraph_strings: List[str],
     # shape.fill.fore_color.rgb = RGBColor(230, 230, 250)
 
     for i, para_string in enumerate(paragraph_strings):
+        # if para_string is ' ':
+        #     clean_text = para_string
+        # else:
+        #     clean_text = re.sub(r'^[+-]', '', para_string).strip()
         clean_text = re.sub(r'^[+-]', '', para_string).strip()
 
         # check if paragraph is empty to prevent adding an extra line at the head of the text block
@@ -88,55 +92,62 @@ def update_paragraphs(paragraph_strings: List[str],
         else:
             p = text_holder.add_paragraph()
 
-        p.text = clean_text
-        run = p.runs[0]
-        run.font.name = font_name
+        # Only proceed with formatting if the paragraph has text
+        if clean_text:
+            p.text = clean_text
+            # Make sure the paragraph has at least one run before accessing it
+            if not p.runs:
+                p.add_run()
 
-        # handle different bullet levels
-        if para_string.startswith('+'):
-            level = 1
-            run.font.color.rgb = RGBColor(*l1_font_color) # black is default
-            run.font.size = l1_font_size
-            run.font.bold = l1_font_bold
-            run.font.italic = l1_font_italic
-            p.alignment = l1_h_alignment
-            p.line_spacing = l1_line_spacing
-            format_paragraph_xml(p,
-                                 level=level,
-                                 left_indent=l1_left_indent,
-                                 # hanging_indent=l1_hanging_indent,
-                                 # bullet_char=l1_bullet_char
-                                 )
-            # p.paragraph_format.left_indent = l1_indent
-        elif para_string.startswith('-'):
-            level = 2
-            # if l2_indent is not None:
-            #     pf.format.left_indent = l1_indent
-            run.font.color.rgb = RGBColor(*l2_font_color)
-            run.font.size = l2_font_size
-            run.font.bold = l2_font_bold
-            run.font.italic = l2_font_italic
-            p.alignment = l2_h_alignment
-            p.line_spacing = l2_line_spacing
-            format_paragraph_xml(p,
-                                 level=level,
-                                 left_indent=l2_left_indent,
-                                 # hanging_indent=l2_hanging_indent,
-                                 # bullet_char=l2_bullet_char
-                                 )
-        else:
-            level = 0
-            # if l0_indent is not None:
-            #     pf.left_indent = l1_indent
-            run.font.color.rgb = RGBColor(*l0_font_color)
-            run.font.size = l0_font_size
-            run.font.bold = l0_font_bold
-            run.font.italic = l0_font_italic
-            p.alignment = l0_h_alignment
-            p.line_spacing = l0_line_spacing
-            format_paragraph_xml(p,
-                                 level=level,
-                                 left_indent=l0_left_indent,
-                                 # hanging_indent=l0_hanging_indent,
-                                 # bullet_char=l0_bullet_char
-            )
+        # p.text = clean_text
+            run = p.runs[0]
+            run.font.name = font_name
+
+            # handle different bullet levels
+            if para_string.startswith('+'):
+                level = 1
+                run.font.color.rgb = RGBColor(*l1_font_color) # black is default
+                run.font.size = l1_font_size
+                run.font.bold = l1_font_bold
+                run.font.italic = l1_font_italic
+                p.alignment = l1_h_alignment
+                p.line_spacing = l1_line_spacing
+                format_paragraph_xml(p,
+                                     level=level,
+                                     left_indent=l1_left_indent,
+                                     # hanging_indent=l1_hanging_indent,
+                                     # bullet_char=l1_bullet_char
+                                     )
+                # p.paragraph_format.left_indent = l1_indent
+            elif para_string.startswith('-'):
+                level = 2
+                # if l2_indent is not None:
+                #     pf.format.left_indent = l1_indent
+                run.font.color.rgb = RGBColor(*l2_font_color)
+                run.font.size = l2_font_size
+                run.font.bold = l2_font_bold
+                run.font.italic = l2_font_italic
+                p.alignment = l2_h_alignment
+                p.line_spacing = l2_line_spacing
+                format_paragraph_xml(p,
+                                     level=level,
+                                     left_indent=l2_left_indent,
+                                     # hanging_indent=l2_hanging_indent,
+                                     # bullet_char=l2_bullet_char
+                                     )
+            else:
+                level = 0
+                # if l0_indent is not None:
+                #     pf.left_indent = l1_indent
+                run.font.color.rgb = RGBColor(*l0_font_color)
+                run.font.size = l0_font_size
+                run.font.bold = l0_font_bold
+                run.font.italic = l0_font_italic
+                p.alignment = l0_h_alignment
+                p.line_spacing = l0_line_spacing
+                format_paragraph_xml(p,
+                                     level=level,
+                                     left_indent=l0_left_indent,
+                                     # hanging_indent=l0_hanging_indent,
+                                     # bullet_char=l0_bullet_char
+                )

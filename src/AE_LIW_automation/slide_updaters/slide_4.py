@@ -6,7 +6,7 @@ import pandas as pd
 from pptx.enum.text import PP_ALIGN
 from pptx.util import Pt
 from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
-from AE_LIW_automation.helper_modules import get_chart_object_by_name
+from AE_LIW_automation.helper_modules import get_chart_object_by_name, update_paragraphs
 
 logger = logging.getLogger(__name__)
 
@@ -19,6 +19,7 @@ def slide_4_updater(meta, df, df_labeled, prs) -> object:
         f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
     logger.info(f'Updating slide {slide_index + 1}')
     slide = prs.slides[slide_index]
+    text_holder = None
 
     # extract existing text from textbox
     existing_text = ""
@@ -77,34 +78,51 @@ def slide_4_updater(meta, df, df_labeled, prs) -> object:
 
     paragraph_strings = [
         f'Overall satisfaction score with energy savings was {q24_TopBox_result:.0%} in {REPORTING_PERIOD} {REPORTING_YEAR}, {comparison_description} from {previous_qtr_percentage}%.',
+        ' ',
         f'Contractor and customer service ratings remained relatively high for all attributes.',
+        ' ',
         f'Customers appeared to be satisfied with the follow-up phone calls and indicated that the Austin Energy staff member/contractor did an overall good job on the work done at their homes.',
+        ' ',
         f'For this quarter, {q2_result_dict_sorted_top_3_keys[0]}, {q2_result_dict_sorted_top_3_keys[1]}, and {q2_result_dict_sorted_top_3_keys[2]} were the top responses for how customers first learned about the weatherization program.',
+        ' ',
         f'For this quarter, due to the small sample size, none of the changes can be deemed significant.'
         ]
 
 
-    text_holder = None
-    # get shape object by name
+    # text_holder = None
+    # # get shape object by name
+    # for shape in slide.shapes:
+    #     if shape.name == 'Rectangle 3':
+    #         shape.text_frame.clear()
+    #         text_holder = shape.text_frame
+    #
+    # p = text_holder.paragraphs[0]
+    #
+    # for para_string in paragraph_strings:
+    #     print(para_string)
+    #     clean_text = para_string.replace('-', '')
+    #     p = text_holder.add_paragraph()
+    #     p.text = clean_text.strip()
+    #     p.alignment = PP_ALIGN.LEFT
+    #
+    #     if para_string.startswith('-'):
+    #         p.level = 1
+    #     else:
+    #         p.level = 0
+    #
+    #     run = p.runs[0]
+    #     run.font.name = 'Tahoma'
+    #     run.font.size = Pt(18 if p.level == 0 else 16)
+
+    # revise to use update_paragraphs.py
     for shape in slide.shapes:
         if shape.name == 'Rectangle 3':
             shape.text_frame.clear()
             text_holder = shape.text_frame
+            break
 
-    p = text_holder.paragraphs[0]
+    update_paragraphs(paragraph_strings,
+                      text_holder,
+                      l0_font_size=Pt(18)
+                      )
 
-    for para_string in paragraph_strings:
-        print(para_string)
-        clean_text = para_string.replace('-', '')
-        p = text_holder.add_paragraph()
-        p.text = clean_text.strip()
-        p.alignment = PP_ALIGN.LEFT
-
-        if para_string.startswith('-'):
-            p.level = 1
-        else:
-            p.level = 0
-
-        run = p.runs[0]
-        run.font.name = 'Tahoma'
-        run.font.size = Pt(18 if p.level == 0 else 16)
