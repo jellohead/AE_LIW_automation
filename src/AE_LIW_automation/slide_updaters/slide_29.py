@@ -1,4 +1,4 @@
-# slide_9.py
+# slide_29.py
 
 import logging
 import pandas as pd
@@ -9,8 +9,8 @@ from AE_LIW_automation.helper_modules import get_chart_object_by_name, get_chart
 
 logger = logging.getLogger(__name__)
 
-def slide_9_updater(df, prs) -> object:
-    slide_index = 8
+def slide_29_updater(df, prs) -> object:
+    slide_index = 28
     print(
         f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
     logger.info(f'Updating slide {slide_index + 1}')
@@ -18,7 +18,7 @@ def slide_9_updater(df, prs) -> object:
     slide = prs.slides[slide_index]
     chart_name = 'Content Placeholder 10'
     chart = get_chart_object_by_name(slide, chart_name)
-    question = 'Q20'
+    question = 'Q7_r2'
     old_categories = get_chart_categories(chart)
     existing_series_data_dict = get_chart_series_data(chart)
     # existing_series_data_dict['sum of displayed values'] = existing_series_data_dict.pop('')

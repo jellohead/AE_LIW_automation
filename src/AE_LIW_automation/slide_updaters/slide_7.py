@@ -21,7 +21,7 @@ def slide_7_updater(df, prs) -> object:
     question = 'Q18'
     old_categories = get_chart_categories(chart)
     existing_series_data_dict = get_chart_series_data(chart)
-    existing_series_data_dict['sum of displayed values'] = existing_series_data_dict.pop('')
+    # existing_series_data_dict['sum of displayed values'] = existing_series_data_dict.pop('')
 
     existing_df = pd.DataFrame(index=old_categories, data=existing_series_data_dict)[1:]
 
