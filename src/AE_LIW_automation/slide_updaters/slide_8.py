@@ -1,22 +1,26 @@
 # slide_8.py
 # update the data table on slide 8
+
+# TODO: Refactor using table helper functions
 # TODO: Break style_cell function into a module
 # TODO: Break style_cell_old_text function into a module
 # TODO: Fix styling to center text vertically in cells
+import logging
 from pandas import DataFrame
 import pandas as pd
 from pptx.util import Inches, Pt
 from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
-from helper_modules import get_table_object
-from config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
+from AE_LIW_automation.helper_modules import get_table_object
+from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
+
+
+logger = logging.getLogger(__name__)
 
 # Function to apply styling to a table cell
 def style_cell(cell, text, font_size=12, bold=False, color=RGBColor(0, 0, 0), bg_color=None, align=PP_ALIGN.CENTER):
     """Applies font size, boldness, color, and background to a cell."""
     cell.text = text
-    # text_frame = cell.text_frame
-    # text_frame.vertical_anchor = MSO_ANCHOR.MIDDLE
     paragraph = cell.text_frame.paragraphs[0]
     paragraph.alignment = align
     if paragraph.runs:
@@ -27,13 +31,10 @@ def style_cell(cell, text, font_size=12, bold=False, color=RGBColor(0, 0, 0), bg
     if bg_color:
         cell.fill.solid()
         cell.fill.fore_color.rgb = bg_color
-    # cell.text_frame.vertical_anchor = MSO_ANCHOR.MIDDLE
 
 # Function to apply styling to a table cell with existing text
 def style_cell_old_text(cell, font_size=12, bold=False, color=RGBColor(0, 0, 0), bg_color=None, align=PP_ALIGN.CENTER):
     """Applies font size, boldness, color, and background to a cell."""
-    # previous_text = cell.text
-    # cell.text = text
     paragraph = cell.text_frame.paragraphs[0]
     paragraph.alignment = align
     if paragraph.runs:
@@ -44,11 +45,13 @@ def style_cell_old_text(cell, font_size=12, bold=False, color=RGBColor(0, 0, 0),
     if bg_color:
         cell.fill.solid()
         cell.fill.fore_color.rgb = bg_color
-    # cell.text_frame.vertical_anchor = MSO_ANCHOR.MIDDLE
 
 def slide_8_updater(df, prs):
-    print('\n\tslide_8_updater\n')
     slide_index = 7
+    print(
+        f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
+    logger.info(f'Updating slide {slide_index + 1}')
+
     slide = prs.slides[slide_index]
 
     table = get_table_object(slide)
@@ -112,9 +115,6 @@ def slide_8_updater(df, prs):
     style_cell(table_shape.cell(0, 0), text='',font_size=12, bold=True, color=header_text_color, bg_color=header_bg_color, align=PP_ALIGN.CENTER)
     for col_idx, col_name in enumerate(q19_df_combined.columns):
         style_cell(table_shape.cell(0, col_idx + 1), col_name, font_size=14, bold=True, color=header_text_color, bg_color=header_bg_color, align=PP_ALIGN.CENTER)
-    # table_shape.cell(0, 0).text = ""  # Name for the index column
-    # for col_idx, col_name in enumerate(q19_df_combined.columns):
-    #     table_shape.cell(0, col_idx + 1).text = col_name  # Shifted by +1
 
     # Step 5: Insert data rows (including index values)
     for row_idx, (index_value, row) in enumerate(q19_df_combined.iterrows()):
@@ -143,9 +143,6 @@ def slide_8_updater(df, prs):
 
 
     for col_number, value in enumerate(q19_df_combined.loc['Base:']):
-        # def style_cell_old_text(cell, font_size=12, bold=False, color=RGBColor(0, 0, 0), bg_color=None,
-        #                         align=PP_ALIGN.CENTER):90	128	184
-
         style_cell_old_text(table_shape.cell(len(q19_df_combined), col_number + 1),
                                              font_size=13,
                                              bold=False,
@@ -153,11 +150,5 @@ def slide_8_updater(df, prs):
                                              bg_color=header_bg_color,
                                              align=PP_ALIGN.CENTER),
         print(f'{value = }')
-        # style_cell(table_shape.cell(len(q19_df_combined), index + 1),
-        #            value,
-        #            font_size=14,
-        #            bold=True,
-        #            color=header_text_color,
-        #            bg_color=header_bg_color,
-        #            align=PP_ALIGN.CENTER)
 
+    logger.info(f'Update of slide {slide_index + 1} complete.\nManually remove rows where all values are zero.\nManually adjust position and size of the table.')

@@ -135,3 +135,230 @@
 [2025-06-27 07:39:51,701] INFO in __main__: Starting AE LIW Automation
 [2025-06-27 07:39:51,771] INFO in slide_updaters.slide_4: Updating slide 4
 [2025-06-27 07:39:51,778] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 07:01:43,331] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 07:01:43,489] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 07:01:51,811] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 07:05:34,416] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 07:05:34,572] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 07:05:34,591] INFO in helper_modules.get_chart_object_by_name: Chart shape Chart 6 not found, returning empty chart object
+[2025-06-28 07:05:34,591] INFO in helper_modules.get_chart_object_by_name: Chart shape Chart 6 not found, returning empty chart object
+[2025-06-28 07:05:34,591] INFO in helper_modules.get_chart_object_by_name: Chart shape Chart 6 not found, returning empty chart object
+[2025-06-28 07:05:39,415] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 07:05:46,441] INFO in AE_LIW_automation.helper_modules.get_chart_object_by_name: Chart shape Content Placeholder 10 not found, returning empty chart object
+[2025-06-28 07:05:52,135] INFO in AE_LIW_automation.helper_modules.get_chart_object_by_name: Chart shape Content Placeholder 10 not found, returning empty chart object
+[2025-06-28 07:06:48,872] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 07:06:49,035] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 07:06:49,056] INFO in helper_modules.get_chart_object_by_name: Chart shape Chart 6 not found, returning empty chart object
+[2025-06-28 07:06:49,056] INFO in helper_modules.get_chart_object_by_name: Chart shape Chart 6 not found, returning empty chart object
+[2025-06-28 07:06:49,056] INFO in helper_modules.get_chart_object_by_name: Chart shape Chart 6 not found, returning empty chart object
+[2025-06-28 07:06:54,194] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 07:07:00,683] INFO in AE_LIW_automation.helper_modules.get_chart_object_by_name: Chart shape Content Placeholder 10 not found, returning empty chart object
+[2025-06-28 07:07:09,100] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 07:07:09,249] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 07:07:12,529] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 07:22:10,863] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 07:22:11,018] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 07:22:17,321] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 07:24:03,896] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 07:24:04,041] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 07:24:10,565] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 07:25:31,308] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 07:25:31,461] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 07:25:32,553] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 07:37:42,598] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 07:37:42,749] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 07:37:49,401] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 07:38:14,611] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 07:38:14,767] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 07:38:16,937] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 07:44:18,186] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 07:44:18,338] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 07:44:20,328] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 07:49:46,608] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 07:49:46,761] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 07:49:47,988] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 07:54:27,736] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 07:54:27,893] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 07:54:32,232] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 07:56:23,202] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 07:56:23,358] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 07:56:27,059] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 07:58:50,753] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 07:58:51,040] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 07:58:51,093] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 07:59:16,619] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 07:59:16,773] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 07:59:16,802] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:16:24,899] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:16:25,056] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:16:25,086] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:17:03,524] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:17:03,682] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:17:03,710] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:24:16,813] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:24:16,969] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:24:16,996] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:25:42,204] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:25:42,362] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:25:42,390] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:26:04,807] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:26:04,956] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:26:04,985] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:26:46,866] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:26:47,021] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:26:47,050] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:27:40,928] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:27:41,083] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:27:41,111] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:34:13,944] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:34:14,099] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:34:14,127] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:35:06,217] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:35:06,373] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:35:06,401] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:36:27,851] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:36:28,003] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:36:28,031] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:37:17,127] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:37:17,283] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:37:17,312] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:38:03,816] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:38:03,971] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:38:03,998] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:39:39,383] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:39:39,540] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:39:39,567] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:43:27,312] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:43:27,471] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:43:27,501] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:45:44,083] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:45:44,237] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:45:44,265] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:47:06,744] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:47:06,907] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:47:06,937] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:48:07,884] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:48:08,051] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:48:08,080] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:48:39,273] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:48:39,432] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:48:39,460] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:55:10,730] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:55:10,881] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:55:10,908] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-28 08:56:06,316] INFO in __main__: Starting AE LIW Automation
+[2025-06-28 08:56:06,388] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-28 08:56:06,395] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:13:58,451] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:13:58,532] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:13:58,540] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:14:07,509] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:14:07,658] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:14:07,685] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:15:48,307] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:15:48,460] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:15:48,487] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:17:53,103] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:17:53,173] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:17:53,180] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:18:51,406] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:18:51,562] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:18:51,589] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:21:41,164] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:21:41,318] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:21:41,346] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:37:26,219] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:37:26,373] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:37:26,401] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:38:11,655] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:38:11,809] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:38:11,837] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:39:20,130] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:39:20,284] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:39:20,311] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:40:49,761] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:40:49,910] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:40:49,938] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:45:35,839] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:45:35,993] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:45:36,021] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:47:08,978] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:47:09,128] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:47:09,156] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:48:44,266] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:48:44,422] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:48:44,448] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:52:05,704] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:52:05,857] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:52:05,886] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:53:46,553] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:53:46,705] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:53:46,733] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:55:45,159] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:55:45,314] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:55:45,341] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:56:42,022] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:56:42,174] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:56:42,202] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 07:59:40,957] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 07:59:41,108] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 07:59:41,136] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 08:00:20,297] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 08:00:20,453] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 08:00:20,480] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 08:01:12,768] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 08:01:12,923] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 08:01:12,950] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 08:05:29,654] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 08:05:29,808] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 08:05:29,837] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 08:08:05,351] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 08:08:05,515] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 08:08:05,545] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 08:13:43,071] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 08:13:43,227] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 08:13:43,256] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 08:14:11,927] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 08:14:12,086] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 08:14:12,115] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 08:15:18,297] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 08:15:18,461] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 08:15:18,491] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 08:17:51,559] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 08:17:51,715] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 08:17:51,742] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 08:22:04,968] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 08:22:05,122] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 08:22:05,150] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 08:23:59,150] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 08:23:59,223] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 08:23:59,232] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 08:34:02,506] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 08:34:02,601] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 08:34:02,618] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 08:34:02,626] INFO in /Users/patescalona/Projects/Coding/Python/report_automation/AE_LIW_automation/src/AE_LIW_automation/slide_updaters/slide_8.py: Updating slide 8
+[2025-06-29 08:34:02,647] INFO in /Users/patescalona/Projects/Coding/Python/report_automation/AE_LIW_automation/src/AE_LIW_automation/slide_updaters/slide_8.py: Update of slide 8 complete.
+Manually remove rows where all values are zero.
+Manually adjust position and size of the table.
+[2025-06-29 08:35:36,113] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 08:35:36,183] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 08:35:36,190] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 08:35:36,195] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-06-29 08:35:36,210] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually remove rows where all values are zero.
+Manually adjust position and size of the table.
+[2025-06-29 08:38:53,477] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 08:38:53,630] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 08:38:53,657] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 08:38:53,670] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-06-29 08:38:53,726] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually remove rows where all values are zero.
+Manually adjust position and size of the table.
+[2025-06-29 08:41:47,501] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 08:41:47,657] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 08:41:47,684] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 08:41:47,697] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-06-29 08:41:47,750] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually remove rows where all values are zero.
+Manually adjust position and size of the table.
+[2025-06-29 08:41:47,750] INFO in slide_updaters.slide_9: Updating slide 9

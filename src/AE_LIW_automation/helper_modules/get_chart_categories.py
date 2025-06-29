@@ -43,6 +43,5 @@ def get_chart_categories(chart):
             # Get categories using list comprehension
             return [category for category in plot.categories]
     # return empty list if chart.chart_type is False
-
     logger.info('No categories found, returning empty list')
     return []

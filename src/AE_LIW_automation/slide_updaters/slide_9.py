@@ -1,5 +1,5 @@
-# slide_7.py
-# This file contains the functions for updating the slide 7 of the Powerpoint file
+# slide_9.py
+# This file contains the functions for updating the slide 9 of the Powerpoint file
 
 import logging
 import pandas as pd
@@ -9,10 +9,10 @@ from AE_LIW_automation.helper_modules import get_chart_object_by_name, get_chart
 
 
 logger = logging.getLogger(__name__)
-# TODO Slide 7 script is not working
+# TODO Slide 9 script is not working
 
-def slide_7_updater(df, prs) -> object:
-    slide_index = 6
+def slide_9_updater(df, prs) -> object:
+    slide_index = 8
     print(
         f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
     logger.info(f'Updating slide {slide_index + 1}')
@@ -20,7 +20,7 @@ def slide_7_updater(df, prs) -> object:
     slide = prs.slides[slide_index]
     chart_name = 'Content Placeholder 10'
     chart = get_chart_object_by_name(slide, chart_name)
-    question = 'Q18'
+    question = 'Q20'
     old_categories = get_chart_categories(chart)
     existing_series_data_dict = get_chart_series_data(chart)
     existing_series_data_dict['sum of displayed values'] = existing_series_data_dict.pop('')
