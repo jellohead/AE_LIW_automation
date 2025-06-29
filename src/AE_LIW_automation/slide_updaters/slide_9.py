@@ -1,5 +1,4 @@
 # slide_9.py
-# This file contains the functions for updating the slide 9 of the Powerpoint file
 
 import logging
 import pandas as pd
@@ -9,7 +8,6 @@ from AE_LIW_automation.helper_modules import get_chart_object_by_name, get_chart
 
 
 logger = logging.getLogger(__name__)
-# TODO Slide 9 script is not working
 
 def slide_9_updater(df, prs) -> object:
     slide_index = 8

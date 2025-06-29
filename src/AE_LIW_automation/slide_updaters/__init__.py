@@ -24,6 +24,7 @@ from .slide_7 import slide_7_updater
 from .slide_8 import slide_8_updater
 from .slide_9 import slide_9_updater
 from .slide_14 import slide_14_updater
+from .slide_15 import slide_15_updater
 from .slide_17 import slide_17_updater
 from .slide_24 import slide_24_updater
 from .slide_25 import slide_25_updater

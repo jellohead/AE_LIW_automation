@@ -362,3 +362,12 @@ Manually adjust position and size of the table.
 Manually remove rows where all values are zero.
 Manually adjust position and size of the table.
 [2025-06-29 08:41:47,750] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-06-29 08:52:55,799] INFO in __main__: Starting AE LIW Automation
+[2025-06-29 08:52:55,874] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-29 08:52:55,883] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-29 08:52:55,887] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-06-29 08:52:55,903] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually remove rows where all values are zero.
+Manually adjust position and size of the table.
+[2025-06-29 08:52:55,903] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-06-29 08:52:55,910] INFO in slide_updaters.slide_15: Updating slide 15
