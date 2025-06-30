@@ -4,6 +4,7 @@ __all__: list = ['slide_1_updater',
                  'slide_6_updater',
                  'slide_7_updater',
                  'slide_8_updater',
+                 'slide_9_updater',
                  'slide_14_updater',
                  'slide_17_updater',
                  'slide_24_updater',
@@ -11,6 +12,7 @@ __all__: list = ['slide_1_updater',
                  'slide_30_updater',
                  'slide_31_updater',
                  'slide_35_updater',
+                 'slide_36_updater',
                  'slide_43_updater',
                  'slide_50_updater'
                  ]
@@ -32,5 +34,6 @@ from .slide_29 import slide_29_updater
 from .slide_30 import slide_30_updater
 from .slide_31 import slide_31_updater
 from .slide_35 import slide_35_updater
+from .slide_36 import slide_36_updater
 from .slide_43 import slide_43_updater
 from .slide_50 import slide_50_updater

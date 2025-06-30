@@ -432,3 +432,56 @@ Manually adjust position and size of the table.
 [2025-06-29 09:06:45,364] INFO in slide_updaters.slide_9: Updating slide 9
 [2025-06-29 09:06:45,373] INFO in slide_updaters.slide_15: Updating slide 15
 [2025-06-29 09:06:45,385] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-06-30 07:10:04,586] INFO in __main__: Starting AE LIW Automation
+[2025-06-30 07:10:04,645] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-30 07:10:04,651] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-30 07:10:04,655] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-06-30 07:10:04,665] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually remove rows where all values are zero.
+Manually adjust position and size of the table.
+[2025-06-30 07:10:04,665] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-06-30 07:10:04,670] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-06-30 07:10:04,678] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-06-30 07:12:17,659] INFO in __main__: Starting AE LIW Automation
+[2025-06-30 07:12:17,721] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-30 07:12:17,728] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-30 07:12:17,732] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-06-30 07:12:17,742] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually remove rows where all values are zero.
+Manually adjust position and size of the table.
+[2025-06-30 07:12:17,743] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-06-30 07:12:17,748] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-06-30 07:12:17,756] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-06-30 07:21:27,226] INFO in __main__: Starting AE LIW Automation
+[2025-06-30 07:21:27,291] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-30 07:21:27,297] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-30 07:21:27,301] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-06-30 07:21:27,311] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually remove rows where all values are zero.
+Manually adjust position and size of the table.
+[2025-06-30 07:21:27,311] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-06-30 07:21:27,317] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-06-30 07:21:27,325] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-06-30 07:21:27,333] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-06-30 07:22:49,665] INFO in __main__: Starting AE LIW Automation
+[2025-06-30 07:22:49,780] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-30 07:22:49,799] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-30 07:22:49,809] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-06-30 07:22:49,844] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually remove rows where all values are zero.
+Manually adjust position and size of the table.
+[2025-06-30 07:22:49,844] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-06-30 07:22:49,859] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-06-30 07:22:49,886] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-06-30 07:22:49,913] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-06-30 07:24:30,145] INFO in __main__: Starting AE LIW Automation
+[2025-06-30 07:24:30,201] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-30 07:24:30,207] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-30 07:24:30,210] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-06-30 07:24:30,220] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually remove rows where all values are zero.
+Manually adjust position and size of the table.
+[2025-06-30 07:24:30,220] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-06-30 07:24:30,226] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-06-30 07:24:30,234] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-06-30 07:24:30,242] INFO in slide_updaters.slide_36: Updating slide 36

@@ -11,7 +11,8 @@ from slide_updaters import (slide_1_updater, slide_3_updater, slide_4_updater, s
                             slide_8_updater, slide_9_updater, slide_14_updater, slide_15_updater, slide_17_updater,
                             slide_24_updater,
                             slide_25_updater, slide_29_updater,
-                            slide_30_updater, slide_31_updater, slide_35_updater, slide_43_updater, slide_50_updater)
+                            slide_30_updater, slide_31_updater, slide_35_updater, slide_36_updater, slide_43_updater,
+                            slide_50_updater)
 
 
 logger = logging.getLogger(__name__)
@@ -39,6 +40,7 @@ def main():
     slide_30_updater(df, prs)
     slide_31_updater(df, prs)
     slide_35_updater(df, prs)
+    slide_36_updater(df, prs)
     # slide_43_updater(df, meta, df_labeled, prs)
     slide_50_updater(df, meta, df_labeled, prs)
 
