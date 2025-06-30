@@ -1,7 +1,4 @@
 .DS_Store
-*.pptx
-*.xlsx
-*.sav
 
 __pycache__/
 *.py[cod]
