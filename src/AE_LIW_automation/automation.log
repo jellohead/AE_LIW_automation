@@ -485,3 +485,39 @@ Manually adjust position and size of the table.
 [2025-06-30 07:24:30,226] INFO in slide_updaters.slide_15: Updating slide 15
 [2025-06-30 07:24:30,234] INFO in slide_updaters.slide_29: Updating slide 29
 [2025-06-30 07:24:30,242] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-06-30 07:29:06,848] INFO in __main__: Starting AE LIW Automation
+[2025-06-30 07:29:06,913] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-30 07:29:06,920] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-30 07:29:06,923] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-06-30 07:29:06,934] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually remove rows where all values are zero.
+Manually adjust position and size of the table.
+[2025-06-30 07:29:06,934] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-06-30 07:29:06,939] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-06-30 07:29:06,947] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-06-30 07:29:06,955] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-06-30 07:29:06,957] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-06-30 07:43:38,107] INFO in __main__: Starting AE LIW Automation
+[2025-06-30 07:43:38,170] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-30 07:43:38,176] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-30 07:43:38,179] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-06-30 07:43:38,189] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually remove rows where all values are zero.
+Manually adjust position and size of the table.
+[2025-06-30 07:43:38,189] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-06-30 07:43:38,195] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-06-30 07:43:38,203] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-06-30 07:43:38,211] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-06-30 07:43:38,213] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-06-30 07:47:50,013] INFO in __main__: Starting AE LIW Automation
+[2025-06-30 07:47:50,077] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-06-30 07:47:50,083] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-06-30 07:47:50,086] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-06-30 07:47:50,096] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually remove rows where all values are zero.
+Manually adjust position and size of the table.
+[2025-06-30 07:47:50,096] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-06-30 07:47:50,102] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-06-30 07:47:50,109] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-06-30 07:47:50,117] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-06-30 07:47:50,120] INFO in slide_updaters.slide_38: Updating slide 38
