@@ -56,7 +56,7 @@ def slide_8_updater(df, prs):
 
     table = get_table_object(slide)
     if not table:
-        print('No table found on Slide 8')
+        print(f'No table found on {slide_index + 1}')
         return
 
     # extract table dimensions
