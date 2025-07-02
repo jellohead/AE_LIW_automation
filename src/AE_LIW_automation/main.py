@@ -8,7 +8,10 @@ from config.logging_config import setup_logging
 from helper_modules.read_data import read_data
 from helper_modules.get_chart_object_by_name import get_chart_object_by_name
 from slide_updaters import (slide_1_updater, slide_3_updater, slide_4_updater, slide_6_updater, slide_7_updater,
-                            slide_8_updater, slide_9_updater, slide_10_updater, slide_14_updater, slide_15_updater,
+                            slide_8_updater, slide_9_updater, slide_10_updater, slide_11_updater, slide_12_updater,
+                            slide_13_updater,
+                            slide_14_updater,
+                            slide_15_updater,
                             slide_17_updater,
                             slide_24_updater,
                             slide_25_updater, slide_29_updater,
@@ -34,7 +37,10 @@ def main():
     slide_7_updater(df, prs)
     slide_8_updater(df, prs)
     slide_9_updater(df, prs)
-    slide_10_updater(meta, df, df_labeled, prs)
+    slide_10_updater(df, prs)
+    slide_11_updater(df, prs)
+    slide_12_updater(df, prs)
+    slide_13_updater(df, prs)
     slide_14_updater(df, prs)
     slide_15_updater(df, prs)
     slide_17_updater(df, prs)

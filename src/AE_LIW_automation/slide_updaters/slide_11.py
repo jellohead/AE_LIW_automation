@@ -1,4 +1,4 @@
-# slide_10.py
+# slide_11.py
 import logging
 from pptx.chart.data import CategoryChartData
 from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
@@ -8,14 +8,14 @@ from AE_LIW_automation.helper_modules import get_chart_object_by_name, get_chart
 logger = logging.getLogger(__name__)
 
 
-def slide_10_updater(df, prs) -> object:
-    slide_index = 9
+def slide_11_updater(df, prs) -> object:
+    slide_index = 10
     print(
         f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
     logger.info(f'Updating slide {slide_index + 1}')
     slide = prs.slides[slide_index]
     chart = get_chart_object_by_name(slide, 'Chart 6')
-    question_list = ['Q14_r1', 'Q14_r2']
+    question_list = ['Q14_r3', 'Q14_r4']
     expected_value_labels = [1, 2, 3, 4, 5]
     old_categories = get_chart_categories(chart)
     existing_series_data = get_chart_series_data(chart)
