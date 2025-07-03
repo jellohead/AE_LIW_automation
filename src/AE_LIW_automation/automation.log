@@ -1986,3 +1986,34 @@ Manually adjust vertical alignment of cell contents.
 [2025-07-03 14:57:21,718] INFO in slide_updaters.slide_38: Updating slide 38
 [2025-07-03 14:57:21,721] INFO in slide_updaters.slide_40: Updating slide 40
 [2025-07-03 14:57:21,723] INFO in slide_updaters.slide_48: Updating slide 48
+[2025-07-03 15:06:58,544] INFO in __main__: Starting AE LIW Automation
+[2025-07-03 15:06:58,606] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-07-03 15:06:58,608] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-07-03 15:06:58,611] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-07-03 15:06:58,614] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-07-03 15:06:58,623] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-03 15:06:58,623] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-07-03 15:06:58,627] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-07-03 15:06:58,629] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-07-03 15:06:58,632] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-07-03 15:06:58,635] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-07-03 15:06:58,637] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-07-03 15:06:58,639] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-07-03 15:06:58,642] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-07-03 15:06:58,651] INFO in slide_updaters.slide_16: Update of slide 16 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-03 15:06:58,652] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-07-03 15:06:58,659] INFO in slide_updaters.slide_18: Update of slide 18 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-03 15:06:58,662] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-07-03 15:06:58,670] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-07-03 15:06:58,672] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-07-03 15:06:58,675] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-07-03 15:06:58,677] INFO in slide_updaters.slide_48: Updating slide 48
