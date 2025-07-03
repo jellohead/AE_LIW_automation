@@ -1,10 +1,10 @@
-# slide_8.py
+# slide_16.py
 
 # TODO: Refactor using table helper functions
-# TODO: Break style_cell function into a module
-# TODO: Break style_cell_old_text function into a module
 # TODO: Fix styling to center text vertically in cells
 import logging
+
+# from lxml.parser import remaining
 from pandas import DataFrame, Series
 import pandas as pd
 from pptx.util import Inches
@@ -19,15 +19,15 @@ logger = logging.getLogger(__name__)
 
 # TODO: v_alignment is not modifying the vertical alignment of the cell text
 
-def slide_8_updater(df, prs):
-    slide_index = 7
+def slide_16_updater(meta, df, df_labeled, prs):
+    slide_index = 15
     print(
         f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
     logger.info(f'Updating slide {slide_index + 1}')
 
     slide = prs.slides[slide_index]
 
-    question = 'Q19'
+    question_list = ['Q12_1', 'Q12_2']
 
     table = get_table_object(slide)
     if not table:
@@ -44,28 +44,54 @@ def slide_8_updater(df, prs):
     print(f'{table_df_current = }')
 
     # get current quarter data from dataset
-    current_quarter_result: Series = df[question].replace('', float('nan')).dropna().value_counts()
+    current_quarter_result = pd.Series()
+    for question in question_list:
+        current_quarter_result_series: Series = df_labeled[question].value_counts()
+
+        if current_quarter_result_series.empty:
+            break
+        else:
+            # current_quarter_result_series.at['Other'] = current_quarter_result_series.pop(current_quarter_result_series.index.str.contains('All other'))
+            mask = current_quarter_result_series.index.str.contains('All other', case=False, na=False)
+
+            if mask.any():
+                value = current_quarter_result_series[mask].values[0]
+                current_quarter_result_series = current_quarter_result_series[~mask]  # remove old entry
+                current_quarter_result_series.at['Other'] = value  # insert with new label
+
+            current_quarter_result = pd.concat([current_quarter_result, current_quarter_result_series])
+
     # append Base value to the series
     current_quarter_result.at['Base:'] = len(current_quarter_result)
-    current_quarter_result_df =pd.DataFrame({f'{REPORTING_PERIOD} {REPORTING_YEAR}': current_quarter_result}).fillna(0)
+
+    current_quarter_result_df = pd.DataFrame({f'{REPORTING_PERIOD} {REPORTING_YEAR}': current_quarter_result}).fillna(0)
 
     # combine old and new data, convert new data to integers
-    current_quarter_result_df_combined = pd.concat([table_df_current, current_quarter_result_df], axis=1).fillna(0).astype(int)
+    current_quarter_result_df_combined = pd.concat([table_df_current, current_quarter_result_df], axis=1).fillna(
+        0).astype(int)
 
     # remove rows where all values are 0
     current_quarter_result_df_combined = current_quarter_result_df_combined[
         ~(current_quarter_result_df_combined == 0)
         .all(axis=1)
     ]
-    # sort the combined df and put Base at the bottom
+
+    # sort the combined df and put Nothing, Other, Base: at the bottom
+    last_rows = ['Nothing', 'Other', 'Base:']
+    rows_to_move = {label: current_quarter_result_df_combined[current_quarter_result_df_combined.index == label]
+                    for label in last_rows
+                    }
+
+    remaining_rows = current_quarter_result_df_combined[~current_quarter_result_df_combined.index.isin(last_rows)]
+    remaining_rows_sorted = (remaining_rows.sort_values(by=f'{REPORTING_PERIOD} {REPORTING_YEAR}',ascending=False))
+    ordered_rows = [rows_to_move[label] for label in last_rows if not rows_to_move[label].empty]
+
+    current_quarter_result_df_combined = pd.concat(
+        [remaining_rows_sorted] + ordered_rows,
+        axis=0
+    ).fillna(0).astype(int)
+
     base_row = current_quarter_result_df_combined[current_quarter_result_df_combined.index == 'Base:']
-    not_base_rows = (current_quarter_result_df_combined[current_quarter_result_df_combined.index != 'Base:']
-                     .sort_values(by=f'{REPORTING_PERIOD} {REPORTING_YEAR}', ascending=False)
-                     )
-    current_quarter_result_df_combined = (pd.concat([not_base_rows, base_row], axis=0)
-                                          .fillna(0)
-                                          .astype(int)
-                                          )
 
     # Step 1: Remove existing table (if any)
     shapes = slide.shapes
@@ -78,12 +104,12 @@ def slide_8_updater(df, prs):
     rows, cols = current_quarter_result_df_combined.shape
 
     # Define styling properties
-    header_bg_color = RGBColor(90,	128,184)  # Dark Blue
+    header_bg_color = RGBColor(90, 128, 184)  # Dark Blue
     header_text_color = RGBColor(255, 255, 255)  # White
     row_bg_color = RGBColor(224, 235, 255)  # Light Blue (Alternating Rows)
-    last_row_bg_color = RGBColor(90,	128,	184)  # Dark Blue for Last Row
-    data_text_color = RGBColor(0, 0, 0) # Black text
-    data_bg_color = RGBColor(224,	229,	240) # Light blue for data rows
+    last_row_bg_color = RGBColor(90, 128, 184)  # Dark Blue for Last Row
+    data_text_color = RGBColor(0, 0, 0)  # Black text
+    data_bg_color = RGBColor(224, 229, 240)  # Light blue for data rows
 
     # Add one more column for the index
     table_shape = slide.shapes.add_table(rows + 1, cols + 1, Inches(.5), Inches(1.7), Inches(6.5), Inches(5)).table
@@ -153,4 +179,5 @@ def slide_8_updater(df, prs):
                          v_alignment=MSO_ANCHOR.MIDDLE,
                          )
 
-    logger.info(f'Update of slide {slide_index + 1} complete.\nManually adjust position and size of the table.\nVerify Base value for current quarter is accurate.\nManually adjust vertical alignment of cell contents.')
+    logger.info(
+        f'Update of slide {slide_index + 1} complete.\nManually adjust position and size of the table.\nVerify Base value for current quarter is accurate.\nManually adjust vertical alignment of cell contents.')
