@@ -3130,3 +3130,404 @@ Manually adjust vertical alignment of cell contents.
 [2025-07-04 07:43:12,851] INFO in slide_updaters.slide_38: Updating slide 38
 [2025-07-04 07:43:12,855] INFO in slide_updaters.slide_40: Updating slide 40
 [2025-07-04 07:43:12,859] INFO in slide_updaters.slide_48: Updating slide 48
+[2025-07-04 08:10:28,605] INFO in __main__: Starting AE LIW Automation
+[2025-07-04 08:10:28,677] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-07-04 08:10:28,681] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-07-04 08:10:28,685] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-07-04 08:10:28,690] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-07-04 08:10:28,705] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:10:28,705] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-07-04 08:10:28,710] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-07-04 08:10:28,713] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-07-04 08:10:28,717] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-07-04 08:10:28,721] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-07-04 08:10:28,725] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-07-04 08:10:28,728] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-07-04 08:10:28,732] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-07-04 08:10:28,748] INFO in slide_updaters.slide_16: Update of slide 16 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:10:28,751] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-07-04 08:10:28,762] INFO in slide_updaters.slide_18: Update of slide 18 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:10:28,762] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-07-04 08:10:28,789] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:10:28,795] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-07-04 08:10:28,798] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:10:28,812] INFO in slide_updaters.slide_26: Update of slide 26 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:10:28,812] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-07-04 08:10:28,822] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-07-04 08:10:28,825] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:10:28,837] INFO in slide_updaters.slide_32: Update of slide 32 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:10:28,840] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-07-04 08:10:28,844] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-07-04 08:10:28,848] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-07-04 08:10:28,852] INFO in slide_updaters.slide_48: Updating slide 48
+[2025-07-04 08:14:07,617] INFO in __main__: Starting AE LIW Automation
+[2025-07-04 08:14:07,694] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-07-04 08:14:07,699] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-07-04 08:14:07,703] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-07-04 08:14:07,708] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-07-04 08:14:07,723] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:14:07,723] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-07-04 08:14:07,728] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-07-04 08:14:07,732] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-07-04 08:14:07,736] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-07-04 08:14:07,739] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-07-04 08:14:07,743] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-07-04 08:14:07,746] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-07-04 08:14:07,750] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-07-04 08:14:07,765] INFO in slide_updaters.slide_16: Update of slide 16 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:14:07,768] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-07-04 08:14:07,780] INFO in slide_updaters.slide_18: Update of slide 18 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:14:07,780] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-07-04 08:14:07,809] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:14:07,815] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-07-04 08:14:07,818] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:14:07,831] INFO in slide_updaters.slide_26: Update of slide 26 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:14:07,831] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-07-04 08:14:07,842] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-07-04 08:14:07,845] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:14:07,858] INFO in slide_updaters.slide_32: Update of slide 32 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:14:07,861] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-07-04 08:14:07,865] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-07-04 08:14:07,870] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-07-04 08:14:07,874] INFO in slide_updaters.slide_48: Updating slide 48
+[2025-07-04 08:19:32,549] INFO in __main__: Starting AE LIW Automation
+[2025-07-04 08:19:32,622] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-07-04 08:19:32,626] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-07-04 08:19:32,630] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-07-04 08:19:32,635] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-07-04 08:19:32,652] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:19:32,653] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-07-04 08:19:32,659] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-07-04 08:19:32,663] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-07-04 08:19:32,667] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-07-04 08:19:32,670] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-07-04 08:19:32,674] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-07-04 08:19:32,676] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-07-04 08:19:32,680] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-07-04 08:19:32,695] INFO in slide_updaters.slide_16: Update of slide 16 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:19:32,697] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-07-04 08:19:32,707] INFO in slide_updaters.slide_18: Update of slide 18 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:19:32,708] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-07-04 08:19:32,734] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:19:32,740] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-07-04 08:19:32,743] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:19:32,755] INFO in slide_updaters.slide_26: Update of slide 26 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:19:32,755] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-07-04 08:19:32,765] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-07-04 08:19:32,768] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:19:32,780] INFO in slide_updaters.slide_32: Update of slide 32 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-07-04 08:19:32,780] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-07-04 08:19:32,785] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:19:32,811] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-07-04 08:19:32,814] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-07-04 08:19:32,818] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-07-04 08:19:32,822] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-07-04 08:19:32,826] INFO in slide_updaters.slide_48: Updating slide 48
+[2025-07-04 08:20:31,894] INFO in __main__: Starting AE LIW Automation
+[2025-07-04 08:20:31,962] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-07-04 08:20:31,966] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-07-04 08:20:31,970] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-07-04 08:20:31,975] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-07-04 08:20:31,989] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:20:31,989] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-07-04 08:20:31,994] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-07-04 08:20:31,997] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-07-04 08:20:32,001] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-07-04 08:20:32,004] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-07-04 08:20:32,007] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-07-04 08:20:32,010] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-07-04 08:20:32,014] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-07-04 08:20:32,028] INFO in slide_updaters.slide_16: Update of slide 16 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:20:32,031] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-07-04 08:20:32,041] INFO in slide_updaters.slide_18: Update of slide 18 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:20:32,041] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-07-04 08:20:32,066] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:20:32,071] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-07-04 08:20:32,074] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:20:32,086] INFO in slide_updaters.slide_26: Update of slide 26 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:20:32,086] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-07-04 08:20:32,096] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-07-04 08:20:32,099] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:20:32,111] INFO in slide_updaters.slide_32: Update of slide 32 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-07-04 08:20:32,111] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-07-04 08:20:32,116] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:20:32,142] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-07-04 08:20:32,145] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-07-04 08:20:32,149] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-07-04 08:20:32,153] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-07-04 08:20:32,157] INFO in slide_updaters.slide_48: Updating slide 48
+[2025-07-04 08:22:03,936] INFO in __main__: Starting AE LIW Automation
+[2025-07-04 08:22:04,005] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-07-04 08:22:04,009] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-07-04 08:22:04,015] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-07-04 08:22:04,019] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-07-04 08:22:04,034] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:22:04,034] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-07-04 08:22:04,039] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-07-04 08:22:04,043] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-07-04 08:22:04,046] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-07-04 08:22:04,050] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-07-04 08:22:04,053] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-07-04 08:22:04,056] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-07-04 08:22:04,060] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-07-04 08:22:04,075] INFO in slide_updaters.slide_16: Update of slide 16 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:22:04,077] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-07-04 08:22:04,087] INFO in slide_updaters.slide_18: Update of slide 18 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:22:04,087] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-07-04 08:22:04,113] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:22:04,118] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-07-04 08:22:04,121] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:22:04,135] INFO in slide_updaters.slide_26: Update of slide 26 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:22:04,135] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-07-04 08:22:04,146] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-07-04 08:22:04,149] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:22:04,161] INFO in slide_updaters.slide_32: Update of slide 32 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-07-04 08:22:04,161] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-07-04 08:22:04,166] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:22:04,190] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-07-04 08:22:04,193] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-07-04 08:22:04,198] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-07-04 08:22:04,201] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-07-04 08:22:04,205] INFO in slide_updaters.slide_48: Updating slide 48
+[2025-07-04 08:23:08,709] INFO in __main__: Starting AE LIW Automation
+[2025-07-04 08:23:08,783] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-07-04 08:23:08,787] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-07-04 08:23:08,791] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-07-04 08:23:08,797] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-07-04 08:23:08,812] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:23:08,812] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-07-04 08:23:08,817] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-07-04 08:23:08,822] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-07-04 08:23:08,825] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-07-04 08:23:08,829] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-07-04 08:23:08,832] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-07-04 08:23:08,835] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-07-04 08:23:08,839] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-07-04 08:23:08,855] INFO in slide_updaters.slide_16: Update of slide 16 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:23:08,857] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-07-04 08:23:08,867] INFO in slide_updaters.slide_18: Update of slide 18 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:23:08,868] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-07-04 08:23:08,894] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:23:08,899] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-07-04 08:23:08,902] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:23:08,914] INFO in slide_updaters.slide_26: Update of slide 26 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:23:08,914] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-07-04 08:23:08,923] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-07-04 08:23:08,925] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:23:08,938] INFO in slide_updaters.slide_32: Update of slide 32 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-07-04 08:23:08,938] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-07-04 08:23:08,943] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:23:08,967] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-07-04 08:23:08,970] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-07-04 08:26:32,642] INFO in __main__: Starting AE LIW Automation
+[2025-07-04 08:26:32,713] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-07-04 08:26:32,718] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-07-04 08:26:32,723] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-07-04 08:26:32,728] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-07-04 08:26:32,744] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:26:32,745] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-07-04 08:26:32,750] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-07-04 08:26:32,755] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-07-04 08:26:32,759] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-07-04 08:26:32,762] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-07-04 08:26:32,766] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-07-04 08:26:32,769] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-07-04 08:26:32,772] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-07-04 08:26:32,788] INFO in slide_updaters.slide_16: Update of slide 16 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:26:32,790] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-07-04 08:26:32,801] INFO in slide_updaters.slide_18: Update of slide 18 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:26:32,801] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-07-04 08:26:32,826] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:26:32,832] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-07-04 08:26:32,835] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:26:32,847] INFO in slide_updaters.slide_26: Update of slide 26 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:26:32,847] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-07-04 08:26:32,857] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-07-04 08:26:32,860] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:26:32,872] INFO in slide_updaters.slide_32: Update of slide 32 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-07-04 08:26:32,872] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-07-04 08:26:32,877] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:26:32,900] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-07-04 08:26:32,903] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-07-04 08:26:54,674] INFO in __main__: Starting AE LIW Automation
+[2025-07-04 08:26:54,746] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-07-04 08:26:54,750] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-07-04 08:26:54,754] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-07-04 08:26:54,759] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-07-04 08:26:54,774] INFO in slide_updaters.slide_8: Update of slide 8 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:26:54,774] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-07-04 08:26:54,779] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-07-04 08:26:54,783] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-07-04 08:26:54,786] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-07-04 08:26:54,790] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-07-04 08:26:54,793] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-07-04 08:26:54,796] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-07-04 08:26:54,799] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-07-04 08:26:54,814] INFO in slide_updaters.slide_16: Update of slide 16 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:26:54,817] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-07-04 08:26:54,827] INFO in slide_updaters.slide_18: Update of slide 18 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:26:54,827] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-07-04 08:26:54,854] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:26:54,859] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-07-04 08:26:54,863] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:26:54,875] INFO in slide_updaters.slide_26: Update of slide 26 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-07-04 08:26:54,875] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-07-04 08:26:54,885] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-07-04 08:26:54,888] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:26:54,900] INFO in slide_updaters.slide_32: Update of slide 32 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-07-04 08:26:54,900] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-07-04 08:26:54,905] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-07-04 08:26:54,928] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-07-04 08:26:54,932] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-07-04 08:26:54,937] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-07-04 08:26:54,946] INFO in slide_updaters.slide_48: Updating slide 48

@@ -1,4 +1,4 @@
-# slide_26.py
+# slide_32.py
 
 import logging
 from pandas import DataFrame, Series
@@ -17,17 +17,16 @@ logger = logging.getLogger(__name__)
 # TODO: v_alignment is not modifying the vertical alignment of the cell text
 # TODO: write helper module to combine results across multiple questions
 
-def slide_26_updater(meta, df, df_labeled, prs):
-    slide_index = 25
+def slide_32_updater(meta, df, df_labeled, prs):
+    slide_index = 31
     print(
         f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
     logger.info(f'Updating slide {slide_index + 1}')
 
     slide = prs.slides[slide_index]
 
-    question_list = ['Q6_1', 'Q6_2', 'Q6_3']
-    label_sub_dict = {"Don' t kn ow" : "Don't know",
-                      'All other': 'Other',
+    question_list = ['Q10_1']
+    label_sub_dict = {'All other' : 'Other',
                       }
     last_rows = ["Don't know", 'Other', 'Base:']
 
@@ -164,4 +163,4 @@ def slide_26_updater(meta, df, df_labeled, prs):
                          )
 
     logger.info(
-        f'Update of slide {slide_index + 1} complete.\nManually adjust position and size of the table.\nVerify Base value for current quarter is accurate.\nManually adjust vertical alignment of cell contents.')
+        f'Update of slide {slide_index + 1} complete.\nManually adjust position and size of the table.\nVerify Base value for current quarter is accurate.')

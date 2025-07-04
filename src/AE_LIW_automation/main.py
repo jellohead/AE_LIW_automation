@@ -15,7 +15,9 @@ from slide_updaters import (slide_1_updater, slide_3_updater, slide_4_updater, s
                             slide_17_updater, slide_18_updater, slide_19_updater,
                             slide_24_updater,
                             slide_25_updater, slide_26_updater, slide_29_updater,
-                            slide_30_updater, slide_31_updater, slide_35_updater, slide_36_updater, slide_38_updater,
+                            slide_30_updater, slide_31_updater, slide_32_updater, slide_33_updater, slide_35_updater,
+                            slide_36_updater,
+                            slide_38_updater,
                             slide_40_updater,
                             slide_43_updater, slide_48_updater,
                             slide_50_updater)
@@ -53,8 +55,10 @@ def main():
     slide_29_updater(df, prs)
     slide_30_updater(df, prs)
     slide_31_updater(df, prs)
+    slide_32_updater(meta, df, df_labeled, prs)
+    slide_33_updater(meta, df, df_labeled, prs)
     slide_35_updater(df, prs)
-    slide_36_updater(df, prs)
+    # slide_36_updater(df, prs)
     slide_38_updater(df, prs)
     slide_40_updater(df, prs)
     slide_48_updater(df, prs)
