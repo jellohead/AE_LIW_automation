@@ -6,6 +6,7 @@ __all__: list = ['read_data',
                  'get_table_object',
                  'get_table_object_incl_old_table_ref',
                  'style_table_cell',
+                 'combine_multiple_questions',
                  ]
 
 
@@ -19,3 +20,4 @@ from .get_table_object_incl_old_table_ref import get_table_object_incl_old_table
 from .update_paragraphs import update_paragraphs
 from .format_paragraph_xml import format_paragraph_xml
 from .style_table_cell import style_table_cell
+from .combine_multiple_questions import combine_multiple_questions

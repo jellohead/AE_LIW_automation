@@ -1,9 +1,5 @@
 # slide_18.py
 
-# TODO: Refactor using table helper functions
-# TODO: Break style_cell function into a module
-# TODO: Break style_cell_old_text function into a module
-# TODO: Fix styling to center text vertically in cells
 import logging
 from pandas import DataFrame, Series
 import pandas as pd
@@ -17,7 +13,7 @@ from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR
 logger = logging.getLogger(__name__)
 
 
-# TODO: v_alignment is not modifying the vertical alignment of the cell text
+# TODO: Refactor using table helper functions
 
 def slide_18_updater(df, prs):
     slide_index = 17

@@ -1,9 +1,6 @@
 # slide_8.py
 
 # TODO: Refactor using table helper functions
-# TODO: Break style_cell function into a module
-# TODO: Break style_cell_old_text function into a module
-# TODO: Fix styling to center text vertically in cells
 import logging
 from pandas import DataFrame, Series
 import pandas as pd

@@ -1,14 +1,12 @@
-# slide_19.py
+# slide_26.py
 
 import logging
-
-# from lxml.parser import remaining
 from pandas import DataFrame, Series
 import pandas as pd
 from pptx.util import Inches
 from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
-from AE_LIW_automation.helper_modules import get_table_object, style_table_cell
+from AE_LIW_automation.helper_modules import get_table_object, style_table_cell, combine_multiple_questions
 from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR
 
 
@@ -16,25 +14,26 @@ logger = logging.getLogger(__name__)
 
 
 # TODO: Refactor using table helper functions
+# TODO: v_alignment is not modifying the vertical alignment of the cell text
+# TODO: write helper module to combine results across multiple questions
 
-def slide_19_updater(meta, df, df_labeled, prs):
-    slide_index = 18
+def slide_26_updater(meta, df, df_labeled, prs):
+    slide_index = 25
     print(
         f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
     logger.info(f'Updating slide {slide_index + 1}')
 
     slide = prs.slides[slide_index]
 
-    question_list = ['Q25_1', 'Q25_2']
-    label_sub_dict = {'Do not know, do not remember': 'Do not know',
-                      'Nothing, satisfied': 'Nothing/no changes needed',
-                      'Have more repair options': 'Have more repair options available',
-                      'More communication, more explanation': 'More communication',
+    question_list = ['Q6_1', 'Q6_2', 'Q6_3']
+    label_sub_dict = {"Don' t kn ow" : 'Do not know',
                       }
+    last_rows = ['Do not know', 'All other', 'Base:']
 
     table = get_table_object(slide)
     if not table:
         print(f'No table found on {slide_index + 1}')
+        logger.info(f'No table found on {slide_index + 1}')
         return
 
     # Get existing data from old table
@@ -48,24 +47,26 @@ def slide_19_updater(meta, df, df_labeled, prs):
 
 
     # get current quarter data from dataset
-    subbed_df = pd.DataFrame()
-    current_quarter_result = None
+    current_quarter_result_series = combine_multiple_questions(df_labeled, question_list, label_sub_dict)
+    current_quarter_result_df = pd.DataFrame({f'{REPORTING_PERIOD} {REPORTING_YEAR}': current_quarter_result_series}).fillna(0)
 
-    series_list = []
-    for question in question_list:
-        subbed_series = df_labeled[question].dropna().astype(str).replace(label_sub_dict).value_counts()
-        if not subbed_series.empty:
-            series_list.append(subbed_series)
 
-    if not series_list:
-        print("No data found in Q25 series")
-        return
-
-    current_quarter_result = pd.concat(series_list).dropna().groupby(level=0).sum()
-    current_quarter_result.at['Base:'] = sum(series.sum() for series in series_list)
-
-    current_quarter_result_df = pd.DataFrame({f'{REPORTING_PERIOD} {REPORTING_YEAR}': current_quarter_result}).fillna(0)
-
+    # subbed_df = pd.DataFrame()
+    # current_quarter_result = None
+    #
+    # series_list = []
+    # for question in question_list:
+    #     subbed_series = df_labeled[question].dropna().astype(str).replace(label_sub_dict).value_counts()
+    #     if not subbed_series.empty:
+    #         series_list.append(subbed_series)
+    #
+    # if not series_list:
+    #     print("No data found in Q25 series")
+    #     return
+    #
+    # current_quarter_result = pd.concat(series_list).dropna().groupby(level=0).sum()
+    # current_quarter_result.at['Base:'] = sum(series.sum() for series in series_list)
+    # current_quarter_result_df = pd.DataFrame({f'{REPORTING_PERIOD} {REPORTING_YEAR}': current_quarter_result_series}).fillna(0)
 
     # combine old and new data, convert new data to integers
     current_quarter_result_df_combined = pd.concat([table_df_existing, current_quarter_result_df], axis=1).fillna(
@@ -77,8 +78,7 @@ def slide_19_updater(meta, df, df_labeled, prs):
         .all(axis=1)
     ]
 
-    # sort the combined df and put Nothing, Other, Base: at the bottom
-    last_rows = ['Do not know', 'All other', 'Base:']
+    # sort the combined df and put last_rows at the bottom in correct order
     rows_to_move = {label: current_quarter_result_df_combined[current_quarter_result_df_combined.index == label]
                     for label in last_rows
                     }
@@ -114,6 +114,11 @@ def slide_19_updater(meta, df, df_labeled, prs):
 
     # Add one more column for the index
     table_shape = slide.shapes.add_table(rows + 1, cols + 1, Inches(.5), Inches(1.7), Inches(6.5), Inches(5)).table
+
+    # TESTING change row height to see if this fixes vertical cell text alignment
+    # this didn't help
+    # for row in table_shape.rows:
+    #     row.height = Inches(0.5)
 
     # Step 4: Insert column headers (including index column)
     # add styling to the header row
