@@ -1,13 +1,14 @@
 # slide_21.py
 
 import logging
-import pandas as pd
 from pptx.chart.data import CategoryChartData
 from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
+from AE_LIW_automation.helper_modules import get_chart_object_by_name, get_chart_categories, get_chart_series_data
 from AE_LIW_automation.helper_modules import get_chart_object_by_name, get_chart_categories, get_chart_series_data, get_chart_object
 
 
 logger = logging.getLogger(__name__)
+
 
 def slide_21_updater(df, prs) -> object:
     slide_index = 20
@@ -19,10 +20,14 @@ def slide_21_updater(df, prs) -> object:
     chart_name = 'Content Placeholder 10'
     chart = get_chart_object_by_name(slide, chart_name)
     question_list = ['Q3_r5', 'Q3_r3']
+    expected_value_labels = [8, 9, 10]
     old_categories = get_chart_categories(chart)
+    existing_series_data = get_chart_series_data(chart)
     existing_series_data_dict = get_chart_series_data(chart)
     # existing_series_data_dict['sum of displayed values'] = existing_series_data_dict.pop('')
 
+    # drop oldest data series and convert it to a dictionary
+    existing_series_data = dict(list(existing_series_data.items())[1:])
     # create a new categories list by dropping oldest labels and inserting new category labels
     current_quarter_category = f'{REPORTING_PERIOD} {REPORTING_YEAR}\n(N={len(df)})'
     new_categories_list =
