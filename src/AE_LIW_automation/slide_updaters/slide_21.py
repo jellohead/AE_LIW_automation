@@ -4,7 +4,6 @@ import logging
 from pptx.chart.data import CategoryChartData
 from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
 from AE_LIW_automation.helper_modules import get_chart_object_by_name, get_chart_categories, get_chart_series_data
-from AE_LIW_automation.helper_modules import get_chart_object_by_name, get_chart_categories, get_chart_series_data, get_chart_object
 
 
 logger = logging.getLogger(__name__)
@@ -28,9 +27,15 @@ def slide_21_updater(df, prs) -> object:
 
     # drop oldest data series and convert it to a dictionary
     existing_series_data = dict(list(existing_series_data.items())[1:])
+
     # create a new categories list by dropping oldest labels and inserting new category labels
     current_quarter_category = f'{REPORTING_PERIOD} {REPORTING_YEAR}\n(N={len(df)})'
-    new_categories_list =
+    # new_category = current_quarter_category.astype('category')
+    new_categories_list = [j for i, j in enumerate(old_categories) if i not in [0, 4]]
+    new_categories_list_copy = new_categories_list[:]
+    new_categories_list_copy.insert(0, current_quarter_category)
+    new_categories_list_copy.insert(4, current_quarter_category)
+
 
     # split existing_series_data_dict into two dictionaries
     existing_series_data_dict_left = {k: v[1:4] for k, v in existing_series_data_dict.items()}
@@ -38,11 +43,12 @@ def slide_21_updater(df, prs) -> object:
 
     # append new quarter data to the end list of dictionary items
     for question in question_list:
+        break
 
 
-    existing_df = pd.DataFrame(index=old_categories, data=existing_series_data_dict)[1:]
+    # existing_df = pd.DataFrame(index=old_categories, data=existing_series_data_dict)[1:]
 
-    new_quarter_df = pd.DataFrame(index=[f'{REPORTING_PERIOD} {REPORTING_YEAR}\n(N={len(df)})'], columns=existing_df.columns)
+    # new_quarter_df = pd.DataFrame(index=[f'{REPORTING_PERIOD} {REPORTING_YEAR}\n(N={len(df)})'], columns=existing_df.columns)
     question_value_counts = df[question].dropna().value_counts(normalize=True).sort_index()
     new_quarter_df['8'] =  question_value_counts.get(8, 0)
     new_quarter_df['9'] =  question_value_counts.get(9, 0)
