@@ -42,7 +42,15 @@ def slide_21_updater(df, prs) -> object:
     existing_series_data_dict_right = {k: v[5:] for k, v in existing_series_data_dict.items()}
 
     # append new quarter data to the end list of dictionary items
+    new_quarter_dict = {}
     for question in question_list:
+
+        question_value_counts = df[question].dropna().value_counts(normalize=True).sort_index()
+        new_quarter_dict['8'] = question_value_counts.get(8, 0)
+        new_quarter_dict['9'] = question_value_counts.get(9, 0)
+        new_quarter_dict['10'] = question_value_counts.get(10, 0)
+        new_quarter_dict['sum of displayed values'] = new_quarter_dict['8'] + new_quarter_dict['9'] + \
+                                                    new_quarter_dict['10']
         break
 
 
