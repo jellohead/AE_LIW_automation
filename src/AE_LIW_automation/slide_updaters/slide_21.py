@@ -9,6 +9,9 @@ from AE_LIW_automation.helper_modules import get_chart_object_by_name, get_chart
 logger = logging.getLogger(__name__)
 
 
+# TODO: refactor
+
+
 def slide_21_updater(df, prs) -> object:
     slide_index = 20
     print(
@@ -18,61 +21,59 @@ def slide_21_updater(df, prs) -> object:
     slide = prs.slides[slide_index]
     chart_name = 'Content Placeholder 10'
     chart = get_chart_object_by_name(slide, chart_name)
-    question_list = ['Q3_r5', 'Q3_r3']
-    expected_value_labels = [8, 9, 10]
+    question_left = 'Q3_r5'
+    question_right = 'Q3_r3'
     old_categories = get_chart_categories(chart)
-    existing_series_data = get_chart_series_data(chart)
     existing_series_data_dict = get_chart_series_data(chart)
-    # existing_series_data_dict['sum of displayed values'] = existing_series_data_dict.pop('')
-
-    # drop oldest data series and convert it to a dictionary
-    existing_series_data = dict(list(existing_series_data.items())[1:])
 
     # create a new categories list by dropping oldest labels and inserting new category labels
     current_quarter_category = f'{REPORTING_PERIOD} {REPORTING_YEAR}\n(N={len(df)})'
-    # new_category = current_quarter_category.astype('category')
     new_categories_list = [j for i, j in enumerate(old_categories) if i not in [0, 4]]
     new_categories_list_copy = new_categories_list[:]
-    new_categories_list_copy.insert(0, current_quarter_category)
-    new_categories_list_copy.insert(4, current_quarter_category)
+    new_categories_list_copy.insert(3, current_quarter_category)
+    new_categories_list_copy.insert(7, current_quarter_category)
 
-
-    # split existing_series_data_dict into two dictionaries
+    # split existing_series_data_dict into two dictionaries, dropping oldest data from values
     existing_series_data_dict_left = {k: v[1:4] for k, v in existing_series_data_dict.items()}
     existing_series_data_dict_right = {k: v[5:] for k, v in existing_series_data_dict.items()}
 
     # append new quarter data to the end list of dictionary items
-    new_quarter_dict = {}
-    for question in question_list:
+    new_quarter_dict_left = {}
+    new_quarter_dict_right = {}
 
-        question_value_counts = df[question].dropna().value_counts(normalize=True).sort_index()
-        new_quarter_dict['8'] = question_value_counts.get(8, 0)
-        new_quarter_dict['9'] = question_value_counts.get(9, 0)
-        new_quarter_dict['10'] = question_value_counts.get(10, 0)
-        new_quarter_dict['sum of displayed values'] = new_quarter_dict['8'] + new_quarter_dict['9'] + \
-                                                    new_quarter_dict['10']
-        break
+    question_value_counts = df[question_left].dropna().value_counts(normalize=True).sort_index()
+    new_quarter_dict_left['8'] = question_value_counts.get(8, 0)
+    existing_series_data_dict_left['8'].append(new_quarter_dict_left['8'])
+    new_quarter_dict_left['9'] = question_value_counts.get(9, 0)
+    existing_series_data_dict_left['9'].append(new_quarter_dict_left['9'])
+    new_quarter_dict_left['10'] = question_value_counts.get(10, 0)
+    existing_series_data_dict_left['10'].append(new_quarter_dict_left['10'])
+    new_quarter_dict_left['sum of displayed values'] = new_quarter_dict_left['8'] + new_quarter_dict_left['9'] + \
+                                                new_quarter_dict_left['10']
+    existing_series_data_dict_left['sum of displayed values'].append(new_quarter_dict_left['sum of displayed values'])
 
+    question_value_counts = df[question_right].dropna().value_counts(normalize=True).sort_index()
+    new_quarter_dict_right['8'] = question_value_counts.get(8, 0)
+    existing_series_data_dict_right['8'].append(new_quarter_dict_right['8'])
+    new_quarter_dict_right['9'] = question_value_counts.get(9, 0)
+    existing_series_data_dict_right['9'].append(new_quarter_dict_right['9'])
+    new_quarter_dict_right['10'] = question_value_counts.get(10, 0)
+    existing_series_data_dict_right['10'].append(new_quarter_dict_right['10'])
+    new_quarter_dict_right['sum of displayed values'] = new_quarter_dict_right['8'] + new_quarter_dict_right['9'] + \
+                                                       new_quarter_dict_right['10']
+    existing_series_data_dict_right['sum of displayed values'].append(new_quarter_dict_right['sum of displayed values'])
 
-    # existing_df = pd.DataFrame(index=old_categories, data=existing_series_data_dict)[1:]
-
-    # new_quarter_df = pd.DataFrame(index=[f'{REPORTING_PERIOD} {REPORTING_YEAR}\n(N={len(df)})'], columns=existing_df.columns)
-    question_value_counts = df[question].dropna().value_counts(normalize=True).sort_index()
-    new_quarter_df['8'] =  question_value_counts.get(8, 0)
-    new_quarter_df['9'] =  question_value_counts.get(9, 0)
-    new_quarter_df['10'] =  question_value_counts.get(10, 0)
-    new_quarter_df['sum of displayed values'] = new_quarter_df['8'].values + new_quarter_df['9'].values + new_quarter_df['10'].values
-
-    existing_df = pd.concat([existing_df, new_quarter_df])
-    # replace NaN with None
-    existing_df = existing_df.astype(object).where(pd.notna(existing_df), None)
-    # replace '0' values with 'None' to prevent 0% showing up on chart
-    existing_df = existing_df.astype(object).replace(0, None)
+    # combine left and right series data dicts
+    combined_series_data_dict = {key: existing_series_data_dict_left[key] + existing_series_data_dict_right[key] for key in existing_series_data_dict_left}
+    # replace 0 with None to prevent showing 0% values on charts
+    for key, value in combined_series_data_dict.items():
+        combined_series_data_dict[key] = [None if v == 0 else v for v in value]
 
     # update chart data
     new_chart_data = CategoryChartData()
-    new_chart_data.categories = existing_df.index
-    for idx, values in existing_df.items():
-        new_chart_data.add_series(idx, existing_df[idx].values, number_format='0%')
+    new_chart_data.categories = new_categories_list_copy
+    for k, v in combined_series_data_dict.items():
+        new_chart_data.add_series(k, v, number_format='0%')
+
     chart.replace_data(new_chart_data)
 
