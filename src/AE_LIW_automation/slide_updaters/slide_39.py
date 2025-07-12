@@ -1,4 +1,4 @@
-# slide_37.py
+# slide_39.py
 
 import logging
 from pandas import DataFrame, Series
@@ -17,28 +17,32 @@ logger = logging.getLogger(__name__)
 # TODO: v_alignment is not modifying the vertical alignment of the cell text
 # TODO: write helper module to combine results across multiple questions
 
-def slide_37_updater(meta, df, df_labeled, prs):
-    slide_index = 36
+def slide_39_updater(meta, df, df_labeled, prs):
+    slide_index = 38
     print(
         f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
     logger.info(f'Updating slide {slide_index + 1}')
 
     slide = prs.slides[slide_index]
-    base_question = 'Q21'
-    question_list = ['Q23_1', 'Q23_2', 'Q23_3', 'Q23_4', 'Q23_5', 'Q23_6', 'Q23_7', 'Q23_8']
-    label_sub_dict = {'Other Mention' : 'All other',
+    base_question = 'Q26_1'
+    question = 'Q26_1'
+    label_sub_dict = {'Nothing, satisfied' : 'Nothing/no suggestions',
                       }
-    last_rows = ['All other', 'Base:']
+    last_rows = ['Nothing/no suggestions', 'Do not know, unsure', 'All other', 'Base:']
 
     # generate current quarter results
-    question_dict_comp = {question: meta.column_names_to_labels[question].split(
-        'What does energy savings mean to you? ')[-1] for question in question_list}
-    question_result_dict_comp = {value: df_labeled[key].value_counts().get('Checked', 0) for key, value in
-                                 question_dict_comp.items() if df_labeled[key].value_counts(normalize=True)
-                                .get('Checked', 0) != 0}
-    question_result_df = pd.DataFrame.from_dict(question_result_dict_comp, orient='index', columns=[f'{REPORTING_PERIOD} {REPORTING_YEAR}'])
-    question_result_df.loc['Base:'] = df_labeled[base_question].value_counts().get('Yes', 0)
+    question_result_series = df_labeled[question].value_counts()
+
+    # question_dict_comp = {question: meta.column_names_to_labels[question].split(
+    #     'What does energy savings mean to you? ')[-1] for question in question_list}
+    # question_result_dict_comp = {value: df_labeled[key].value_counts().get('Checked', 0) for key, value in
+    #                              question_dict_comp.items() if df_labeled[key].value_counts(normalize=True)
+    #                             .get('Checked', 0) != 0}
+    question_result_df = pd.DataFrame(data=question_result_series.values, index=question_result_series.index, columns=[f'{REPORTING_PERIOD} {REPORTING_YEAR}'])
+    question_result_df.loc['Base:'] = len(df_labeled[base_question])
+
     question_result_df.rename(index=label_sub_dict, inplace=True)
+    question_result_df.rename_axis('', inplace=True)
 
     table = get_table_object(slide)
     if not table:
