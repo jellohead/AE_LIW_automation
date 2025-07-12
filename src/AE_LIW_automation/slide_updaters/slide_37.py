@@ -24,13 +24,21 @@ def slide_37_updater(meta, df, df_labeled, prs):
     logger.info(f'Updating slide {slide_index + 1}')
 
     slide = prs.slides[slide_index]
-
+    base_question = 'Q21'
     question_list = ['Q23_1', 'Q23_2', 'Q23_3', 'Q23_4', 'Q23_5', 'Q23_6', 'Q23_7', 'Q23_8']
     label_sub_dict = {'Other Mention' : 'All other',
-                      # 'Do not remember, do not know': "Don't know",
-                      # 'Nothing': 'Nothing/no changes',
                       }
     last_rows = ['All other', 'Base:']
+
+    # generate current quarter results
+    question_dict_comp = {question: meta.column_names_to_labels[question].split(
+        'What does energy savings mean to you? ')[-1] for question in question_list}
+    question_result_dict_comp = {value: df_labeled[key].value_counts().get('Checked', 0) for key, value in
+                                 question_dict_comp.items() if df_labeled[key].value_counts(normalize=True)
+                                .get('Checked', 0) != 0}
+    question_result_df = pd.DataFrame.from_dict(question_result_dict_comp, orient='index', columns=[f'{REPORTING_PERIOD} {REPORTING_YEAR}'])
+    question_result_df.loc['Base:'] = df_labeled[base_question].value_counts().get('Yes', 0)
+    question_result_df.rename(index=label_sub_dict, inplace=True)
 
     table = get_table_object(slide)
     if not table:
@@ -47,12 +55,8 @@ def slide_37_updater(meta, df, df_labeled, prs):
     table_df_existing = table_df.drop(columns=[table_df.columns[0]])
     print(f'{table_df_existing = }')
 
-    # get current quarter data from dataset
-    current_quarter_result_series = combine_multiple_questions(df_labeled, question_list, label_sub_dict)
-    current_quarter_result_df = pd.DataFrame({f'{REPORTING_PERIOD} {REPORTING_YEAR}': current_quarter_result_series}).fillna(0)
-
     # combine old and new data, convert new data to integers
-    current_quarter_result_df_combined = pd.concat([table_df_existing, current_quarter_result_df], axis=1).fillna(
+    current_quarter_result_df_combined = pd.concat([table_df_existing, question_result_df], axis=1).fillna(
         0).astype(int)
 
     # remove rows where all values are 0
@@ -84,8 +88,11 @@ def slide_37_updater(meta, df, df_labeled, prs):
             sp = shape._element  # Get the XML element of the shape
             slide.shapes._spTree.remove(sp)  # Remove the shape
 
-    # Step 3: Add a new table to the slide
+    # Determine size of table needed by looking at shape of dataframe
     rows, cols = current_quarter_result_df_combined.shape
+
+    # Add new table, include an extra row for index and column for column name
+    table_shape = slide.shapes.add_table(rows + 1, cols + 1, Inches(.5), Inches(1.7), Inches(6.5), Inches(5)).table
 
     # Define styling properties
     header_bg_color = RGBColor(90, 128, 184)  # Dark Blue
@@ -95,8 +102,6 @@ def slide_37_updater(meta, df, df_labeled, prs):
     data_text_color = RGBColor(0, 0, 0)  # Black text
     data_bg_color = RGBColor(224, 229, 240)  # Light blue for data rows
 
-    # Add one more column for the index
-    table_shape = slide.shapes.add_table(rows + 1, cols + 1, Inches(.5), Inches(1.7), Inches(6.5), Inches(5)).table
 
     # Step 4: Insert column headers (including index column)
     # add styling to the header row
