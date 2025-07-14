@@ -1,5 +1,5 @@
-# slide_43.py
-# This file contains the functions for updating the slide 43 of the PowerPoint file
+# slide_44.py
+# This file contains the functions for updating the slide 44 of the PowerPoint file
 import logging
 
 import numpy as np
@@ -13,18 +13,17 @@ from src.AE_LIW_automation.helper_modules import get_chart_object_by_name, get_c
 
 logger = logging.getLogger(__name__)
 
-# TODO slide 43 and possibly 44 not working
 
-def slide_43_updater(df, meta, df_labeled, prs) -> object:
-    slide_index = 42
+def slide_44_updater(df, meta, df_labeled, prs) -> object:
+    slide_index = 43
     print(
         f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
     logger.info(f'Updating slide {slide_index + 1}')
     slide = prs.slides[slide_index]
     chart = get_chart_object_by_name(slide, 'Content Placeholder 8')
     old_categories = get_chart_categories(chart)
-    question = 'Q1'
-    last_rows_list = ['All other', 'Do not know', 'None']
+    question_list = ['Q2_1', 'Q2_2', 'Q2_3', 'Q2_4', 'Q2_5', 'Q2_6', 'Q2_7', 'Q2_8', 'Q2_9', 'Q2_10', 'Q2_11', 'Q2_12']
+    last_rows_list = ['Other Mention']
 
 
     # pull old chart data blob
