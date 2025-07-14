@@ -8,7 +8,7 @@ from typing import Tuple
 from pptx.chart.chart import Chart
 from openpyxl.workbook.workbook import Workbook
 from openpyxl.worksheet.worksheet import Worksheet
-from src.AE_Contact_Center_automation.config import EXCEL_FILE
+from AE_LIW_automation.config import EXCEL_FILE
 
 
 def get_data_blob_from_chart(chart: Chart) -> Tuple[Workbook, Worksheet]:
