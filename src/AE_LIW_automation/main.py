@@ -72,7 +72,7 @@ def main():
     slide_40_updater(df, prs)
     slide_41_updater(meta, df, df_labeled, prs)
     slide_43_updater(df, meta, df_labeled, prs)
-    slide_44_updater(meta, df, df_labeled, prs)
+    slide_44_updater(df, meta, df_labeled, prs)
     # slide_48_updater(df, prs)
     # slide_50_updater(df, meta, df_labeled, prs)
     # slide_60_updater(df, meta, df_labeled, prs)

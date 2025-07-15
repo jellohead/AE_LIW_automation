@@ -32,7 +32,7 @@ def slide_44_updater(df, meta, df_labeled, prs) -> object:
     existing_data = []
     for item in old_data:
         # drop oldest column of data and remove extra columns that are filled with None values
-        new_item = item [:4]
+        new_item = item[:1] + item[2:5]
         if any(new_item):
             existing_data.append(new_item)
 
@@ -44,11 +44,15 @@ def slide_44_updater(df, meta, df_labeled, prs) -> object:
 
     # generate new quarter data
     new_key = f'{REPORTING_PERIOD} {REPORTING_YEAR}\n(N={len(df)})'
-    current_quarter_chart_data = df_labeled[question].value_counts(normalize=True).sort_index()
-    current_quarter_chart_data_df = current_quarter_chart_data.to_frame(name=new_key)
+    current_quarter_chart_data_df = pd.DataFrame(columns=[new_key])
+    for question in question_list:
+        row_label = (meta.column_names_to_labels[question].split('? ', 1)[1].strip())
+        current_quarter_chart_data_df.loc[row_label]= df_labeled[question].value_counts(normalize=True).get('Checked', 0)
+    # current_quarter_chart_data_df = current_quarter_chart_data.to_frame(name=new_key)
 
     # combine old and new data into a dataframe
-    combined_df = pd.concat([current_quarter_chart_data_df, existing_data_df], axis=1)
+    combined_df = pd.concat([existing_data_df ,current_quarter_chart_data_df], axis=1)
+    merged_df = pd.merge(existing_data_df, current_quarter_chart_data_df, left_index=True, right_index=True, how='outer')
     combined_df.replace({np.nan: None}, inplace=True)
 
     # reorder dataframe to start with last rows and sort remaining rows
