@@ -23,8 +23,11 @@ def slide_44_updater(df, meta, df_labeled, prs) -> object:
     chart = get_chart_object_by_name(slide, 'Content Placeholder 8')
     old_categories = get_chart_categories(chart)
     question_list = ['Q2_1', 'Q2_2', 'Q2_3', 'Q2_4', 'Q2_5', 'Q2_6', 'Q2_7', 'Q2_8', 'Q2_9', 'Q2_10', 'Q2_11', 'Q2_12']
-    last_rows_list = ['Other Mention']
-
+    last_rows_list = ['All other', 'Do not know']
+    label_sub_dict = {'Austin Energy’s website': 'Austin Energy\'s website',
+                      'Friends/family/word of mouth': 'Friends/family/word-of-mouth',
+                      'Other Mention': 'All other'
+                      }
 
     # pull old chart data blob
     workbook, worksheet = get_data_blob_from_chart(chart)
@@ -47,13 +50,14 @@ def slide_44_updater(df, meta, df_labeled, prs) -> object:
     current_quarter_chart_data_df = pd.DataFrame(columns=[new_key])
     for question in question_list:
         row_label = (meta.column_names_to_labels[question].split('? ', 1)[1].strip())
-        current_quarter_chart_data_df.loc[row_label]= df_labeled[question].value_counts(normalize=True).get('Checked', 0)
-    # current_quarter_chart_data_df = current_quarter_chart_data.to_frame(name=new_key)
+        # current_quarter_chart_data_df.loc[row_label]= df_labeled[question].value_counts(normalize=True).get('Checked', 0)
+        current_quarter_chart_data_df.loc[row_label]= df_labeled[question].value_counts(normalize=True).get('Checked', None)
+    current_quarter_chart_data_df.rename(index=label_sub_dict, inplace=True)
 
     # combine old and new data into a dataframe
     combined_df = pd.concat([existing_data_df ,current_quarter_chart_data_df], axis=1)
-    merged_df = pd.merge(existing_data_df, current_quarter_chart_data_df, left_index=True, right_index=True, how='outer')
-    combined_df.replace({np.nan: None}, inplace=True)
+    # merged_df = pd.merge(existing_data_df, current_quarter_chart_data_df, left_index=True, right_index=True, how='outer')
+    # combined_df.replace({np.nan: None}, inplace=True)
 
     # reorder dataframe to start with last rows and sort remaining rows
     last_rows_mask = combined_df.index.isin(last_rows_list)
