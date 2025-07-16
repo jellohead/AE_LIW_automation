@@ -25,12 +25,15 @@ def slide_46_updater(meta, df, df_labeled, prs):
 
     slide = prs.slides[slide_index]
 
-    question_list = ['Q13_1', 'Q13_2', 'Q13_3', 'Q13_4',]
-    label_sub_dict = {'All other' : 'Other',
-                      'Do not remember, do not know': "Don't know",
+    question_list = ['Q30_1', 'Q30_2']
+    label_sub_dict = {'Do not remember, do not know': "Don't know",
                       'Nothing': 'Nothing/no changes',
                       }
-    last_rows = ["Don't know", 'Other', 'Base:']
+    last_rows = ['No complaints, nothing',
+                 'Do not know',
+                 'All other',
+                 'Base:'
+                 ]
 
     table = get_table_object(slide)
     if not table:
@@ -49,7 +52,7 @@ def slide_46_updater(meta, df, df_labeled, prs):
 
 
     # get current quarter data from dataset
-    current_quarter_result_series = combine_multiple_questions(df_labeled, question_list, label_sub_dict)
+    current_quarter_result_series = combine_multiple_questions(df_labeled, question_list, label_sub_dict, base_calc_method='population')
     current_quarter_result_df = pd.DataFrame({f'{REPORTING_PERIOD} {REPORTING_YEAR}': current_quarter_result_series}).fillna(0)
 
     # combine old and new data, convert new data to integers

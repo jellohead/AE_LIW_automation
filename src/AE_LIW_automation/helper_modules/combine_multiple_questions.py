@@ -5,13 +5,18 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+
+# TODO: add some logic to determine base cell value
+
 def combine_multiple_questions(
     df: pd.DataFrame,
     question_list: List[str],
     label_sub_dict: Dict[str, str] = None,
     clean_strings: bool = True,
     include_base: bool = True,
-    base_label: str = "Base:"
+    base_label: str = "Base:",
+    base_calc_method: str = "population",
+
 ) -> pd.Series:
     """
     Summarizes multiple categorical survey questions by combining their value_counts,
@@ -49,7 +54,10 @@ def combine_multiple_questions(
     result = pd.concat(series_list).groupby(level=0).sum()
 
     if include_base:
-        result.at[base_label] = sum(series.sum() for series in series_list)
+        if base_calc_method == 'population':
+            result.at[base_label] = len(df)
+        else:
+            result.at[base_label] = sum(series.sum() for series in series_list)
 
     logger.info(f'Manually verify {base_label} value is correct')
 
