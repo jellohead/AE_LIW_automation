@@ -21,11 +21,13 @@ from slide_updaters import (slide_1_updater, slide_3_updater, slide_4_updater, s
                             slide_38_updater, slide_39_updater, slide_41_updater,
                             slide_40_updater,
                             slide_43_updater, slide_44_updater, slide_45_updater, slide_46_updater, slide_48_updater,
-                            slide_50_updater, slide_60_updater,
+                            slide_50_updater, slide_52_updater, slide_60_updater,
                             )
 
 logger = logging.getLogger(__name__)
 
+
+# TODO: slides with stacked bar charts showing T3B values and totals, like slide 48, need rounding functions added to display total value that matches sum of T3B ratings
 
 def main():
     setup_logging()
@@ -75,8 +77,9 @@ def main():
     slide_44_updater(df, meta, df_labeled, prs)
     slide_45_updater(df, meta, df_labeled, prs)
     slide_46_updater(meta, df, df_labeled, prs)
-    # slide_48_updater(df, prs)
-    # slide_50_updater(df, meta, df_labeled, prs)
+    slide_48_updater(df, prs)
+    slide_50_updater(df, meta, df_labeled, prs)
+    slide_52_updater(df, meta, df_labeled, prs)
     # slide_60_updater(df, meta, df_labeled, prs)
 
     prs.save(PPTX_OUTPUT_FILE)

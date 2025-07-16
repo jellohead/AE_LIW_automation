@@ -15,6 +15,7 @@ def slide_50_updater(df, meta, df_labeled, prs) -> object:
         f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
     logger.info(f'Updating slide {slide_index + 1}')
     slide = prs.slides[slide_index]
+    question = 'D11'
     chart = get_chart_object_by_name(slide, 'Chart 6')
     old_categories = get_chart_categories(chart)
 
@@ -25,7 +26,7 @@ def slide_50_updater(df, meta, df_labeled, prs) -> object:
 
     # get the order of the old chart categories
     category_label_order = []
-    d11_value_labels = meta.variable_value_labels.get('D11')
+    d11_value_labels = meta.variable_value_labels.get(question)
     for category in old_categories_cleaned:
         for k, v in d11_value_labels.items():
             if category in v:
@@ -36,7 +37,7 @@ def slide_50_updater(df, meta, df_labeled, prs) -> object:
     existing_series_data = get_chart_series_data(chart)
     print(f'{existing_series_data = }')
 
-    current_quarter_chart_data = df['D11'].value_counts(normalize=True).sort_index()
+    current_quarter_chart_data = df[question].value_counts(normalize=True).sort_index()
     print(f'{type(current_quarter_chart_data) = } {current_quarter_chart_data = }')
 
     # reindex the current quarter data to match the order of the old chart data
