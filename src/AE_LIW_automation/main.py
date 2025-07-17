@@ -78,8 +78,8 @@ def main():
     slide_45_updater(df, meta, df_labeled, prs)
     slide_46_updater(meta, df, df_labeled, prs)
     slide_48_updater(df, prs)
-    slide_50_updater(df, meta, df_labeled, prs)
-    slide_52_updater(df, meta, df_labeled, prs)
+    slide_50_updater(meta, df, df_labeled, prs)
+    slide_52_updater(meta, df, df_labeled, prs)
     # slide_60_updater(df, meta, df_labeled, prs)
 
     prs.save(PPTX_OUTPUT_FILE)

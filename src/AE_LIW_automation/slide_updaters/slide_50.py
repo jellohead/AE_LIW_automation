@@ -9,7 +9,7 @@ from AE_LIW_automation.helper_modules import get_chart_object_by_name, get_chart
 
 logger = logging.getLogger(__name__)
 
-def slide_50_updater(df, meta, df_labeled, prs) -> object:
+def slide_50_updater(meta, df, df_labeled, prs) -> object:
     slide_index = 49
     print(
         f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')

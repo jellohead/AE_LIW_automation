@@ -9,13 +9,9 @@ from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 from AE_LIW_automation.helper_modules import get_table_object, style_table_cell, combine_multiple_questions
 from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR
 
-
 logger = logging.getLogger(__name__)
 
 
-# TODO: Refactor using table helper functions
-# TODO: v_alignment is not modifying the vertical alignment of the cell text
-# TODO: write helper module to combine results across multiple questions
 # TODO: recode no/none/nothing responses to group them
 
 
@@ -30,9 +26,8 @@ def slide_52_updater(meta, df, df_labeled, prs):
     question = 'D12'
     new_quarter_label = f'{REPORTING_PERIOD} {REPORTING_YEAR}'
     label_sub_dict = {}
-    last_rows = ["Don't know",
-                 'All other',
-                 'Base:']
+    # last_rows = ['All other', "Don’t know", "Don't know", 'Base:']
+    last_rows = ['All other', "Don’t know", 'Base:']
 
     table = get_table_object(slide)
     if not table:
@@ -47,19 +42,16 @@ def slide_52_updater(meta, df, df_labeled, prs):
 
     # drop oldest quarter data
     table_df_existing = table_df.drop(columns=[table_df.columns[0]])
-    print(f'{table_df_existing = }')
 
     # get the existing base row and then drop it from the working dataframe
-    base_row_df = table_df_existing.loc['Base:']
-
-
+    base_row_df = table_df_existing.loc[['Base:']]
+    base_row_df[new_quarter_label] = len(df)
 
     # get current quarter data from dataset
     current_quarter_result_series = df_labeled[question].value_counts(normalize=True).map("{:.0%}".format)
-
-    current_quarter_result_df = pd.DataFrame({f'{REPORTING_PERIOD} {REPORTING_YEAR}': current_quarter_result_series}).fillna(0)
-    current_quarter_result_df_combined = pd.concat([table_df_existing, current_quarter_result_df], axis=1).fillna(
-        '0%')
+    current_quarter_result_df = pd.DataFrame({new_quarter_label: current_quarter_result_series})
+    current_quarter_result_df.loc['Base:'] = len(df)
+    current_quarter_result_df_combined = pd.concat([table_df_existing, current_quarter_result_df], axis=1).fillna('0%')
 
     # remove rows where all values are 0
     current_quarter_result_df_combined = current_quarter_result_df_combined[
@@ -67,29 +59,24 @@ def slide_52_updater(meta, df, df_labeled, prs):
         .all(axis=1)
     ]
 
-    # sort the combined df and put last_rows at the bottom in correct order
-    rows_to_move = {label: current_quarter_result_df_combined[current_quarter_result_df_combined.index == label]
-                    for label in last_rows
-                    }
-
-    remaining_rows = current_quarter_result_df_combined[~current_quarter_result_df_combined.index.isin(last_rows)]
+    rows_to_move_df = current_quarter_result_df_combined[current_quarter_result_df_combined.index.isin(last_rows)]
+    remaining_rows_df = current_quarter_result_df_combined[~current_quarter_result_df_combined.index.isin(last_rows)].copy()
 
     # sort dataframe by the current quarter column
-    last_col = remaining_rows.columns[-1]
-    remaining_rows[last_col] = remaining_rows[last_col].str.rstrip('%').astype(float)
-    remaining_rows_sorted = remaining_rows.sort_values(by=last_col, ascending=False).copy()
-    # reapply % format to last column
+    last_col = remaining_rows_df.columns[-1]
+    remaining_rows_df[last_col] = remaining_rows_df[last_col].str.rstrip('%').astype(float)
+    remaining_rows_sorted = remaining_rows_df.sort_values(by=last_col, ascending=False).copy()
+
+    # reapply % format to last column, change dtype of last column to string
+    remaining_rows_sorted = remaining_rows_sorted.astype({last_col: 'object'})
     remaining_rows_sorted.loc[:, last_col] = remaining_rows_sorted[last_col].map(lambda x: f'{x:.0f}%')
 
-    # remaining_rows_sorted = (remaining_rows.sort_values(by=f'{REPORTING_PERIOD} {REPORTING_YEAR}',ascending=False))
-    ordered_rows = [rows_to_move[label] for label in last_rows if not rows_to_move[label].empty]
 
-    current_quarter_result_df_combined = pd.concat(
-        [remaining_rows_sorted] + ordered_rows,
-        axis=0
+    final_result_df_combined = pd.concat(
+        [remaining_rows_sorted, rows_to_move_df]
     )
 
-    base_row = current_quarter_result_df_combined[current_quarter_result_df_combined.index == 'Base:']
+    base_row = final_result_df_combined[final_result_df_combined.index == 'Base:']
 
     # Step 1: Remove existing table (if any)
     shapes = slide.shapes
@@ -123,7 +110,7 @@ def slide_52_updater(meta, df, df_labeled, prs):
                      h_alignment=PP_ALIGN.CENTER,
                      v_alignment=MSO_ANCHOR.MIDDLE,
                      )
-    for col_idx, col_name in enumerate(current_quarter_result_df_combined.columns):
+    for col_idx, col_name in enumerate(final_result_df_combined.columns):
         style_table_cell(table_shape.cell(0, col_idx + 1),
                          col_name,
                          font_size=14,
@@ -135,7 +122,7 @@ def slide_52_updater(meta, df, df_labeled, prs):
                          )
 
     # Step 5: Insert data rows (including index values)
-    for row_idx, (index_value, row) in enumerate(current_quarter_result_df_combined.iterrows()):
+    for row_idx, (index_value, row) in enumerate(final_result_df_combined.iterrows()):
         style_table_cell(table_shape.cell(row_idx + 1, 0),
                          str(index_value),
                          font_size=13,
@@ -157,7 +144,7 @@ def slide_52_updater(meta, df, df_labeled, prs):
                              )
 
     # add styling to the last row of the table
-    style_table_cell(table_shape.cell(len((current_quarter_result_df_combined)), 0),
+    style_table_cell(table_shape.cell(len((final_result_df_combined)), 0),
                      text=base_row.index[0],
                      font_size=12,
                      bold=True,
@@ -167,8 +154,8 @@ def slide_52_updater(meta, df, df_labeled, prs):
                      v_alignment=MSO_ANCHOR.MIDDLE,
                      )
 
-    for col_number, value in enumerate(current_quarter_result_df_combined.loc['Base:']):
-        style_table_cell(table_shape.cell(len(current_quarter_result_df_combined), col_number + 1),
+    for col_number, value in enumerate(final_result_df_combined.loc['Base:']):
+        style_table_cell(table_shape.cell(len(final_result_df_combined), col_number + 1),
                          font_size=13,
                          bold=False,
                          color=header_text_color,
@@ -178,4 +165,4 @@ def slide_52_updater(meta, df, df_labeled, prs):
                          )
 
     logger.info(
-        f'Update of slide {slide_index + 1} complete.\nCopy/paste these results to populate slides 51 and 52.\nManually adjust position and size of the table.\nVerify Base value for current quarter is accurate.')
+        f'Update of slide {slide_index + 1} complete.\nCopy/paste these results to populate slides 51 and 52.\nManually adjust position and size of the table.')
