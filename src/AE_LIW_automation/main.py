@@ -85,7 +85,7 @@ def main():
     slide_55_updater(meta, df, df_labeled, prs)
     slide_56_updater(meta, df, df_labeled, prs)
     slide_57_updater(meta, df, df_labeled, prs)
-    # slide_60_updater(df, meta, df_labeled, prs)
+    slide_60_updater(df, meta, df_labeled, prs)
 
     prs.save(PPTX_OUTPUT_FILE)
     # df_labeled.to_excel(EXCEL_FILE)
