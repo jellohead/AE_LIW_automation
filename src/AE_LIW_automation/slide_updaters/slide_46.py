@@ -71,6 +71,7 @@ def slide_46_updater(meta, df, df_labeled, prs):
                     }
 
     remaining_rows = current_quarter_result_df_combined[~current_quarter_result_df_combined.index.isin(last_rows)]
+
     remaining_rows_sorted = (remaining_rows.sort_values(by=f'{REPORTING_PERIOD} {REPORTING_YEAR}',ascending=False))
     ordered_rows = [rows_to_move[label] for label in last_rows if not rows_to_move[label].empty]
 

@@ -1,4 +1,4 @@
-# slide_55.py
+# slide_57.py
 
 import typing
 import logging
@@ -15,28 +15,34 @@ logger = logging.getLogger(__name__)
 
 
 # TODO: recode no/none/nothing responses to group them
+# TODO: add logic to handle if table requires sorting by values
 
 
-def slide_55_updater(meta, df, df_labeled, prs):
-    slide_index = 54
+def slide_57_updater(meta, df, df_labeled, prs):
+    slide_index = 56
     print(
         f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
     logger.info(f'Updating slide {slide_index + 1}')
 
     slide = prs.slides[slide_index]
 
-    question_dict = {'Table 3':'D5',}
+    question_dict = {
+                    'Table 1':'D2',
+                     'Table 2': 'D3'}
 
     upper_table = list(question_dict.keys())[0]
 
     new_quarter_label = f'{REPORTING_PERIOD} {REPORTING_YEAR}'
-    label_sub_dict = {'DK/unsure': 'Do not know/unsure',
-                      'White or Caucasian': 'White',
-                      'African American or Black': 'African American',
-                      'Hispanic or Latino': 'Hispanic',
-                      }
-    last_rows: list[str] = ['Other', 'Refused', 'Base:']
-    # table_names: list[str] = ['Table 1', 'Table 2']
+    label_sub_dict = {'Prefer not to respond': 'Refused',
+                      'DK/unsure': 'Do not know/unsure'}
+    last_rows: list[str] = ['Do not know/unsure','Other', 'Refused', 'Base:']
+    values_to_replace = {'Less than 6 months': 'Less than 1 year',
+                         '7 to 12 months': 'Less than 1 year',
+                         '21 to 30 years': 'More than 20 years',
+                         '31 to 40 years': 'More than 20 years',
+                         '41 to 50 years': 'More than 20 years',
+                         'More than 50 years': 'More than 20 years',
+                         }
 
     for table_name, question in question_dict.items():
         table_shape = get_table_shape_by_name(slide, table_name)
@@ -64,13 +70,13 @@ def slide_55_updater(meta, df, df_labeled, prs):
         base_row_df = table_df_existing.loc[['Base:']]
         base_row_df[new_quarter_label] = len(df)
 
-        # get current quarter data from dataset
-        current_quarter_result_series = df_labeled[question].value_counts(normalize=True).map("{:.0%}".format)
-        current_quarter_result_df = pd.DataFrame({new_quarter_label: current_quarter_result_series})
-        current_quarter_result_df.rename(index=label_sub_dict, inplace=True)
-        current_quarter_result_df.loc['Base:'] = len(df)
+        # recode column from dataset for current quarter
+        df_labeled_recoded = df_labeled[question].astype(str).replace(values_to_replace).copy()
 
-        # concat old and new into a single dataframe
+        # get current quarter data from dataset
+        current_quarter_result_series = df_labeled_recoded.value_counts(normalize=True).map("{:.0%}".format)
+        current_quarter_result_df = pd.DataFrame({new_quarter_label: current_quarter_result_series})
+        current_quarter_result_df.loc['Base:'] = len(df)
         current_quarter_result_df_combined = pd.concat([table_df_existing, current_quarter_result_df], axis=1).fillna('0%')
 
         # remove rows where all values are 0
@@ -79,20 +85,11 @@ def slide_55_updater(meta, df, df_labeled, prs):
             .all(axis=1)
         ]
 
-        rows_to_move_df = current_quarter_result_df_combined.loc[current_quarter_result_df_combined.index.isin(last_rows)].reindex(last_rows)
+        rows_to_move_df = current_quarter_result_df_combined[current_quarter_result_df_combined.index.isin(last_rows)]
         remaining_rows_df = current_quarter_result_df_combined[~current_quarter_result_df_combined.index.isin(last_rows)].copy()
 
-        # change current quarter values to floats to allow sorting
-        last_col = remaining_rows_df.columns[-1]
-        remaining_rows_df[last_col] = remaining_rows_df[last_col].str.rstrip('%').astype(float)
-        remaining_rows_df_sorted = remaining_rows_df.sort_values(by=last_col, ascending=False).copy()
-
-        # reapply % format to last column, change dtype of last column to string
-        remaining_rows_df_sorted = remaining_rows_df_sorted.astype({last_col: 'object'})
-        remaining_rows_df_sorted.loc[:, last_col] = remaining_rows_df_sorted[last_col].map(lambda x: f'{x:.0f}%')
-
         final_result_df_combined = pd.concat(
-            [remaining_rows_df_sorted, rows_to_move_df]
+            [remaining_rows_df, rows_to_move_df]
         )
 
         base_row = final_result_df_combined[final_result_df_combined.index == 'Base:']
