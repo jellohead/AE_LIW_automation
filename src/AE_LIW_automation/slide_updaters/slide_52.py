@@ -113,7 +113,7 @@ def slide_52_updater(meta, df, df_labeled, prs):
     for col_idx, col_name in enumerate(final_result_df_combined.columns):
         style_table_cell(table_shape.cell(0, col_idx + 1),
                          col_name,
-                         font_size=14,
+                         font_size=12,
                          bold=True,
                          color=header_text_color,
                          bg_color=header_bg_color,
@@ -125,7 +125,7 @@ def slide_52_updater(meta, df, df_labeled, prs):
     for row_idx, (index_value, row) in enumerate(final_result_df_combined.iterrows()):
         style_table_cell(table_shape.cell(row_idx + 1, 0),
                          str(index_value),
-                         font_size=13,
+                         font_size=12,
                          bold=False,
                          color=data_text_color,
                          bg_color=data_bg_color,
@@ -135,7 +135,7 @@ def slide_52_updater(meta, df, df_labeled, prs):
         for col_idx, value in enumerate(row):
             style_table_cell(table_shape.cell(row_idx + 1, col_idx + 1),
                              str(value),
-                             font_size=13,
+                             font_size=12,
                              bold=False,
                              color=data_text_color,
                              bg_color=data_bg_color,
@@ -156,8 +156,8 @@ def slide_52_updater(meta, df, df_labeled, prs):
 
     for col_number, value in enumerate(final_result_df_combined.loc['Base:']):
         style_table_cell(table_shape.cell(len(final_result_df_combined), col_number + 1),
-                         font_size=13,
-                         bold=False,
+                         font_size=12,
+                         bold=True,
                          color=header_text_color,
                          bg_color=header_bg_color,
                          h_alignment=PP_ALIGN.CENTER,
