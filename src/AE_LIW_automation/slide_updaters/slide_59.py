@@ -16,6 +16,7 @@ logger = logging.getLogger(__name__)
 
 # TODO: recode no/none/nothing responses to group them
 # TODO: add logic to handle if table requires sorting by values
+# TODO: restore the index name in the first column of data for all tables like this one
 
 
 def slide_59_updater(meta, df, df_labeled, prs):
