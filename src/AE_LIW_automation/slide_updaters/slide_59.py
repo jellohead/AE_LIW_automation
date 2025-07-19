@@ -1,4 +1,4 @@
-# slide_58.py
+# slide_59.py
 
 import typing
 import logging
@@ -18,8 +18,8 @@ logger = logging.getLogger(__name__)
 # TODO: add logic to handle if table requires sorting by values
 
 
-def slide_58_updater(meta, df, df_labeled, prs):
-    slide_index = 57
+def slide_59_updater(meta, df, df_labeled, prs):
+    slide_index = 58
     print(
         f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
     logger.info(f'Updating slide {slide_index + 1}')
@@ -27,7 +27,7 @@ def slide_58_updater(meta, df, df_labeled, prs):
     slide = prs.slides[slide_index]
 
     question_dict = {
-                    'Table 1':'D9',
+                    'Table 2':'D10',
                     }
 
     upper_table = list(question_dict.keys())[0]
