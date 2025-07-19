@@ -22,7 +22,7 @@ from slide_updaters import (slide_1_updater, slide_3_updater, slide_4_updater, s
                             slide_40_updater,
                             slide_43_updater, slide_44_updater, slide_45_updater, slide_46_updater, slide_48_updater,
                             slide_50_updater, slide_52_updater, slide_54_updater, slide_55_updater, slide_56_updater,
-                            slide_57_updater, slide_60_updater,
+                            slide_57_updater, slide_58_updater, slide_60_updater,
                             )
 
 logger = logging.getLogger(__name__)
@@ -85,6 +85,7 @@ def main():
     slide_55_updater(meta, df, df_labeled, prs)
     slide_56_updater(meta, df, df_labeled, prs)
     slide_57_updater(meta, df, df_labeled, prs)
+    slide_58_updater(meta, df, df_labeled, prs)
     slide_60_updater(df, meta, df_labeled, prs)
 
     prs.save(PPTX_OUTPUT_FILE)
