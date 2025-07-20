@@ -1,12 +1,9 @@
 # slide_4.py
-# This file contains the functions for updating slide 4 of the PowerPoint file.
 
 import logging
-import pandas as pd
-from pptx.enum.text import PP_ALIGN
 from pptx.util import Pt
 from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
-from AE_LIW_automation.helper_modules import get_chart_object_by_name, update_paragraphs
+from AE_LIW_automation.helper_modules import update_paragraphs
 
 logger = logging.getLogger(__name__)
 

@@ -60,6 +60,8 @@ def slide_56_updater(meta, df, df_labeled, prs):
         # drop oldest quarter data
         table_df_existing = table_df.drop(columns=[table_df.columns[0]])
 
+        index_name = table_df_existing.index.name
+
         # get the existing base row and then drop it from the working dataframe
         base_row_df = table_df_existing.loc[['Base:']]
         base_row_df[new_quarter_label] = len(df)
@@ -69,6 +71,7 @@ def slide_56_updater(meta, df, df_labeled, prs):
         current_quarter_result_df = pd.DataFrame({new_quarter_label: current_quarter_result_series})
         current_quarter_result_df.loc['Base:'] = len(df)
         current_quarter_result_df_combined = pd.concat([table_df_existing, current_quarter_result_df], axis=1).fillna('0%')
+        current_quarter_result_df_combined.rename(index=label_sub_dict, inplace=True)
 
         # remove rows where all values are 0
         current_quarter_result_df_combined = current_quarter_result_df_combined[
@@ -82,6 +85,8 @@ def slide_56_updater(meta, df, df_labeled, prs):
         final_result_df_combined = pd.concat(
             [remaining_rows_df, rows_to_move_df]
         )
+
+        final_result_df_combined.rename_axis(index_name, inplace=True)
 
         base_row = final_result_df_combined[final_result_df_combined.index == 'Base:']
 
@@ -113,7 +118,7 @@ def slide_56_updater(meta, df, df_labeled, prs):
         # Step 4: Insert column headers (including index column)
         # add styling to the header row
         style_table_cell(table_shape.cell(0, 0),
-                         text='',
+                         text=index_name,
                          font_size=12,
                          bold=True,
                          color=header_text_color,

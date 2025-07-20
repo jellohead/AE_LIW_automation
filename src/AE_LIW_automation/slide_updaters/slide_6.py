@@ -1,8 +1,8 @@
 # slide_6.py
-# This file contains the functions for updating the slide 6 of the Powerpoint file
+# This file contains the functions for updating the slide 6 of the PowerPoint file
 import logging
 from pptx.chart.data import CategoryChartData
-from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
+from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR
 from AE_LIW_automation.helper_modules import get_chart_object_by_name, get_chart_categories, get_chart_series_data
 
 

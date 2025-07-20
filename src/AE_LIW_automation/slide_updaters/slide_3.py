@@ -1,13 +1,9 @@
 # slide_3.py
-# This file contains the functions for updating the slide 3 of the Powerpoint file.
-
 
 from pptx.enum.text import PP_ALIGN
 from pptx.util import Pt
-# from config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
 
 from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
-from AE_LIW_automation.helper_modules import get_chart_object_by_name
 
 
 def slide_3_updater(df, prs) -> object:
