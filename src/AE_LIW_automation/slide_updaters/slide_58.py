@@ -66,8 +66,8 @@ def slide_58_updater(meta, df, df_labeled, prs):
         # drop the base row from the old data
         table_df_existing.drop(index='Base:', inplace=True)
 
-
-
+        # get the name of the index
+        index_name = table_df_existing.index.name
 
         # replace index labels with integers to allow for sorting
         table_df_existing.index = [
@@ -75,10 +75,6 @@ def slide_58_updater(meta, df, df_labeled, prs):
             for index in table_df_existing.index
         ]
         table_df_existing.index = table_df_existing.index.astype(int)
-
-
-        # recode column from dataset for current quarter
-        # df_labeled_recoded = df_labeled[question].astype(str).replace(values_to_replace).copy()
 
         # get current quarter data from dataset
         current_quarter_result_series = (df_labeled[question].value_counts(normalize=True))
@@ -90,30 +86,11 @@ def slide_58_updater(meta, df, df_labeled, prs):
         combined_df = pd.concat([table_df_existing, current_quarter_result_df], axis=1).fillna('0%').sort_index()
 
 
-        # replace index labels with formatted index labels
-        # current_quarter_result_series.index = [
-        #     f"{int(index)} time" if int(index) == 1 else f'{int(index)} times'
-        #     for index in current_quarter_result_series.index
-        # ]
-
         combined_df.index = [
             f"{index} time" if index == 1 else f'{index} times'
             for index in combined_df.index
         ]
 
-
-
-
-
-
-
-        # current_quarter_result_df_combined = pd.concat([table_df_existing, current_quarter_result_df], axis=1).fillna('0%')
-
-        # remove rows where all values are 0
-        # current_quarter_result_df_combined = current_quarter_result_df_combined[
-        #     ~(current_quarter_result_df_combined == '0%')
-        #     .all(axis=1)
-        # ]
         combined_df = combined_df[
             ~(combined_df == '0%')
             .all(axis=1)
@@ -121,14 +98,7 @@ def slide_58_updater(meta, df, df_labeled, prs):
 
         combined_df = pd.concat([combined_df, base_row_df], axis=0)
 
-        # rows_to_move_df = combined_df[combined_df.index.isin(last_rows)]
-        # remaining_rows_df = combined_df[~combined_df.index.isin(last_rows)].copy()
-        #
-        # final_result_df_combined = pd.concat(
-        #     [remaining_rows_df, rows_to_move_df]
-        # )
-
-        # base_row = final_result_df_combined[final_result_df_combined.index == 'Base:']
+        combined_df.rename_axis(index_name, inplace=True)
 
         # Step 1: Remove existing table (if any)
         slide.shapes._spTree.remove(table_shape_element)
@@ -158,7 +128,7 @@ def slide_58_updater(meta, df, df_labeled, prs):
         # Step 4: Insert column headers (including index column)
         # add styling to the header row
         style_table_cell(table_shape.cell(0, 0),
-                         text='',
+                         text=index_name,
                          font_size=12,
                          bold=True,
                          color=header_text_color,
