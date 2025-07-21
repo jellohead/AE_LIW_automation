@@ -11,13 +11,13 @@ def slide_3_updater(df, prs) -> object:
     slide_index = 2
     slide = prs.slides[slide_index]
 
-    q11_TopBox_result = (df['Q11']
+    q11_topbox_result = (df['Q11']
                          .dropna()
                          .apply(lambda x: 'TopBox'if x in [8, 9, 10] else 'BottomBox')
                          .value_counts(normalize=True)
                          )['TopBox']
 
-    q31_TopBox_result = (df['Q31']
+    q31_topbox_result = (df['Q31']
                          .dropna()
                          .apply(lambda x: 'TopBox'if x in [8, 9, 10] else 'BottomBox')
                          .value_counts(normalize=True)
@@ -28,17 +28,17 @@ def slide_3_updater(df, prs) -> object:
                   .value_counts(normalize=True)
                   )[1]
 
-    q22_TopBox_result = (df['Q22']
+    q22_topbox_result = (df['Q22']
                          .dropna()
                          .apply(lambda x: 'TopBox'if x in [8, 9, 10] else 'BottomBox')
                          .value_counts(normalize=True)
                          )['TopBox']
 
-    paragraph_strings = [f'Customers’ overall satisfaction with Austin Energy’s Weatherization Program remained favorable with a score of {q11_TopBox_result:.0%} for {REPORTING_PERIOD} {REPORTING_YEAR}.',
-                         f'Overall satisfaction level with Austin Energy improved to {q31_TopBox_result:.0%} in {REPORTING_PERIOD} {REPORTING_YEAR} from 89% in Q2 2024.',
+    paragraph_strings = [f'Customers’ overall satisfaction with Austin Energy’s Weatherization Program remained favorable with a score of {q11_topbox_result:.0%} for {REPORTING_PERIOD} {REPORTING_YEAR}.',
+                         f'Overall satisfaction level with Austin Energy improved to {q31_topbox_result:.0%} in {REPORTING_PERIOD} {REPORTING_YEAR} from 89% in Q2 2024.',
                          f'Customers indicated a need for the program and home weatherization assistance.',
                          f'{q15_result:.0%} of customers would recommend this program to a friend or family member.',
-                         f'{q22_TopBox_result:.0%} of customers appeared to have a high level of understanding when it comes to their utility bill and energy savings.'
+                         f'{q22_topbox_result:.0%} of customers appeared to have a high level of understanding when it comes to their utility bill and energy savings.'
                          ]
 
     text_holder = None

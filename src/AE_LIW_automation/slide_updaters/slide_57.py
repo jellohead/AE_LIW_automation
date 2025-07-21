@@ -168,7 +168,7 @@ def slide_57_updater(meta, df, df_labeled, prs):
                                  )
 
         # add styling to the last row of the table
-        style_table_cell(table_shape.cell(len((final_result_df_combined)), 0),
+        style_table_cell(table_shape.cell(len(final_result_df_combined), 0),
                          text=base_row.index[0],
                          font_size=12,
                          bold=True,

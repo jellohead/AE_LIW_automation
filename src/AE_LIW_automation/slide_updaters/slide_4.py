@@ -33,17 +33,17 @@ def slide_4_updater(meta, df, df_labeled, prs) -> object:
     previous_qtr_percentage_integer = int(previous_qtr_percentage.split('%')[0])
 
 
-    q24_TopBox_result = (df['Q24']
+    q24_topbox_result = (df['Q24']
                          .dropna()
                          .apply(lambda x: 'TopBox' if x in [8, 9, 10] else 'BottomBox')
                          .value_counts(normalize=True)
                          )['TopBox']
 
-    q24_TopBox_result_integer = round(q24_TopBox_result * 100)
+    q24_topbox_result_integer = round(q24_topbox_result * 100)
 
-    if q24_TopBox_result_integer > previous_qtr_percentage_integer:
+    if q24_topbox_result_integer > previous_qtr_percentage_integer:
         comparison_description = 'up'
-    elif q24_TopBox_result_integer < previous_qtr_percentage_integer:
+    elif q24_topbox_result_integer < previous_qtr_percentage_integer:
         comparison_description = 'down'
     else:
         comparison_description = 'no change'
@@ -74,7 +74,7 @@ def slide_4_updater(meta, df, df_labeled, prs) -> object:
     q2_result_dict_sorted_top_3_keys = list(q2_result_dict_sorted.keys())[:3]
 
     paragraph_strings = [
-        f'Overall satisfaction score with energy savings was {q24_TopBox_result:.0%} in {REPORTING_PERIOD} {REPORTING_YEAR}, {comparison_description} from {previous_qtr_percentage}%.',
+        f'Overall satisfaction score with energy savings was {q24_topbox_result:.0%} in {REPORTING_PERIOD} {REPORTING_YEAR}, {comparison_description} from {previous_qtr_percentage}%.',
         ' ',
         f'Contractor and customer service ratings remained relatively high for all attributes.',
         ' ',

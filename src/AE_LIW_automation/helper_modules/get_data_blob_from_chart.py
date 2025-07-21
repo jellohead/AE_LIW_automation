@@ -11,7 +11,7 @@ from openpyxl.worksheet.worksheet import Worksheet
 from AE_LIW_automation.config import EXCEL_FILE
 
 
-def get_data_blob_from_chart(chart: Chart) -> Tuple[Workbook, Worksheet]:
+def get_data_blob_from_chart(chart: object) -> Tuple[Workbook, Worksheet]:
     """
     Pulls the blob with chart data from PowerPoint slide
 

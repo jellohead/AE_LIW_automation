@@ -1,18 +1,21 @@
 import logging
+from typing import Optional
+from pptx.shapes.graphfrm import GraphicFrame
+
 
 
 logger = logging.getLogger(__name__)
 
 
-def get_table_shape_by_name(slide: object, table_name: None) -> object:
-    '''
+def get_table_shape_by_name(slide: object, table_name: Optional[str] = None) -> Optional[GraphicFrame]:
+    """
     Provide a slide object and returns the corresponding table object from the PowerPoint slide.
     If a table name is provided, it will return the corresponding table object.
     When a table name is not provided, it will return the first table object from the slide.
     :param slide:
     :param table_name: (default is None)
     :return: object
-    '''
+    """
 
     # table_shape: object = None
     for shape in slide.shapes:

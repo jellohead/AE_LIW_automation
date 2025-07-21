@@ -2,11 +2,11 @@
 # Pull series name and values from an existing embedded Excel chart
 
 def get_chart_series_data(chart) -> dict:
-    '''
+    """
     Get series name and values from an existing embedded Excel chart
     :param chart: object
     :return: dict
-    '''
+    """
 
     series_data = {}
     for series in chart.plots[0].series:

@@ -1,12 +1,12 @@
 import pandas as pd
-from typing import List, Dict, Union
+from typing import List, Dict
 import logging
 
 
 logger = logging.getLogger(__name__)
 
 
-# TODO: add some logic to determine base cell value
+# TODO: add some logic to determine base cell value for various scenarios
 
 def combine_multiple_questions(
     df: pd.DataFrame,
@@ -29,6 +29,7 @@ def combine_multiple_questions(
         clean_strings   : If True, convert responses to str before processing
         include_base    : If True, adds a 'Base:' row with total count of non-blank responses
         base_label      : Label to use for the base count row
+        base_calc_method: Sets how to generate base value (e.g., use entire population)
 
     Returns:
         pd.Series: Combined value counts with optional label substitutions and base count

@@ -6,12 +6,12 @@ logger = logging.getLogger(__name__)
 
 
 def get_chart_categories(chart):
-    '''
+    """
     Provide a chart object and return the list of categories from the slide.
 
     :param chart: Chart object
     :return: List of categories from the slide
-    '''
+    """
     if chart.chart_type in [
         XL_CHART_TYPE.AREA,
         XL_CHART_TYPE.AREA_STACKED,

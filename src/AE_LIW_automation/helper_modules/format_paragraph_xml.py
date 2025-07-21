@@ -1,11 +1,6 @@
-from pptx.oxml.ns import qn
-from pptx.oxml.xmlchemy import OxmlElement
-from pptx.text.text import TextFrame
-from typing import List, Optional, TYPE_CHECKING
+from typing import Optional, TYPE_CHECKING
 if TYPE_CHECKING:
     from pptx.text.text import Paragraph
-import re
-from pptx.util import Inches
 
 
 def set_safe_indent(p_pr, attr: str, value: Optional[str]):
