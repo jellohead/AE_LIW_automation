@@ -4,35 +4,52 @@ import logging
 import pandas as pd
 from pptx.chart.data import CategoryChartData
 from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
-from AE_LIW_automation.helper_modules import get_chart_object_by_name, get_chart_categories, get_chart_series_data, get_chart_object
+from AE_LIW_automation.helper_modules import (get_chart_object_by_name, get_chart_categories, get_chart_series_data,
+                                              get_data_blob_from_chart, get_chart_object)
 
 
 logger = logging.getLogger(__name__)
 
 def slide_36_updater(df, prs) -> object:
     slide_index = 35
-    print(
-        f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
-    logger.info(f'Updating slide {slide_index + 1}')
+
+    msg = f"Updating slide {slide_index + 1}"
+    width = 40
+    print(f"\n{'=' * width}\n{' ' + msg + ' ':=^{width}}\n{'=' * width}\n")
+    logger.info(msg)
+
+    question = 'Q22'
+    chart_name = 'Content Placeholder 10'
 
     slide = prs.slides[slide_index]
-    chart_name = 'Content Placeholder 10'
     chart = get_chart_object_by_name(slide, chart_name)
-    question = 'Q22'
-    old_categories = get_chart_categories(chart)
-    existing_series_data_dict = get_chart_series_data(chart)
-    # existing_series_data_dict['sum of displayed values'] = existing_series_data_dict.pop('')
 
-    existing_df = pd.DataFrame(index=old_categories, data=existing_series_data_dict)[1:]
+    # pull blob with chart data out of slide
+    workbook, worksheet = get_data_blob_from_chart(chart)
+    data = list(worksheet.values)
 
-    new_quarter_df = pd.DataFrame(index=[f'{REPORTING_PERIOD} {REPORTING_YEAR}\n(N={len(df)})'], columns=existing_df.columns)
+    # create new dataframe from old chart data
+    slide_df = pd.DataFrame(data)
+    # set dataframe column labels to first row values then drop first row
+    slide_df.columns = slide_df.iloc[0]
+    slide_df.drop(slide_df.index[0], inplace=True)
+    # set dataframe index labels to values in first column
+    slide_df.set_index(slide_df.columns[0], inplace=True)
+    # drop the oldest quarter of data
+    slide_df = slide_df.iloc[1:].copy()
+
+    # existing_df = pd.DataFrame(index=old_categories, data=existing_series_data_dict)[1:]
+
+    # new_quarter_df = pd.DataFrame(index=[f'{REPORTING_PERIOD} {REPORTING_YEAR}\n(N={len(df)})'], columns=existing_df.columns)
+    new_quarter_df = pd.DataFrame(index=[f'{REPORTING_PERIOD} {REPORTING_YEAR}\n(N={len(df)})'],
+                                  columns=['8', '9', '10', 'sum of displayed values'])
     question_value_counts = df[question].dropna().value_counts(normalize=True).sort_index()
     new_quarter_df['8'] =  question_value_counts.get(8, 0)
     new_quarter_df['9'] =  question_value_counts.get(9, 0)
     new_quarter_df['10'] =  question_value_counts.get(10, 0)
     new_quarter_df['sum of displayed values'] = new_quarter_df['8'].values + new_quarter_df['9'].values + new_quarter_df['10'].values
 
-    existing_df = pd.concat([existing_df, new_quarter_df])
+    existing_df = pd.concat([slide_df, new_quarter_df])
     # replace NaN with None
     existing_df = existing_df.astype(object).where(pd.notna(existing_df), None)
     # replace '0' values with 'None' to prevent 0% showing up on chart

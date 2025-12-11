@@ -1,4 +1,5 @@
 # slide_59.py
+# Demographics Mental Health Not Good in Past 30 Days
 
 import typing
 import logging
@@ -20,10 +21,12 @@ logger = logging.getLogger(__name__)
 
 
 def slide_59_updater(meta, df, df_labeled, prs):
-    slide_index = 58
-    print(
-        f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
-    logger.info(f'Updating slide {slide_index + 1}')
+    slide_index = 57
+
+    msg = f"Updating slide {slide_index + 1}"
+    width = 40
+    print(f"\n{'=' * width}\n{' ' + msg + ' ':=^{width}}\n{'=' * width}\n")
+    logger.info(msg)
 
     slide = prs.slides[slide_index]
 

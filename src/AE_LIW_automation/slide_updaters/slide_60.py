@@ -1,5 +1,5 @@
 # slide_60.py
-# This file contains the functions for updating the slide 60 of the Powerpoint file
+# Demographics How would you describe your health chart
 
 import logging
 import numpy as np
@@ -11,10 +11,13 @@ from AE_LIW_automation.helper_modules import get_chart_object_by_name, get_chart
 logger = logging.getLogger(__name__)
 
 def slide_60_updater(df, meta, df_labeled, prs) -> object:
-    slide_index = 59
-    print(
-        f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
-    logger.info(f'Updating slide {slide_index + 1}')
+    slide_index = 58
+
+    msg = f"Updating slide {slide_index + 1}"
+    width = 40
+    print(f"\n{'=' * width}\n{' ' + msg + ' ':=^{width}}\n{'=' * width}\n")
+    logger.info(msg)
+
     slide = prs.slides[slide_index]
     chart = get_chart_object_by_name(slide, 'Chart 6')
     question = 'D8'

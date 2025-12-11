@@ -1,4 +1,5 @@
 # slide_33.py
+# Was there anything about your experience with the people who weatherized your home that you would like to share with Austin Energy?
 
 import logging
 from pandas import DataFrame, Series
@@ -19,18 +20,20 @@ logger = logging.getLogger(__name__)
 
 def slide_33_updater(meta, df, df_labeled, prs):
     slide_index = 32
-    print(
-        f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
-    logger.info(f'Updating slide {slide_index + 1}')
+
+    msg = f"Updating slide {slide_index + 1}"
+    width = 40
+    print(f"\n{'=' * width}\n{' ' + msg + ' ':=^{width}}\n{'=' * width}\n")
+    logger.info(msg)
 
     slide = prs.slides[slide_index]
 
-    question_list = ['Q13_1', 'Q13_2', 'Q13_3', 'Q13_4',]
-    label_sub_dict = {'All other' : 'Other',
+    question_list = [f'Q13_{i}' for i in range(1, 5)]
+    label_sub_dict = {'Other' : 'All other',
                       'Do not remember, do not know': "Don't know",
                       'Nothing': 'Nothing/no changes',
                       }
-    last_rows = ["Don't know", 'Other', 'Base:']
+    last_rows = ["Don't know", 'All other', 'Base:']
 
     table = get_table_object(slide)
     if not table:
@@ -40,20 +43,28 @@ def slide_33_updater(meta, df, df_labeled, prs):
 
     # Get existing data from old table
     table_data = [[cell.text.strip() for cell in row.cells] for row in table.rows]
+    # create a dataframe from old table data
     table_df: DataFrame = pd.DataFrame(table_data[1:], columns=table_data[0])
     table_df.set_index(table_df.columns[0], inplace=True)
+    # replace blank and NaN values with 0
+    table_df = table_df.replace(r'^\s*$', 0, regex=True).fillna(0)
 
     # drop oldest quarter data
     table_df_existing = table_df.drop(columns=[table_df.columns[0]])
-    print(f'{table_df_existing = }')
+    # print(f'{table_df_existing = }')
 
 
     # get current quarter data from dataset
+    # TODO: substitute df_labeled[question_list].stack().value_counts() for the call to combine_multiple_questions()
     current_quarter_result_series = combine_multiple_questions(df_labeled, question_list, label_sub_dict)
-    current_quarter_result_df = pd.DataFrame({f'{REPORTING_PERIOD} {REPORTING_YEAR}': current_quarter_result_series}).fillna(0)
+    # change series name to current reporting period and year
+    current_quarter_result_series.rename(f'{REPORTING_PERIOD} {REPORTING_YEAR}', inplace=True)
+    # change index labels to match historical index labels
+    current_quarter_result_series.rename(label_sub_dict, inplace=True)
+    # current_quarter_result_df = pd.DataFrame({f'{REPORTING_PERIOD} {REPORTING_YEAR}': current_quarter_result_series}).fillna(0)
 
     # combine old and new data, convert new data to integers
-    current_quarter_result_df_combined = pd.concat([table_df_existing, current_quarter_result_df], axis=1).fillna(
+    current_quarter_result_df_combined = pd.concat([table_df_existing, current_quarter_result_series], axis=1).fillna(
         0).astype(int)
 
     # remove rows where all values are 0
@@ -79,6 +90,7 @@ def slide_33_updater(meta, df, df_labeled, prs):
     base_row = current_quarter_result_df_combined[current_quarter_result_df_combined.index == 'Base:']
 
     # Step 1: Remove existing table (if any)
+    # TODO: Some of this is redundant code
     shapes = slide.shapes
     for shape in shapes:
         if shape.has_table:  # Check if shape is a table
@@ -121,43 +133,46 @@ def slide_33_updater(meta, df, df_labeled, prs):
                          v_alignment=MSO_ANCHOR.MIDDLE,
                          )
 
-    # Step 5: Insert data rows (including index values)
+    # Step 5: Insert data rows (including index values) with styling
     for row_idx, (index_value, row) in enumerate(current_quarter_result_df_combined.iterrows()):
-        style_table_cell(table_shape.cell(row_idx + 1, 0),
-                         str(index_value),
-                         font_size=13,
-                         bold=False,
-                         color=data_text_color,
-                         bg_color=data_bg_color,
-                         h_alignment=PP_ALIGN.LEFT,
-                         v_alignment=MSO_ANCHOR.MIDDLE,
-                         )
-        for col_idx, value in enumerate(row):
-            style_table_cell(table_shape.cell(row_idx + 1, col_idx + 1),
-                             str(value),
+        # skip adding styling to Base row
+        if index_value != 'Base:':
+            style_table_cell(table_shape.cell(row_idx + 1, 0),
+                             str(index_value),
                              font_size=13,
                              bold=False,
                              color=data_text_color,
                              bg_color=data_bg_color,
-                             h_alignment=PP_ALIGN.CENTER,
+                             h_alignment=PP_ALIGN.LEFT,
                              v_alignment=MSO_ANCHOR.MIDDLE,
                              )
+            for col_idx, value in enumerate(row):
+                style_table_cell(table_shape.cell(row_idx + 1, col_idx + 1),
+                                 str(value),
+                                 font_size=13,
+                                 bold=False,
+                                 color=data_text_color,
+                                 bg_color=data_bg_color,
+                                 h_alignment=PP_ALIGN.CENTER,
+                                 v_alignment=MSO_ANCHOR.MIDDLE,
+                                 )
 
-    # add styling to the last row of the table
+    # add styling to the Base index label
     style_table_cell(table_shape.cell(len(current_quarter_result_df_combined), 0),
                      text=base_row.index[0],
-                     font_size=12,
+                     font_size=13,
                      bold=True,
                      color=header_text_color,
                      bg_color=header_bg_color,
                      h_alignment=PP_ALIGN.LEFT,
                      v_alignment=MSO_ANCHOR.MIDDLE,
                      )
-
+    # add styling to the Base row values
     for col_number, value in enumerate(current_quarter_result_df_combined.loc['Base:']):
         style_table_cell(table_shape.cell(len(current_quarter_result_df_combined), col_number + 1),
+                         text=str(value),
                          font_size=13,
-                         bold=False,
+                         bold=True,
                          color=header_text_color,
                          bg_color=header_bg_color,
                          h_alignment=PP_ALIGN.CENTER,

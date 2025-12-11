@@ -2,7 +2,7 @@
 
 import logging
 from pptx.util import Pt
-from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
+from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR, PREVIOUS_PERIOD, CURRENT_MONTH_TEXT, CURRENT_YEAR
 from AE_LIW_automation.helper_modules import update_paragraphs
 
 logger = logging.getLogger(__name__)
@@ -12,25 +12,30 @@ logger = logging.getLogger(__name__)
 
 def slide_4_updater(meta, df, df_labeled, prs) -> object:
     slide_index = 3
-    print(
-        f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
-    logger.info(f'Updating slide {slide_index + 1}')
+
+    msg = f"Updating slide {slide_index + 1}"
+    width = 40
+    print(f"\n{'=' * width}\n{' ' + msg + ' ':=^{width}}\n{'=' * width}\n")
+    logger.info(msg)
+
+    shape_name = 'Rectangle 3'
+
     slide = prs.slides[slide_index]
     text_holder = None
 
     # extract existing text from textbox
-    existing_text = ""
-    for shape in slide.shapes:
-        if shape.name == 'Rectangle 3' and shape.has_text_frame:
-            text_frame = shape.text_frame
-            existing_text = "\n".join([p.text for p in text_frame.paragraphs])
-            break  # stop after finding the shape
+    # existing_text = ""
+    # for shape in slide.shapes:
+    #     if shape.name == shape_name and shape.has_text_frame:
+    #         text_frame = shape.text_frame
+    #         existing_text = "\n".join([p.text for p in text_frame.paragraphs])
+    #         break  # stop after finding the shape
 
-    print("Extracted text:")
-    print(existing_text)
-    previous_qtr_percentage = existing_text.split('was ')[1].split(',')[0]
-    print(f'{previous_qtr_percentage = }\n')
-    previous_qtr_percentage_integer = int(previous_qtr_percentage.split('%')[0])
+    # print("Extracted text:")
+    # print(existing_text)
+    # previous_qtr_percentage = existing_text.split('was ')[1].split(',')[0]
+    # print(f'{previous_qtr_percentage = }\n')
+    # previous_qtr_percentage_integer = int(previous_qtr_percentage.split('%')[0])
 
 
     q24_topbox_result = (df['Q24']
@@ -41,26 +46,26 @@ def slide_4_updater(meta, df, df_labeled, prs) -> object:
 
     q24_topbox_result_integer = round(q24_topbox_result * 100)
 
-    if q24_topbox_result_integer > previous_qtr_percentage_integer:
-        comparison_description = 'up'
-    elif q24_topbox_result_integer < previous_qtr_percentage_integer:
-        comparison_description = 'down'
-    else:
-        comparison_description = 'no change'
+    # if q24_topbox_result_integer > previous_qtr_percentage_integer:
+    #     comparison_description = 'up'
+    # elif q24_topbox_result_integer < previous_qtr_percentage_integer:
+    #     comparison_description = 'down'
+    # else:
+    #     comparison_description = 'no change'
 
-    q2_questions_list = [
-        'Q2_1',
-        'Q2_2',
-        'Q2_3',
-        'Q2_4',
-        'Q2_5',
-        'Q2_6',
-        'Q2_7',
-        'Q2_8',
-        'Q2_9',
-        'Q2_10',
-        'Q2_11',
-    ]
+    q2_questions_list = [f'Q2_{i}' for i in range(1, 12)]
+    #     'Q2_1',
+    #     'Q2_2',
+    #     'Q2_3',
+    #     'Q2_4',
+    #     'Q2_5',
+    #     'Q2_6',
+    #     'Q2_7',
+    #     'Q2_8',
+    #     'Q2_9',
+    #     'Q2_10',
+    #     'Q2_11',
+    # ]
 
     q2_result_dict = {}
     # get top 3 responses to how customers found out about the weatherization program
@@ -74,7 +79,7 @@ def slide_4_updater(meta, df, df_labeled, prs) -> object:
     q2_result_dict_sorted_top_3_keys = list(q2_result_dict_sorted.keys())[:3]
 
     paragraph_strings = [
-        f'Overall satisfaction score with energy savings was {q24_topbox_result:.0%} in {REPORTING_PERIOD} {REPORTING_YEAR}, {comparison_description} from {previous_qtr_percentage}%.',
+        f'Overall satisfaction score with energy savings was {q24_topbox_result:.0%} in {REPORTING_PERIOD} {REPORTING_YEAR}, UP/DOWN/UNCHANGED from PREVIOUS QTR% in {PREVIOUS_PERIOD}.',
         ' ',
         f'Contractor and customer service ratings remained relatively high for all attributes.',
         ' ',

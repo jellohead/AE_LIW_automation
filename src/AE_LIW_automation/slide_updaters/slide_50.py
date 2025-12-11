@@ -1,5 +1,5 @@
 # slide_50.py
-# This file contains the functions for updating the slide 50 of the Powerpoint file
+# D11. Based on your experience in the weatherization program, what phrase do you think would best describes the program?
 
 import logging
 from pptx.chart.data import CategoryChartData
@@ -11,9 +11,12 @@ logger = logging.getLogger(__name__)
 
 def slide_50_updater(meta, df, df_labeled, prs) -> object:
     slide_index = 49
-    print(
-        f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
-    logger.info(f'Updating slide {slide_index + 1}')
+
+    msg = f"Updating slide {slide_index + 1}"
+    width = 40
+    print(f"\n{'=' * width}\n{' ' + msg + ' ':=^{width}}\n{'=' * width}\n")
+    logger.info(msg)
+
     slide = prs.slides[slide_index]
     question = 'D11'
     chart = get_chart_object_by_name(slide, 'Chart 6')

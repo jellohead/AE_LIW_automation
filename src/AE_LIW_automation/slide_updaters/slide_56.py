@@ -1,4 +1,5 @@
 # slide_56.py
+# Demographics Education and Anyone Under 18 Living in Home
 
 import typing
 import logging
@@ -19,10 +20,12 @@ logger = logging.getLogger(__name__)
 
 
 def slide_56_updater(meta, df, df_labeled, prs):
-    slide_index = 55
-    print(
-        f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
-    logger.info(f'Updating slide {slide_index + 1}')
+    slide_index = 54
+
+    msg = f"Updating slide {slide_index + 1}"
+    width = 40
+    print(f"\n{'=' * width}\n{' ' + msg + ' ':=^{width}}\n{'=' * width}\n")
+    logger.info(msg)
 
     slide = prs.slides[slide_index]
 

@@ -36,6 +36,15 @@ def combine_multiple_questions(
     """
     series_list = []
 
+    # use stack() to combine multiple questions
+    series2 = df[question_list].stack().value_counts()
+    if clean_strings:
+        series2 = series2.astype(str)
+
+    print(series2.unique())
+    if label_sub_dict:
+        series2.replace(label_sub_dict, inplace=True)
+
     for question in question_list:
         series = df[question].dropna()
 

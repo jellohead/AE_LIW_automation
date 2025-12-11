@@ -1,4 +1,5 @@
 # slide_52.py
+# Are there other words you think best describe the program to other potential participants?
 
 import logging
 from pandas import DataFrame, Series
@@ -16,10 +17,12 @@ logger = logging.getLogger(__name__)
 
 
 def slide_52_updater(meta, df, df_labeled, prs):
-    slide_index = 51
-    print(
-        f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
-    logger.info(f'Updating slide {slide_index + 1}')
+    slide_index = 50
+
+    msg = f"Updating slide {slide_index + 1}"
+    width = 40
+    print(f"\n{'=' * width}\n{' ' + msg + ' ':=^{width}}\n{'=' * width}\n")
+    logger.info(msg)
 
     slide = prs.slides[slide_index]
 
