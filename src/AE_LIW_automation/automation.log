@@ -47139,3 +47139,1604 @@ Table name: Table 2
 [2025-12-11 08:00:41,703] INFO in slide_updaters.slide_59: Update of slide 58 complete.
 Manually adjust position and size of the table.
 [2025-12-11 08:00:41,703] INFO in slide_updaters.slide_60: Updating slide 59
+[2025-12-11 12:39:05,834] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 12:39:05,890] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 12:39:05,894] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 12:39:05,896] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 12:39:05,905] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 12:39:05,905] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 12:39:05,912] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 12:39:05,914] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 12:39:05,917] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 12:39:05,919] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 12:39:05,921] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 12:39:05,923] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 12:39:05,929] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 12:39:05,931] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 12:39:05,931] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 12:39:05,931] INFO in root: Table name: Table 1
+[2025-12-11 12:39:05,950] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 12:39:05,950] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 12:39:05,952] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 12:39:05,954] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 12:39:05,960] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 12:39:05,960] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 12:39:05,960] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 12:39:05,962] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 12:39:05,965] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 12:39:05,971] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 12:39:05,971] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 12:39:05,971] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 12:39:05,971] INFO in root: Table name: Table 1
+[2025-12-11 12:39:05,974] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 12:39:05,988] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:39:05,990] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 12:39:05,996] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 12:39:05,998] INFO in root: Table name: Table 5
+[2025-12-11 12:39:06,009] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:39:06,009] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 12:39:06,012] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 12:39:06,013] INFO in root: Table name: Table 1
+[2025-12-11 12:39:06,029] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:39:06,029] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 12:39:06,033] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 12:39:06,034] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 12:39:06,034] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 12:39:06,043] INFO in slide_updaters.slide_44: Updating slide 44
+[2025-12-11 12:39:06,055] INFO in slide_updaters.slide_45: Updating slide 45
+[2025-12-11 12:39:06,064] INFO in slide_updaters.slide_46: Updating slide 46
+[2025-12-11 12:39:06,064] INFO in root: Table name: Table 1
+[2025-12-11 12:39:06,067] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 12:39:06,081] INFO in slide_updaters.slide_46: Update of slide 46 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:39:06,081] INFO in slide_updaters.slide_48: Updating slide 48
+[2025-12-11 12:39:06,085] INFO in slide_updaters.slide_50: Updating slide 50
+[2025-12-11 12:39:06,088] INFO in slide_updaters.slide_52: Updating slide 51
+[2025-12-11 12:39:06,088] INFO in root: Table name: Table 6
+[2025-12-11 12:39:06,102] INFO in slide_updaters.slide_52: Update of slide 51 complete.
+Copy/paste these results to populate slides 51 and 52.
+Manually adjust position and size of the table.
+[2025-12-11 12:39:06,103] INFO in slide_updaters.slide_54: Updating slide 53
+[2025-12-11 12:39:06,103] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 12:39:06,103] INFO in slide_updaters.slide_54: Updating "Table 1"
+[2025-12-11 12:39:06,110] INFO in root: Shape with "Table 2" table name found on this slide.
+Table name: Table 2
+[2025-12-11 12:39:06,110] INFO in slide_updaters.slide_54: Updating "Table 2"
+[2025-12-11 12:39:06,121] INFO in slide_updaters.slide_54: Update of slide 53 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:39:06,121] INFO in slide_updaters.slide_55: Updating slide 54
+[2025-12-11 12:39:06,121] INFO in root: Shape with "Table 3" table name found on this slide.
+Table name: Table 3
+[2025-12-11 12:39:06,121] INFO in slide_updaters.slide_55: Updating "Table 3"
+[2025-12-11 12:39:06,133] INFO in slide_updaters.slide_55: Update of slide 54 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:39:06,133] INFO in slide_updaters.slide_56: Updating slide 55
+[2025-12-11 12:39:06,133] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 12:39:06,133] INFO in slide_updaters.slide_56: Updating "Table 1"
+[2025-12-11 12:39:06,143] INFO in root: Shape with "Table 5" table name found on this slide.
+Table name: Table 5
+[2025-12-11 12:39:06,143] INFO in slide_updaters.slide_56: Updating "Table 5"
+[2025-12-11 12:39:06,151] INFO in slide_updaters.slide_56: Update of slide 55 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:39:06,151] INFO in slide_updaters.slide_57: Updating slide 56
+[2025-12-11 12:39:06,151] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 12:39:06,151] INFO in slide_updaters.slide_57: Updating "Table 1"
+[2025-12-11 12:39:06,162] INFO in root: Shape with "Table 2" table name found on this slide.
+Table name: Table 2
+[2025-12-11 12:39:06,162] INFO in slide_updaters.slide_57: Updating "Table 2"
+[2025-12-11 12:39:06,171] INFO in slide_updaters.slide_57: Update of slide 56 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:39:06,171] INFO in slide_updaters.slide_58: Updating slide 57
+[2025-12-11 12:39:06,172] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 12:39:06,172] INFO in slide_updaters.slide_58: Updating "Table 1"
+[2025-12-11 12:39:06,188] INFO in slide_updaters.slide_58: Update of slide 57 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:39:06,188] INFO in slide_updaters.slide_59: Updating slide 58
+[2025-12-11 12:39:06,188] INFO in root: Shape with "Table 2" table name found on this slide.
+Table name: Table 2
+[2025-12-11 12:39:06,188] INFO in slide_updaters.slide_59: Updating "Table 2"
+[2025-12-11 12:39:06,204] INFO in slide_updaters.slide_59: Update of slide 58 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:39:06,204] INFO in slide_updaters.slide_60: Updating slide 59
+[2025-12-11 12:43:34,765] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 12:43:34,825] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 12:43:34,828] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 12:43:34,831] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 12:43:34,840] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 12:43:34,840] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 12:43:34,847] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 12:43:34,850] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 12:43:34,853] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 12:43:34,855] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 12:43:34,857] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 12:43:34,859] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 12:43:34,865] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 12:43:34,867] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 12:43:34,867] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 12:43:34,867] INFO in root: Table name: Table 1
+[2025-12-11 12:43:34,886] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 12:43:34,886] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 12:43:34,888] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 12:43:34,890] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 12:43:34,896] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 12:43:34,896] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 12:43:34,896] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 12:43:34,898] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 12:43:34,901] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 12:43:34,906] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 12:43:34,907] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 12:43:34,907] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 12:43:34,907] INFO in root: Table name: Table 1
+[2025-12-11 12:43:34,910] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 12:43:34,924] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:43:34,926] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 12:43:34,932] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 12:43:34,934] INFO in root: Table name: Table 5
+[2025-12-11 12:43:34,945] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:43:34,945] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 12:43:34,948] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 12:43:34,949] INFO in root: Table name: Table 1
+[2025-12-11 12:43:34,966] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:43:34,967] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 12:44:12,173] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 12:44:12,233] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 12:44:12,235] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 12:44:12,238] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 12:44:12,248] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 12:44:12,248] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 12:44:12,255] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 12:44:12,258] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 12:44:12,260] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 12:44:12,262] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 12:44:12,265] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 12:44:12,267] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 12:44:12,273] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 12:44:12,275] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 12:44:12,275] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 12:44:12,275] INFO in root: Table name: Table 1
+[2025-12-11 12:44:12,294] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 12:44:12,294] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 12:44:12,296] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 12:44:12,298] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 12:44:12,304] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 12:44:12,304] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 12:44:12,304] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 12:44:12,306] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 12:44:12,309] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 12:44:12,314] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 12:44:12,315] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 12:44:12,315] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 12:44:12,315] INFO in root: Table name: Table 1
+[2025-12-11 12:44:12,318] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 12:44:12,332] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:44:12,334] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 12:44:12,340] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 12:44:12,342] INFO in root: Table name: Table 5
+[2025-12-11 12:44:12,353] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:44:12,353] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 12:44:12,356] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 12:44:12,357] INFO in root: Table name: Table 1
+[2025-12-11 12:44:12,374] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:44:12,374] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 12:45:15,498] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 12:45:15,559] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 12:45:15,562] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 12:45:15,565] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 12:45:15,575] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 12:45:15,575] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 12:45:15,583] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 12:45:15,585] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 12:45:15,588] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 12:45:15,590] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 12:45:15,592] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 12:45:15,594] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 12:45:15,601] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 12:45:15,602] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 12:45:15,602] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 12:45:15,603] INFO in root: Table name: Table 1
+[2025-12-11 12:45:15,621] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 12:45:15,621] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 12:45:15,624] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 12:45:15,626] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 12:45:15,632] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 12:45:15,632] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 12:45:15,632] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 12:45:15,634] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 12:45:15,636] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 12:45:15,642] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 12:45:15,643] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 12:45:15,643] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 12:45:15,643] INFO in root: Table name: Table 1
+[2025-12-11 12:45:15,647] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 12:45:15,661] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:45:15,663] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 12:45:15,669] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 12:45:15,671] INFO in root: Table name: Table 5
+[2025-12-11 12:45:15,682] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:45:15,682] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 12:45:15,685] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 12:45:15,686] INFO in root: Table name: Table 1
+[2025-12-11 12:45:15,704] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:45:15,704] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 12:45:15,712] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 12:45:15,713] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 12:45:15,713] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 12:45:15,723] INFO in slide_updaters.slide_44: Updating slide 44
+[2025-12-11 12:45:15,734] INFO in slide_updaters.slide_45: Updating slide 45
+[2025-12-11 12:45:15,744] INFO in slide_updaters.slide_46: Updating slide 46
+[2025-12-11 12:45:15,745] INFO in root: Table name: Table 1
+[2025-12-11 12:45:15,748] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 12:45:15,763] INFO in slide_updaters.slide_46: Update of slide 46 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:45:15,763] INFO in slide_updaters.slide_48: Updating slide 48
+[2025-12-11 12:45:15,767] INFO in slide_updaters.slide_50: Updating slide 50
+[2025-12-11 12:45:15,770] INFO in slide_updaters.slide_52: Updating slide 51
+[2025-12-11 12:45:15,770] INFO in root: Table name: Table 6
+[2025-12-11 12:45:15,785] INFO in slide_updaters.slide_52: Update of slide 51 complete.
+Copy/paste these results to populate slides 51 and 52.
+Manually adjust position and size of the table.
+[2025-12-11 12:45:15,785] INFO in slide_updaters.slide_54: Updating slide 53
+[2025-12-11 12:45:15,785] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 12:45:15,785] INFO in slide_updaters.slide_54: Updating "Table 1"
+[2025-12-11 12:45:15,793] INFO in root: Shape with "Table 2" table name found on this slide.
+Table name: Table 2
+[2025-12-11 12:45:15,793] INFO in slide_updaters.slide_54: Updating "Table 2"
+[2025-12-11 12:45:15,803] INFO in slide_updaters.slide_54: Update of slide 53 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:45:15,804] INFO in slide_updaters.slide_55: Updating slide 54
+[2025-12-11 12:45:15,804] INFO in root: Shape with "Table 3" table name found on this slide.
+Table name: Table 3
+[2025-12-11 12:45:15,804] INFO in slide_updaters.slide_55: Updating "Table 3"
+[2025-12-11 12:45:15,815] INFO in slide_updaters.slide_55: Update of slide 54 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:45:15,815] INFO in slide_updaters.slide_56: Updating slide 55
+[2025-12-11 12:45:15,815] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 12:45:15,816] INFO in slide_updaters.slide_56: Updating "Table 1"
+[2025-12-11 12:45:15,825] INFO in root: Shape with "Table 5" table name found on this slide.
+Table name: Table 5
+[2025-12-11 12:45:15,825] INFO in slide_updaters.slide_56: Updating "Table 5"
+[2025-12-11 12:45:15,832] INFO in slide_updaters.slide_56: Update of slide 55 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:45:15,832] INFO in slide_updaters.slide_57: Updating slide 56
+[2025-12-11 12:45:15,833] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 12:45:15,833] INFO in slide_updaters.slide_57: Updating "Table 1"
+[2025-12-11 12:45:15,843] INFO in root: Shape with "Table 2" table name found on this slide.
+Table name: Table 2
+[2025-12-11 12:45:15,843] INFO in slide_updaters.slide_57: Updating "Table 2"
+[2025-12-11 12:45:15,853] INFO in slide_updaters.slide_57: Update of slide 56 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:45:15,853] INFO in slide_updaters.slide_58: Updating slide 57
+[2025-12-11 12:45:15,853] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 12:45:15,853] INFO in slide_updaters.slide_58: Updating "Table 1"
+[2025-12-11 12:45:15,869] INFO in slide_updaters.slide_58: Update of slide 57 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:45:15,869] INFO in slide_updaters.slide_59: Updating slide 58
+[2025-12-11 12:45:15,870] INFO in root: Shape with "Table 2" table name found on this slide.
+Table name: Table 2
+[2025-12-11 12:45:15,870] INFO in slide_updaters.slide_59: Updating "Table 2"
+[2025-12-11 12:45:15,885] INFO in slide_updaters.slide_59: Update of slide 58 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:45:15,885] INFO in slide_updaters.slide_60: Updating slide 59
+[2025-12-11 12:57:49,462] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 12:57:49,526] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 12:57:49,529] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 12:57:49,532] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 12:57:49,541] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 12:57:49,541] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 12:57:49,548] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 12:57:49,551] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 12:57:49,553] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 12:57:49,556] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 12:57:49,558] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 12:57:49,560] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 12:57:49,566] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 12:57:49,568] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 12:57:49,568] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 12:57:49,568] INFO in root: Table name: Table 1
+[2025-12-11 12:57:49,587] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 12:57:49,587] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 12:57:49,589] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 12:57:49,591] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 12:57:49,597] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 12:57:49,597] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 12:57:49,597] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 12:57:49,599] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 12:57:49,602] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 12:57:49,608] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 12:57:49,608] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 12:57:49,608] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 12:57:49,608] INFO in root: Table name: Table 1
+[2025-12-11 12:57:49,611] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 12:57:49,625] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:57:49,627] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 12:57:49,633] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 12:57:49,635] INFO in root: Table name: Table 5
+[2025-12-11 12:57:49,646] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:57:49,647] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 12:57:49,650] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 12:57:49,652] INFO in root: Table name: Table 1
+[2025-12-11 12:57:49,669] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:57:49,669] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 12:57:49,677] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 12:57:49,678] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 12:57:49,678] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 12:57:49,688] INFO in slide_updaters.slide_44: Updating slide 44
+[2025-12-11 12:58:26,070] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 12:58:26,132] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 12:58:26,135] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 12:58:26,138] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 12:58:26,148] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 12:58:26,149] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 12:58:26,155] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 12:58:26,158] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 12:58:26,160] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 12:58:26,163] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 12:58:26,165] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 12:58:26,167] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 12:58:26,173] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 12:58:26,175] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 12:58:26,175] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 12:58:26,175] INFO in root: Table name: Table 1
+[2025-12-11 12:58:26,194] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 12:58:26,194] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 12:58:26,196] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 12:58:26,198] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 12:58:26,204] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 12:58:26,204] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 12:58:26,204] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 12:58:26,206] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 12:58:26,208] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 12:58:26,214] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 12:58:26,215] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 12:58:26,215] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 12:58:26,215] INFO in root: Table name: Table 1
+[2025-12-11 12:58:26,218] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 12:58:26,233] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:58:26,235] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 12:58:26,241] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 12:58:26,243] INFO in root: Table name: Table 5
+[2025-12-11 12:58:26,254] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:58:26,254] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 12:58:26,258] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 12:58:26,259] INFO in root: Table name: Table 1
+[2025-12-11 12:58:26,275] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:58:26,276] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 12:58:26,283] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 12:58:26,285] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 12:58:26,285] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 12:58:26,295] INFO in slide_updaters.slide_44: Updating slide 44
+[2025-12-11 12:58:26,306] INFO in slide_updaters.slide_45: Updating slide 45
+[2025-12-11 12:58:26,315] INFO in slide_updaters.slide_46: Updating slide 46
+[2025-12-11 12:58:26,315] INFO in root: Table name: Table 1
+[2025-12-11 12:58:26,318] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 12:58:26,332] INFO in slide_updaters.slide_46: Update of slide 46 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 12:58:26,332] INFO in slide_updaters.slide_48: Updating slide 48
+[2025-12-11 12:58:26,336] INFO in slide_updaters.slide_50: Updating slide 50
+[2025-12-11 12:58:26,339] INFO in slide_updaters.slide_52: Updating slide 51
+[2025-12-11 12:58:26,339] INFO in root: Table name: Table 6
+[2025-12-11 12:58:26,353] INFO in slide_updaters.slide_52: Update of slide 51 complete.
+Copy/paste these results to populate slides 51 and 52.
+Manually adjust position and size of the table.
+[2025-12-11 12:58:26,353] INFO in slide_updaters.slide_54: Updating slide 53
+[2025-12-11 12:58:26,354] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 12:58:26,354] INFO in slide_updaters.slide_54: Updating "Table 1"
+[2025-12-11 12:58:26,361] INFO in root: Shape with "Table 2" table name found on this slide.
+Table name: Table 2
+[2025-12-11 12:58:26,361] INFO in slide_updaters.slide_54: Updating "Table 2"
+[2025-12-11 12:58:26,372] INFO in slide_updaters.slide_54: Update of slide 53 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:58:26,372] INFO in slide_updaters.slide_55: Updating slide 54
+[2025-12-11 12:58:26,372] INFO in root: Shape with "Table 3" table name found on this slide.
+Table name: Table 3
+[2025-12-11 12:58:26,372] INFO in slide_updaters.slide_55: Updating "Table 3"
+[2025-12-11 12:58:26,383] INFO in slide_updaters.slide_55: Update of slide 54 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:58:26,386] INFO in slide_updaters.slide_56: Updating slide 55
+[2025-12-11 12:58:26,386] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 12:58:26,386] INFO in slide_updaters.slide_56: Updating "Table 1"
+[2025-12-11 12:58:26,396] INFO in root: Shape with "Table 5" table name found on this slide.
+Table name: Table 5
+[2025-12-11 12:58:26,396] INFO in slide_updaters.slide_56: Updating "Table 5"
+[2025-12-11 12:58:26,403] INFO in slide_updaters.slide_56: Update of slide 55 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:58:26,403] INFO in slide_updaters.slide_57: Updating slide 56
+[2025-12-11 12:58:26,403] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 12:58:26,403] INFO in slide_updaters.slide_57: Updating "Table 1"
+[2025-12-11 12:58:26,413] INFO in root: Shape with "Table 2" table name found on this slide.
+Table name: Table 2
+[2025-12-11 12:58:26,413] INFO in slide_updaters.slide_57: Updating "Table 2"
+[2025-12-11 12:58:26,422] INFO in slide_updaters.slide_57: Update of slide 56 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:58:26,423] INFO in slide_updaters.slide_58: Updating slide 57
+[2025-12-11 12:58:26,423] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 12:58:26,423] INFO in slide_updaters.slide_58: Updating "Table 1"
+[2025-12-11 12:58:26,439] INFO in slide_updaters.slide_58: Update of slide 57 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:58:26,439] INFO in slide_updaters.slide_59: Updating slide 58
+[2025-12-11 12:58:26,439] INFO in root: Shape with "Table 2" table name found on this slide.
+Table name: Table 2
+[2025-12-11 12:58:26,439] INFO in slide_updaters.slide_59: Updating "Table 2"
+[2025-12-11 12:58:26,454] INFO in slide_updaters.slide_59: Update of slide 58 complete.
+Manually adjust position and size of the table.
+[2025-12-11 12:58:26,454] INFO in slide_updaters.slide_60: Updating slide 59
+[2025-12-11 13:43:20,765] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 13:43:20,884] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 13:43:20,896] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 13:43:30,063] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 13:43:30,097] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 13:43:30,097] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 13:43:30,118] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 13:43:30,125] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 13:43:30,132] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 13:43:30,139] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 13:43:30,146] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 13:43:30,153] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 13:43:30,171] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 13:43:30,176] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 13:43:30,177] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 13:43:30,177] INFO in root: Table name: Table 1
+[2025-12-11 13:43:30,235] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 13:43:30,235] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 13:43:30,242] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 13:43:30,249] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 13:43:30,268] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 13:43:30,268] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 13:43:30,268] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 13:43:30,275] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 13:43:30,282] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 13:43:30,301] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 13:43:30,302] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 13:43:30,302] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 13:43:30,302] INFO in root: Table name: Table 1
+[2025-12-11 13:43:30,316] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 13:43:30,361] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:43:30,367] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 13:43:30,385] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 13:43:30,396] INFO in root: Table name: Table 5
+[2025-12-11 13:43:30,432] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:43:30,432] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 13:43:30,443] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 13:43:30,446] INFO in root: Table name: Table 1
+[2025-12-11 13:43:30,501] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:43:30,501] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 13:43:30,518] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 13:43:30,522] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 13:43:30,522] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 13:49:06,201] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 13:49:06,311] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 13:49:06,322] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 13:49:06,328] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 13:49:06,349] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 13:49:06,350] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 13:49:06,367] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 13:49:06,374] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 13:49:06,380] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 13:49:06,387] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 13:49:06,393] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 13:49:06,399] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 13:49:06,417] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 13:49:06,423] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 13:49:06,423] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 13:49:06,423] INFO in root: Table name: Table 1
+[2025-12-11 13:49:06,483] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 13:49:06,483] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 13:49:06,490] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 13:49:06,497] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 13:49:06,515] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 13:49:06,516] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 13:49:06,516] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 13:49:06,522] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 13:49:06,529] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 13:49:06,549] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 13:49:06,549] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 13:49:06,549] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 13:49:06,549] INFO in root: Table name: Table 1
+[2025-12-11 13:49:06,560] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 13:49:06,603] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:49:06,609] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 13:49:06,628] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 13:49:06,639] INFO in root: Table name: Table 5
+[2025-12-11 13:49:06,676] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:49:06,676] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 13:49:06,687] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 13:49:06,689] INFO in root: Table name: Table 1
+[2025-12-11 13:49:06,745] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:49:06,745] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 13:49:06,763] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 13:49:06,766] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 13:49:06,766] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 13:51:16,321] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 13:51:16,376] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 13:51:16,379] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 13:51:16,381] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 13:51:16,389] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 13:51:16,389] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 13:51:16,396] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 13:51:16,399] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 13:51:16,401] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 13:51:16,404] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 13:51:16,406] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 13:51:16,408] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 13:51:16,414] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 13:51:16,416] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 13:51:16,416] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 13:51:16,416] INFO in root: Table name: Table 1
+[2025-12-11 13:51:16,434] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 13:51:16,434] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 13:51:16,436] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 13:51:16,439] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 13:51:16,444] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 13:51:16,445] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 13:51:16,445] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 13:51:16,447] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 13:51:16,449] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 13:51:16,455] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 13:51:16,455] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 13:51:16,455] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 13:51:16,455] INFO in root: Table name: Table 1
+[2025-12-11 13:51:16,459] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 13:51:16,475] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:51:16,477] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 13:51:16,484] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 13:51:16,487] INFO in root: Table name: Table 5
+[2025-12-11 13:51:16,499] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:51:16,499] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 13:51:16,503] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 13:51:16,504] INFO in root: Table name: Table 1
+[2025-12-11 13:51:16,524] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:51:16,524] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 13:51:16,533] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 13:51:16,534] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 13:51:16,534] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 13:51:16,545] INFO in slide_updaters.slide_44: Updating slide 44
+[2025-12-11 13:51:16,558] INFO in slide_updaters.slide_45: Updating slide 45
+[2025-12-11 13:51:16,569] INFO in slide_updaters.slide_46: Updating slide 46
+[2025-12-11 13:51:16,569] INFO in root: Table name: Table 1
+[2025-12-11 13:51:16,574] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 13:51:16,589] INFO in slide_updaters.slide_46: Update of slide 46 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:51:16,589] INFO in slide_updaters.slide_48: Updating slide 48
+[2025-12-11 13:51:16,594] INFO in slide_updaters.slide_50: Updating slide 50
+[2025-12-11 13:51:16,596] INFO in slide_updaters.slide_52: Updating slide 51
+[2025-12-11 13:51:16,597] INFO in root: Table name: Table 6
+[2025-12-11 13:51:16,611] INFO in slide_updaters.slide_52: Update of slide 51 complete.
+Copy/paste these results to populate slides 51 and 52.
+Manually adjust position and size of the table.
+[2025-12-11 13:51:16,611] INFO in slide_updaters.slide_54: Updating slide 53
+[2025-12-11 13:51:16,612] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 13:51:16,612] INFO in slide_updaters.slide_54: Updating "Table 1"
+[2025-12-11 13:51:16,620] INFO in root: Shape with "Table 2" table name found on this slide.
+Table name: Table 2
+[2025-12-11 13:51:16,620] INFO in slide_updaters.slide_54: Updating "Table 2"
+[2025-12-11 13:51:16,631] INFO in slide_updaters.slide_54: Update of slide 53 complete.
+Manually adjust position and size of the table.
+[2025-12-11 13:51:16,631] INFO in slide_updaters.slide_55: Updating slide 54
+[2025-12-11 13:51:16,632] INFO in root: Shape with "Table 3" table name found on this slide.
+Table name: Table 3
+[2025-12-11 13:51:16,632] INFO in slide_updaters.slide_55: Updating "Table 3"
+[2025-12-11 13:51:16,643] INFO in slide_updaters.slide_55: Update of slide 54 complete.
+Manually adjust position and size of the table.
+[2025-12-11 13:51:16,643] INFO in slide_updaters.slide_56: Updating slide 55
+[2025-12-11 13:51:16,643] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 13:51:16,643] INFO in slide_updaters.slide_56: Updating "Table 1"
+[2025-12-11 13:51:16,653] INFO in root: Shape with "Table 5" table name found on this slide.
+Table name: Table 5
+[2025-12-11 13:51:16,653] INFO in slide_updaters.slide_56: Updating "Table 5"
+[2025-12-11 13:51:16,661] INFO in slide_updaters.slide_56: Update of slide 55 complete.
+Manually adjust position and size of the table.
+[2025-12-11 13:51:16,661] INFO in slide_updaters.slide_57: Updating slide 56
+[2025-12-11 13:51:16,661] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 13:51:16,661] INFO in slide_updaters.slide_57: Updating "Table 1"
+[2025-12-11 13:51:16,672] INFO in root: Shape with "Table 2" table name found on this slide.
+Table name: Table 2
+[2025-12-11 13:51:16,672] INFO in slide_updaters.slide_57: Updating "Table 2"
+[2025-12-11 13:51:16,682] INFO in slide_updaters.slide_57: Update of slide 56 complete.
+Manually adjust position and size of the table.
+[2025-12-11 13:51:16,682] INFO in slide_updaters.slide_58: Updating slide 57
+[2025-12-11 13:51:16,682] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 13:51:16,682] INFO in slide_updaters.slide_58: Updating "Table 1"
+[2025-12-11 13:51:16,699] INFO in slide_updaters.slide_58: Update of slide 57 complete.
+Manually adjust position and size of the table.
+[2025-12-11 13:51:16,699] INFO in slide_updaters.slide_59: Updating slide 58
+[2025-12-11 13:51:16,700] INFO in root: Shape with "Table 2" table name found on this slide.
+Table name: Table 2
+[2025-12-11 13:51:16,700] INFO in slide_updaters.slide_59: Updating "Table 2"
+[2025-12-11 13:51:16,715] INFO in slide_updaters.slide_59: Update of slide 58 complete.
+Manually adjust position and size of the table.
+[2025-12-11 13:51:16,715] INFO in slide_updaters.slide_60: Updating slide 59
+[2025-12-11 13:52:52,050] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 13:52:52,108] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 13:52:52,110] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 13:52:52,113] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 13:52:52,122] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 13:52:52,122] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 13:52:52,129] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 13:52:52,132] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 13:52:52,134] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 13:52:52,137] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 13:52:52,139] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 13:52:52,141] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 13:52:52,147] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 13:52:52,149] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 13:52:52,149] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 13:52:52,149] INFO in root: Table name: Table 1
+[2025-12-11 13:52:52,167] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 13:52:52,167] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 13:52:52,170] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 13:52:52,172] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 13:52:52,178] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 13:52:52,178] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 13:52:52,178] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 13:52:52,180] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 13:52:52,182] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 13:52:52,188] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 13:52:52,188] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 13:52:52,188] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 13:52:52,188] INFO in root: Table name: Table 1
+[2025-12-11 13:52:52,192] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 13:52:52,206] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:52:52,208] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 13:52:52,214] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 13:52:52,216] INFO in root: Table name: Table 5
+[2025-12-11 13:52:52,228] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:52:52,228] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 13:52:52,231] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 13:52:52,232] INFO in root: Table name: Table 1
+[2025-12-11 13:52:52,249] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:52:52,249] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 13:52:52,256] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 13:52:52,256] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 13:52:52,256] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 13:52:52,265] INFO in slide_updaters.slide_44: Updating slide 44
+[2025-12-11 13:52:52,277] INFO in slide_updaters.slide_45: Updating slide 45
+[2025-12-11 13:52:52,286] INFO in slide_updaters.slide_46: Updating slide 46
+[2025-12-11 13:52:52,287] INFO in root: Table name: Table 1
+[2025-12-11 13:52:52,290] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 13:52:52,305] INFO in slide_updaters.slide_46: Update of slide 46 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:52:52,305] INFO in slide_updaters.slide_48: Updating slide 48
+[2025-12-11 13:52:52,310] INFO in slide_updaters.slide_50: Updating slide 50
+[2025-12-11 13:52:52,312] INFO in slide_updaters.slide_52: Updating slide 51
+[2025-12-11 13:52:52,313] INFO in root: Table name: Table 6
+[2025-12-11 13:52:52,327] INFO in slide_updaters.slide_52: Update of slide 51 complete.
+Copy/paste these results to populate slides 51 and 52.
+Manually adjust position and size of the table.
+[2025-12-11 13:52:52,327] INFO in slide_updaters.slide_54: Updating slide 53
+[2025-12-11 13:52:52,328] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 13:52:52,328] INFO in slide_updaters.slide_54: Updating "Table 1"
+[2025-12-11 13:52:52,335] INFO in root: Shape with "Table 2" table name found on this slide.
+Table name: Table 2
+[2025-12-11 13:52:52,335] INFO in slide_updaters.slide_54: Updating "Table 2"
+[2025-12-11 13:52:52,346] INFO in slide_updaters.slide_54: Update of slide 53 complete.
+Manually adjust position and size of the table.
+[2025-12-11 13:52:52,346] INFO in slide_updaters.slide_55: Updating slide 54
+[2025-12-11 13:52:52,346] INFO in root: Shape with "Table 3" table name found on this slide.
+Table name: Table 3
+[2025-12-11 13:52:52,346] INFO in slide_updaters.slide_55: Updating "Table 3"
+[2025-12-11 13:52:52,358] INFO in slide_updaters.slide_55: Update of slide 54 complete.
+Manually adjust position and size of the table.
+[2025-12-11 13:52:52,358] INFO in slide_updaters.slide_56: Updating slide 55
+[2025-12-11 13:52:52,358] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 13:52:52,358] INFO in slide_updaters.slide_56: Updating "Table 1"
+[2025-12-11 13:52:52,369] INFO in root: Shape with "Table 5" table name found on this slide.
+Table name: Table 5
+[2025-12-11 13:52:52,369] INFO in slide_updaters.slide_56: Updating "Table 5"
+[2025-12-11 13:52:52,376] INFO in slide_updaters.slide_56: Update of slide 55 complete.
+Manually adjust position and size of the table.
+[2025-12-11 13:52:52,376] INFO in slide_updaters.slide_57: Updating slide 56
+[2025-12-11 13:52:52,376] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 13:52:52,376] INFO in slide_updaters.slide_57: Updating "Table 1"
+[2025-12-11 13:52:52,387] INFO in root: Shape with "Table 2" table name found on this slide.
+Table name: Table 2
+[2025-12-11 13:52:52,387] INFO in slide_updaters.slide_57: Updating "Table 2"
+[2025-12-11 13:52:52,396] INFO in slide_updaters.slide_57: Update of slide 56 complete.
+Manually adjust position and size of the table.
+[2025-12-11 13:52:52,397] INFO in slide_updaters.slide_58: Updating slide 57
+[2025-12-11 13:52:52,397] INFO in root: Shape with "Table 1" table name found on this slide.
+Table name: Table 1
+[2025-12-11 13:52:52,397] INFO in slide_updaters.slide_58: Updating "Table 1"
+[2025-12-11 13:52:52,414] INFO in slide_updaters.slide_58: Update of slide 57 complete.
+Manually adjust position and size of the table.
+[2025-12-11 13:52:52,414] INFO in slide_updaters.slide_59: Updating slide 58
+[2025-12-11 13:52:52,414] INFO in root: Shape with "Table 2" table name found on this slide.
+Table name: Table 2
+[2025-12-11 13:52:52,414] INFO in slide_updaters.slide_59: Updating "Table 2"
+[2025-12-11 13:52:52,430] INFO in slide_updaters.slide_59: Update of slide 58 complete.
+Manually adjust position and size of the table.
+[2025-12-11 13:52:52,430] INFO in slide_updaters.slide_60: Updating slide 59
+[2025-12-11 13:52:57,306] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 13:52:57,415] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 13:52:57,426] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 13:52:57,433] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 13:52:57,453] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 13:52:57,453] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 13:52:57,471] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 13:52:57,478] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 13:52:57,485] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 13:52:57,491] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 13:52:57,498] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 13:52:57,503] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 13:52:57,523] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 13:52:57,528] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 13:52:57,529] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 13:52:57,529] INFO in root: Table name: Table 1
+[2025-12-11 13:52:57,589] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 13:52:57,589] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 13:52:57,596] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 13:52:57,603] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 13:52:57,622] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 13:52:57,622] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 13:52:57,622] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 13:52:57,629] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 13:52:57,636] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 13:52:57,656] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 13:52:57,657] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 13:52:57,657] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 13:52:57,657] INFO in root: Table name: Table 1
+[2025-12-11 13:52:57,667] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 13:52:57,711] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:52:57,716] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 13:52:57,734] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 13:52:57,746] INFO in root: Table name: Table 5
+[2025-12-11 13:52:57,783] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:52:57,783] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 13:52:57,793] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 13:52:57,796] INFO in root: Table name: Table 1
+[2025-12-11 13:52:57,851] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:52:57,851] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 13:52:57,868] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 13:52:57,871] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 13:52:57,871] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 13:55:44,385] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 13:55:45,173] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 13:55:45,246] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 13:55:45,288] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 13:55:45,489] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 13:55:45,491] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 13:55:45,683] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 13:55:45,739] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 13:55:45,794] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 13:55:45,847] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 13:55:45,902] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 13:55:45,945] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 13:55:46,142] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 13:55:46,182] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 13:55:46,183] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 13:55:46,185] INFO in root: Table name: Table 1
+[2025-12-11 13:55:46,657] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 13:55:46,658] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 13:55:46,711] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 13:55:46,763] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 13:55:46,906] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 13:55:46,908] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 13:55:46,908] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 13:55:46,961] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 13:55:47,013] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 13:55:47,168] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 13:55:47,170] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 13:55:47,171] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 13:55:47,172] INFO in root: Table name: Table 1
+[2025-12-11 13:55:47,242] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 13:55:47,600] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:55:47,640] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 13:55:47,810] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 13:55:47,878] INFO in root: Table name: Table 5
+[2025-12-11 13:55:48,176] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:55:48,177] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 13:55:48,256] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 13:55:48,274] INFO in root: Table name: Table 1
+[2025-12-11 13:55:48,725] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 13:55:48,725] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 13:55:48,907] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 13:55:48,927] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 13:55:48,927] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 14:02:06,558] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 14:02:07,362] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 14:02:07,437] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 14:02:07,480] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 14:02:07,689] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 14:02:07,691] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 14:02:07,883] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 14:02:07,944] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 14:02:08,002] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 14:02:08,056] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 14:02:08,111] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 14:02:08,156] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 14:02:08,354] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 14:02:08,395] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 14:02:08,397] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 14:02:08,398] INFO in root: Table name: Table 1
+[2025-12-11 14:02:08,875] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 14:02:08,876] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 14:02:08,928] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 14:02:08,980] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 14:02:09,128] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 14:02:09,130] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 14:02:09,130] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 14:02:09,185] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 14:02:09,237] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 14:02:09,393] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 14:02:09,395] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 14:02:09,395] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 14:02:09,397] INFO in root: Table name: Table 1
+[2025-12-11 14:02:09,467] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 14:02:09,843] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:02:09,886] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 14:02:10,066] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 14:02:10,134] INFO in root: Table name: Table 5
+[2025-12-11 14:02:10,433] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:02:10,433] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 14:02:10,513] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 14:02:10,532] INFO in root: Table name: Table 1
+[2025-12-11 14:02:10,980] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:02:10,980] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 14:02:11,167] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 14:02:11,188] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 14:02:11,188] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 14:02:48,331] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 14:02:48,442] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 14:02:48,453] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 14:02:48,459] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 14:02:48,481] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 14:02:48,481] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 14:02:48,498] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 14:02:48,505] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 14:02:48,512] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 14:02:48,519] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 14:02:48,525] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 14:02:48,531] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 14:02:48,551] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 14:02:48,556] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 14:02:48,556] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 14:02:48,557] INFO in root: Table name: Table 1
+[2025-12-11 14:02:48,619] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 14:02:48,619] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 14:02:48,626] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 14:02:48,633] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 14:02:48,652] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 14:02:48,652] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 14:02:48,652] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 14:02:48,658] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 14:02:48,665] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 14:02:48,685] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 14:02:48,685] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 14:02:48,685] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 14:02:48,685] INFO in root: Table name: Table 1
+[2025-12-11 14:02:48,696] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 14:02:48,740] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:02:48,746] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 14:02:48,764] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 14:02:48,775] INFO in root: Table name: Table 5
+[2025-12-11 14:02:48,813] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:02:48,813] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 14:02:48,824] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 14:02:48,827] INFO in root: Table name: Table 1
+[2025-12-11 14:02:48,885] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:02:48,885] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 14:02:48,903] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 14:02:48,906] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 14:02:48,906] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 14:03:56,467] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 14:03:57,246] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 14:03:57,320] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 14:03:57,362] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 14:03:57,563] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 14:03:57,564] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 14:03:57,752] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 14:03:57,809] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 14:03:57,863] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 14:03:57,917] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 14:03:57,972] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 14:03:58,015] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 14:03:58,213] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 14:03:58,253] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 14:03:58,255] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 14:03:58,257] INFO in root: Table name: Table 1
+[2025-12-11 14:03:58,730] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 14:03:58,730] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 14:03:58,784] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 14:03:58,838] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 14:03:58,978] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 14:03:58,980] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 14:03:58,980] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 14:03:59,034] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 14:03:59,087] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 14:03:59,243] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 14:03:59,245] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 14:03:59,245] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 14:03:59,247] INFO in root: Table name: Table 1
+[2025-12-11 14:03:59,318] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 14:03:59,674] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:03:59,714] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 14:03:59,889] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 14:03:59,958] INFO in root: Table name: Table 5
+[2025-12-11 14:04:00,253] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:04:00,254] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 14:04:00,334] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 14:04:00,353] INFO in root: Table name: Table 1
+[2025-12-11 14:04:00,798] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:04:00,799] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 14:04:00,975] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 14:04:00,994] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 14:04:00,995] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 14:05:39,498] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 14:05:39,609] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 14:05:39,620] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 14:05:39,626] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 14:05:39,647] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 14:05:39,648] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 14:05:39,666] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 14:05:39,673] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 14:05:39,679] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 14:05:39,686] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 14:05:39,692] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 14:05:39,698] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 14:05:39,718] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 14:05:39,723] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 14:05:39,724] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 14:05:39,724] INFO in root: Table name: Table 1
+[2025-12-11 14:05:39,784] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 14:05:39,784] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 14:05:39,791] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 14:05:39,798] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 14:05:39,817] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 14:05:39,817] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 14:05:39,817] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 14:05:39,824] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 14:05:39,830] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 14:05:39,851] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 14:05:39,851] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 14:05:39,851] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 14:05:39,851] INFO in root: Table name: Table 1
+[2025-12-11 14:05:39,862] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 14:05:39,906] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:05:39,911] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 14:05:39,932] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 14:05:39,943] INFO in root: Table name: Table 5
+[2025-12-11 14:05:39,982] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:05:39,982] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 14:05:39,993] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 14:05:39,996] INFO in root: Table name: Table 1
+[2025-12-11 14:05:40,055] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:05:40,055] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 14:05:40,073] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 14:05:40,076] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 14:05:40,076] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 14:07:26,546] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 14:07:26,659] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 14:07:26,670] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 14:07:26,677] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 14:07:26,698] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 14:07:26,699] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 14:07:26,717] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 14:07:26,724] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 14:07:26,730] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 14:07:26,737] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 14:07:26,744] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 14:07:26,749] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 14:07:26,769] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 14:07:26,775] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 14:07:26,775] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 14:07:26,775] INFO in root: Table name: Table 1
+[2025-12-11 14:07:26,836] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 14:07:26,836] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 14:07:26,843] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 14:07:26,850] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 14:07:26,869] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 14:07:26,870] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 14:07:26,870] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 14:07:26,877] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 14:07:26,883] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 14:07:26,905] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 14:07:26,905] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 14:07:26,905] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 14:07:26,905] INFO in root: Table name: Table 1
+[2025-12-11 14:07:26,916] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 14:07:26,963] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:07:26,969] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 14:07:26,988] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 14:07:27,000] INFO in root: Table name: Table 5
+[2025-12-11 14:07:27,040] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:07:27,040] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 14:07:27,051] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 14:07:27,054] INFO in root: Table name: Table 1
+[2025-12-11 14:07:27,111] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:07:27,111] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 14:07:27,130] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 14:07:27,133] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 14:07:27,133] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 14:10:01,870] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 14:10:01,983] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 14:10:01,995] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 14:10:02,002] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 14:10:02,023] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 14:10:02,023] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 14:10:02,041] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 14:10:02,048] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 14:10:02,055] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 14:10:02,061] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 14:10:02,068] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 14:10:02,073] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 14:10:02,093] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 14:10:02,098] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 14:10:02,099] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 14:10:02,099] INFO in root: Table name: Table 1
+[2025-12-11 14:10:02,162] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 14:10:02,162] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 14:10:02,169] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 14:10:02,176] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 14:10:02,194] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 14:10:02,194] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 14:10:02,194] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 14:10:02,201] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 14:10:02,207] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 14:10:02,228] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 14:10:02,228] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 14:10:02,228] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 14:10:02,228] INFO in root: Table name: Table 1
+[2025-12-11 14:10:02,238] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 14:10:02,286] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:10:02,292] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 14:10:02,310] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 14:10:02,322] INFO in root: Table name: Table 5
+[2025-12-11 14:10:02,360] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:10:02,361] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 14:10:02,372] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 14:10:02,375] INFO in root: Table name: Table 1
+[2025-12-11 14:10:02,430] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:10:02,430] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 14:10:02,449] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 14:10:02,452] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 14:10:02,452] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 14:11:03,731] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 14:11:03,843] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 14:11:03,855] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 14:11:03,861] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 14:11:03,883] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 14:11:03,883] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 14:11:03,902] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 14:11:03,910] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 14:11:03,916] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 14:11:03,923] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 14:11:03,930] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 14:11:03,935] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 14:11:03,954] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 14:11:03,960] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 14:11:03,960] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 14:11:03,961] INFO in root: Table name: Table 1
+[2025-12-11 14:11:04,022] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 14:11:04,022] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 14:11:04,030] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 14:11:04,037] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 14:11:04,056] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 14:11:04,056] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 14:11:04,056] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 14:11:04,063] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 14:11:04,069] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 14:11:04,090] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 14:11:04,091] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 14:11:04,091] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 14:11:04,091] INFO in root: Table name: Table 1
+[2025-12-11 14:11:04,101] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 14:11:04,146] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:11:04,152] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 14:11:04,170] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 14:11:04,181] INFO in root: Table name: Table 5
+[2025-12-11 14:11:04,219] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:11:04,220] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 14:11:04,230] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 14:11:04,233] INFO in root: Table name: Table 1
+[2025-12-11 14:11:04,289] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:11:04,289] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 14:11:04,307] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 14:11:04,310] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 14:11:04,310] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 14:14:11,588] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 14:14:11,699] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 14:14:11,711] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 14:14:11,717] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 14:14:11,738] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 14:14:11,738] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 14:14:11,756] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 14:14:11,763] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 14:14:11,770] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 14:14:11,777] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 14:14:11,783] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 14:14:11,789] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 14:14:11,810] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 14:14:11,816] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 14:14:11,816] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 14:14:11,816] INFO in root: Table name: Table 1
+[2025-12-11 14:14:11,877] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 14:14:11,877] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 14:14:11,885] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 14:14:11,891] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 14:14:11,910] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 14:14:11,910] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 14:14:11,910] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 14:14:11,917] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 14:14:11,923] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 14:14:11,944] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 14:14:11,944] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 14:14:11,945] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 14:14:11,945] INFO in root: Table name: Table 1
+[2025-12-11 14:14:11,955] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 14:14:11,999] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:14:12,005] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 14:14:12,023] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 14:14:12,035] INFO in root: Table name: Table 5
+[2025-12-11 14:14:12,073] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:14:12,073] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 14:14:12,084] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 14:14:12,087] INFO in root: Table name: Table 1
+[2025-12-11 14:14:12,142] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:14:12,142] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 14:14:12,160] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 14:14:12,163] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 14:14:12,163] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 14:18:47,212] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 14:18:47,324] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 14:18:47,336] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 14:18:47,342] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 14:18:47,363] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 14:18:47,363] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 14:18:47,380] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 14:18:47,387] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 14:18:47,393] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 14:18:47,400] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 14:18:47,406] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 14:18:47,412] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 14:18:47,431] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 14:18:47,436] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 14:18:47,437] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 14:18:47,437] INFO in root: Table name: Table 1
+[2025-12-11 14:18:47,497] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 14:18:47,497] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 14:18:47,504] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 14:18:47,510] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 14:18:47,529] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 14:18:47,529] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 14:18:47,529] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 14:18:47,536] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 14:18:47,542] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 14:18:47,563] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 14:18:47,563] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 14:18:47,563] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 14:18:47,564] INFO in root: Table name: Table 1
+[2025-12-11 14:18:47,574] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 14:18:47,620] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:18:47,626] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 14:18:47,644] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 14:18:47,656] INFO in root: Table name: Table 5
+[2025-12-11 14:18:47,694] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:18:47,694] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 14:18:47,705] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 14:18:47,708] INFO in root: Table name: Table 1
+[2025-12-11 14:18:47,766] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:18:47,766] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 14:18:47,783] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 14:18:47,786] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 14:18:47,786] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 14:23:10,766] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 14:23:11,555] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 14:23:11,631] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 14:23:11,673] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 14:23:11,875] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 14:23:11,877] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 14:23:12,068] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 14:23:12,126] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 14:23:12,180] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 14:23:12,235] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 14:23:12,291] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 14:23:12,334] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 14:23:12,532] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 14:23:12,572] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 14:23:12,574] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 14:23:12,575] INFO in root: Table name: Table 1
+[2025-12-11 14:23:13,050] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 14:23:13,050] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 14:23:13,102] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 14:23:13,154] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 14:23:13,297] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 14:23:13,298] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 14:23:13,299] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 14:23:13,355] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 14:23:13,408] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 14:23:13,567] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 14:23:13,569] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 14:23:13,570] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 14:23:13,571] INFO in root: Table name: Table 1
+[2025-12-11 14:23:13,643] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 14:23:14,008] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:23:14,048] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 14:23:14,223] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 14:23:14,291] INFO in root: Table name: Table 5
+[2025-12-11 14:23:14,586] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:23:14,586] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 14:23:14,664] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 14:23:14,682] INFO in root: Table name: Table 1
+[2025-12-11 14:23:15,131] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:23:15,132] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 14:23:15,313] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 14:23:15,332] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 14:23:15,333] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 14:23:15,335] INFO in src.AE_LIW_automation.helper_modules.get_chart_object_by_name: Chart shape Content Placeholder 10 not found, returning empty chart object
+[2025-12-11 14:24:29,187] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 14:24:29,300] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 14:24:29,312] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 14:24:29,319] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 14:24:29,341] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 14:24:29,341] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 14:24:29,359] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 14:24:29,366] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 14:24:29,373] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 14:24:29,380] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 14:24:29,387] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 14:24:29,392] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 14:24:29,412] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 14:24:29,417] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 14:24:29,418] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 14:24:29,418] INFO in root: Table name: Table 1
+[2025-12-11 14:24:29,478] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 14:24:29,479] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 14:24:29,486] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 14:24:29,492] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 14:24:29,511] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 14:24:29,512] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 14:24:29,512] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 14:24:29,519] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 14:24:29,525] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 14:24:29,546] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 14:24:29,547] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 14:24:29,547] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 14:24:29,547] INFO in root: Table name: Table 1
+[2025-12-11 14:24:29,557] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 14:24:29,604] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:24:29,610] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 14:24:29,629] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 14:24:29,640] INFO in root: Table name: Table 5
+[2025-12-11 14:24:29,680] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:24:29,680] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 14:24:29,691] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 14:24:29,694] INFO in root: Table name: Table 1
+[2025-12-11 14:24:29,749] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:24:29,749] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 14:24:29,767] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 14:24:29,770] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 14:24:29,770] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 14:30:00,523] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 14:30:00,635] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 14:30:00,646] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 14:30:00,653] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 14:30:00,676] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 14:30:00,676] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 14:30:00,694] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 14:30:00,700] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 14:30:00,707] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 14:30:00,714] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 14:30:00,720] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 14:30:00,726] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 14:30:00,747] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 14:30:00,752] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 14:30:00,752] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 14:30:00,753] INFO in root: Table name: Table 1
+[2025-12-11 14:30:00,813] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 14:30:00,813] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 14:30:00,820] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 14:30:00,827] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 14:30:00,846] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 14:30:00,846] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 14:30:00,846] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 14:30:00,852] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 14:30:00,859] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 14:30:00,879] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 14:30:00,879] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 14:30:00,879] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 14:30:00,880] INFO in root: Table name: Table 1
+[2025-12-11 14:30:00,890] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 14:30:00,934] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:30:00,941] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 14:30:00,959] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 14:30:00,970] INFO in root: Table name: Table 5
+[2025-12-11 14:30:01,008] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:30:01,008] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 14:30:01,019] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 14:30:01,022] INFO in root: Table name: Table 1
+[2025-12-11 14:30:01,077] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:30:01,078] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 14:30:01,095] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 14:30:01,098] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 14:30:01,098] INFO in slide_updaters.slide_43: Updating slide 43
+[2025-12-11 14:32:40,038] INFO in __main__: Starting AE LIW Automation
+[2025-12-11 14:32:40,149] INFO in slide_updaters.slide_4: Updating slide 4
+[2025-12-11 14:32:40,160] INFO in slide_updaters.slide_6: Updating slide 6
+[2025-12-11 14:32:40,167] INFO in slide_updaters.slide_7: Updating slide 7
+[2025-12-11 14:32:40,190] INFO in slide_updaters.slide_8: Updating slide 8
+[2025-12-11 14:32:40,190] INFO in slide_updaters.slide_9: Updating slide 9
+[2025-12-11 14:32:40,208] INFO in slide_updaters.slide_10: Updating slide 10
+[2025-12-11 14:32:40,215] INFO in slide_updaters.slide_11: Updating slide 11
+[2025-12-11 14:32:40,221] INFO in slide_updaters.slide_12: Updating slide 12
+[2025-12-11 14:32:40,228] INFO in slide_updaters.slide_13: Updating slide 13
+[2025-12-11 14:32:40,235] INFO in slide_updaters.slide_14: Updating slide 14
+[2025-12-11 14:32:40,240] INFO in slide_updaters.slide_15: Updating slide 15
+[2025-12-11 14:32:40,259] INFO in slide_updaters.slide_16: Updating slide 16
+[2025-12-11 14:32:40,265] INFO in slide_updaters.slide_18: Updating slide 18
+[2025-12-11 14:32:40,265] INFO in slide_updaters.slide_19: Updating slide 19
+[2025-12-11 14:32:40,265] INFO in root: Table name: Table 1
+[2025-12-11 14:32:40,327] INFO in slide_updaters.slide_19: Update of slide 19 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+Manually adjust vertical alignment of cell contents.
+[2025-12-11 14:32:40,327] INFO in slide_updaters.slide_21: Updating slide 21
+[2025-12-11 14:32:40,334] INFO in slide_updaters.slide_22: Updating slide 22
+[2025-12-11 14:32:40,341] INFO in slide_updaters.slide_23: Updating slide 23
+[2025-12-11 14:32:40,360] INFO in slide_updaters.slide_26: Updating slide 26
+[2025-12-11 14:32:40,360] INFO in slide_updaters.slide_26: No table found on 26
+[2025-12-11 14:32:40,360] INFO in slide_updaters.slide_27: Updating slide 27
+[2025-12-11 14:32:40,367] INFO in slide_updaters.slide_28: Updating slide 28
+[2025-12-11 14:32:40,373] INFO in slide_updaters.slide_29: Updating slide 29
+[2025-12-11 14:32:40,395] INFO in slide_updaters.slide_32: Updating slide 32
+[2025-12-11 14:32:40,395] INFO in slide_updaters.slide_32: No table found on 32
+[2025-12-11 14:32:40,395] INFO in slide_updaters.slide_33: Updating slide 33
+[2025-12-11 14:32:40,395] INFO in root: Table name: Table 1
+[2025-12-11 14:32:40,406] INFO in AE_LIW_automation.helper_modules.combine_multiple_questions: Manually verify Base: value is correct
+[2025-12-11 14:32:40,452] INFO in slide_updaters.slide_33: Update of slide 33 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:32:40,458] INFO in slide_updaters.slide_36: Updating slide 36
+[2025-12-11 14:32:40,476] INFO in slide_updaters.slide_37: Updating slide 37
+[2025-12-11 14:32:40,487] INFO in root: Table name: Table 5
+[2025-12-11 14:32:40,525] INFO in slide_updaters.slide_37: Update of slide 37 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:32:40,526] INFO in slide_updaters.slide_38: Updating slide 38
+[2025-12-11 14:32:40,536] INFO in slide_updaters.slide_39: Updating slide 39
+[2025-12-11 14:32:40,539] INFO in root: Table name: Table 1
+[2025-12-11 14:32:40,597] INFO in slide_updaters.slide_39: Update of slide 39 complete.
+Manually adjust position and size of the table.
+Verify Base value for current quarter is accurate.
+[2025-12-11 14:32:40,597] INFO in slide_updaters.slide_40: Updating slide 40
+[2025-12-11 14:32:40,615] INFO in slide_updaters.slide_41: Updating slide 41
+[2025-12-11 14:32:40,618] INFO in slide_updaters.slide_41: No table found on 41
+[2025-12-11 14:32:40,618] INFO in slide_updaters.slide_43: Updating slide 43

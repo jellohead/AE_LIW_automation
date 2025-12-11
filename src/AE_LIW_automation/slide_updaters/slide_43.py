@@ -17,39 +17,56 @@ logger = logging.getLogger(__name__)
 
 def slide_43_updater(df, meta, df_labeled, prs) -> object:
     slide_index = 42
-    print(
-        f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
-    logger.info(f'Updating slide {slide_index + 1}')
-    slide = prs.slides[slide_index]
-    chart = get_chart_object_by_name(slide, 'Content Placeholder 8')
-    old_categories = get_chart_categories(chart)
+
+    msg = f"Updating slide {slide_index + 1}"
+    width = 40
+    print(f"\n{'=' * width}\n{' ' + msg + ' ':=^{width}}\n{'=' * width}\n")
+    logger.info(msg)
+
     question = 'Q1'
     last_rows_list = ['All other', 'Do not know', 'None']
+    chart_name = 'Content Placeholder 8'
+
+    slide = prs.slides[slide_index]
+    chart = get_chart_object_by_name(slide, chart_name)
+    # old_categories = get_chart_categories(chart)
 
 
-    # pull old chart data blob
+    # pull blob with chart data out of side
     workbook, worksheet = get_data_blob_from_chart(chart)
-    old_data = list(worksheet.values)
-    existing_data = []
-    for item in old_data:
-        # drop oldest column of data and remove extra columns that are filled with None values
-        new_item = item [:4]
-        if any(new_item):
-            existing_data.append(new_item)
+    data = list(worksheet.values)
 
-    existing_data_df = pd.DataFrame(data=existing_data)
-    existing_data_df.index = existing_data_df.iloc[:, 0]
-    existing_data_df.drop([0], axis=1, inplace=True)
-    existing_data_df.columns = existing_data_df.iloc[0]
-    existing_data_df = existing_data_df.iloc[1:]
+    # create new dataframe from old chart data
+    slide_df = pd.DataFrame(data)
+    # set dataframe column labels to first row values then drop first row
+    slide_df.columns = slide_df.iloc[0]
+    slide_df.drop(slide_df.index[0], inplace=True)
+    # set dataframe index labels to values in first column
+    slide_df.set_index(slide_df.columns[0], inplace=True)
+    # drop the oldest quarter of data
+    slide_df = slide_df.iloc[:,:3].copy()
+
+    # existing_data = []
+    # for item in data:
+    #     # drop oldest column of data and remove extra columns that are filled with None values
+    #     new_item = item [:4]
+    #     if any(new_item):
+    #         existing_data.append(new_item)
+    #
+    # existing_data_df = pd.DataFrame(data=existing_data)
+    # existing_data_df.index = existing_data_df.iloc[:, 0]
+    # existing_data_df.drop([0], axis=1, inplace=True)
+    # existing_data_df.columns = existing_data_df.iloc[0]
+    # existing_data_df = existing_data_df.iloc[1:]
 
     # generate new quarter data
-    new_key = f'{REPORTING_PERIOD} {REPORTING_YEAR}\n(N={len(df)})'
+    current_quarter_col_name = f'{REPORTING_PERIOD} {REPORTING_YEAR}\n(N={len(df)})'
     current_quarter_chart_data = df_labeled[question].value_counts(normalize=True).sort_index()
-    current_quarter_chart_data_df = current_quarter_chart_data.to_frame(name=new_key)
+    current_quarter_chart_data.rename(current_quarter_col_name, inplace=True)
+    # current_quarter_chart_data_df = current_quarter_chart_data.to_frame(name=current_quarter_col_name)
 
     # combine old and new data into a dataframe
-    combined_df = pd.concat([current_quarter_chart_data_df, existing_data_df], axis=1)
+    combined_df = pd.concat([current_quarter_chart_data, existing_data_df], axis=1)
     combined_df.replace({np.nan: None}, inplace=True)
 
     # reorder dataframe to start with last rows and sort remaining rows

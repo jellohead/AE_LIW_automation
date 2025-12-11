@@ -22,7 +22,7 @@ def slide_44_updater(df, meta, df_labeled, prs) -> object:
     slide = prs.slides[slide_index]
     chart = get_chart_object_by_name(slide, 'Content Placeholder 8')
     old_categories = get_chart_categories(chart)
-    question_list = ['Q2_1', 'Q2_2', 'Q2_3', 'Q2_4', 'Q2_5', 'Q2_6', 'Q2_7', 'Q2_8', 'Q2_9', 'Q2_10', 'Q2_11', 'Q2_12']
+    question_list = [f'Q2_{i}' for i in range(1, 13)]
     last_rows_list = ['All other', 'Do not know']
     label_sub_dict = {'Austin Energy’s website': 'Austin Energy\'s website',
                       'Friends/family/word of mouth': 'Friends/family/word-of-mouth',
@@ -66,10 +66,10 @@ def slide_44_updater(df, meta, df_labeled, prs) -> object:
     last_rows_df = last_rows_df.reindex(last_rows_list)
 
     # pull all rows that are not part of the last rows dataframe
-    combined_df = combined_df[~last_rows_mask].sort_values(by=new_key, na_position='first', ascending=True)
+    combined_df = combined_df[~last_rows_mask].sort_values(by=new_key, na_position='first', ascending=False)
 
     # concat both dataframes into a single dataframe and clean up the data
-    combined_df_sorted = pd.concat([last_rows_df, combined_df]).replace({np.nan: None}).dropna(how='all')
+    combined_df_sorted = pd.concat([combined_df, last_rows_df]).replace({np.nan: None}).dropna(how='all')
 
     # update chart data
     new_chart_data = CategoryChartData()
