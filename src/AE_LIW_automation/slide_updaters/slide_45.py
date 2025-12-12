@@ -15,43 +15,47 @@ logger = logging.getLogger(__name__)
 
 def slide_45_updater(df, meta, df_labeled, prs) -> object:
     slide_index = 44
-    print(
-        f'\n================================\n======= Updating slide {slide_index + 1} =======\n================================\n')
-    logger.info(f'Updating slide {slide_index + 1}')
+
+    msg = f"Updating slide {slide_index + 1}"
+    width = 40
+    print(f"\n{'=' * width}\n{' ' + msg + ' ':=^{width}}\n{'=' * width}\n")
+    logger.info(msg)
+
+    chart_name = 'Content Placeholder 8'
+    question_list = [f'Q29_{i}' for i in range(1, 9)]
+    last_rows_list = ['All other']
+    label_sub_dict = {'Other Mention': 'All other',
+                      'Austin Energy’s website': 'Austin Energy\'s website',
+                      }
+
     slide = prs.slides[slide_index]
     chart = get_chart_object_by_name(slide, 'Content Placeholder 8')
-    old_categories = get_chart_categories(chart)
-    question_list = ['Q29_1', 'Q29_2', 'Q29_3', 'Q29_4', 'Q29_5', 'Q29_6', 'Q29_7', 'Q29_8']
-    last_rows_list = ['All other']
-    label_sub_dict = {'Other Mention': 'All other'
-                      }
 
     # pull old chart data blob
     workbook, worksheet = get_data_blob_from_chart(chart)
-    old_data = list(worksheet.values)
-    existing_data = []
-    for item in old_data:
-        # drop oldest column of data and remove extra columns that are filled with None values
-        new_item = item[:1] + item[2:5]
-        if any(new_item):
-            existing_data.append(new_item)
+    data = list(worksheet.values)
 
-    existing_data_df = pd.DataFrame(data=existing_data)
-    existing_data_df.index = existing_data_df.iloc[:, 0]
-    existing_data_df.drop([0], axis=1, inplace=True)
-    existing_data_df.columns = existing_data_df.iloc[0]
-    existing_data_df = existing_data_df.iloc[1:]
+    # create new dataframe from old chart data
+    slide_df = pd.DataFrame(data)
+    # set dataframe column labels to first row values then drop first row
+    slide_df.columns = slide_df.iloc[0]
+    slide_df.drop(slide_df.index[0], inplace=True)
+    # set dataframe index labels to values in first column
+    slide_df.set_index(slide_df.columns[0], inplace=True)
+    # drop the oldest quarter of data
+    slide_df = slide_df.iloc[:, 1:].copy()
 
     # generate new quarter data
-    new_key = f'{REPORTING_PERIOD} {REPORTING_YEAR}\n(N={len(df)})'
-    current_quarter_chart_data_df = pd.DataFrame(columns=[new_key])
+    current_quarter_col_name = f'{REPORTING_PERIOD} {REPORTING_YEAR}\n(N={len(df)})'
+    current_quarter_chart_series = pd.Series(name=current_quarter_col_name)
     for question in question_list:
         row_label = (meta.column_names_to_labels[question].split('? ', 1)[1].strip())
-        current_quarter_chart_data_df.loc[row_label]= df_labeled[question].value_counts(normalize=True).get('Checked', None)
-    current_quarter_chart_data_df.rename(index=label_sub_dict, inplace=True)
+        current_quarter_chart_series[row_label] = df_labeled[question].value_counts(normalize=True).get('Checked', 0)
+
+    current_quarter_chart_series.rename(index=label_sub_dict, inplace=True)
 
     # combine old and new data into a dataframe
-    combined_df = pd.concat([existing_data_df ,current_quarter_chart_data_df], axis=1)
+    combined_df = pd.concat([slide_df, current_quarter_chart_series], axis=1)
 
     # reorder dataframe to start with last rows and sort remaining rows
     last_rows_mask = combined_df.index.isin(last_rows_list)
@@ -60,10 +64,12 @@ def slide_45_updater(df, meta, df_labeled, prs) -> object:
     last_rows_df = last_rows_df.reindex(last_rows_list)
 
     # pull all rows that are not part of the last rows dataframe
-    combined_df = combined_df[~last_rows_mask].sort_values(by=new_key, na_position='first', ascending=True)
+    combined_df = combined_df[~last_rows_mask].sort_values(by=current_quarter_col_name, ascending=False)
 
     # concat both dataframes into a single dataframe and clean up the data
-    combined_df_sorted = pd.concat([last_rows_df, combined_df]).replace({np.nan: None}).dropna(how='all')
+    combined_df_sorted = pd.concat([combined_df, last_rows_df]).replace({np.nan: 0})
+    # drop rows that are all 0 values
+    combined_df_sorted = combined_df_sorted[(combined_df_sorted != 0).any(axis=1)]
 
     # update chart data
     new_chart_data = CategoryChartData()

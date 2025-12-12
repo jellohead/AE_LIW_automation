@@ -66,7 +66,7 @@ def slide_43_updater(df, meta, df_labeled, prs) -> object:
     # current_quarter_chart_data_df = current_quarter_chart_data.to_frame(name=current_quarter_col_name)
 
     # combine old and new data into a dataframe
-    combined_df = pd.concat([current_quarter_chart_data, existing_data_df], axis=1)
+    combined_df = pd.concat([current_quarter_chart_data, slide_df], axis=1)
     combined_df.replace({np.nan: None}, inplace=True)
 
     # reorder dataframe to start with last rows and sort remaining rows
@@ -76,10 +76,12 @@ def slide_43_updater(df, meta, df_labeled, prs) -> object:
     last_rows_df = last_rows_df.reindex(last_rows_list)
 
     # pull all rows that are not part of the last rows dataframe
-    combined_df = combined_df[~last_rows_mask].sort_values(by=new_key, na_position='first', ascending=True)
+    combined_df = combined_df[~last_rows_mask].sort_values(by=current_quarter_col_name, ascending=True)
 
     # concat both dataframes into a single dataframe and clean up the data
-    combined_df_sorted = pd.concat([last_rows_df, combined_df]).replace({np.nan: None}).dropna(how='all')
+    combined_df_sorted = pd.concat([last_rows_df, combined_df]).replace({np.nan: 0})
+
+    combined_df_sorted = combined_df_sorted[(combined_df_sorted !=0).any(axis=1)]
 
     # update chart data
     new_chart_data = CategoryChartData()
