@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 
 
 def slide_56_updater(meta, df, df_labeled, prs):
-    slide_index = 54
+    slide_index = 57
 
     msg = f"Updating slide {slide_index + 1}"
     width = 40
@@ -73,6 +73,14 @@ def slide_56_updater(meta, df, df_labeled, prs):
         current_quarter_result_series = df_labeled[question].value_counts(normalize=True).map("{:.0%}".format)
         current_quarter_result_df = pd.DataFrame({new_quarter_label: current_quarter_result_series})
         current_quarter_result_df.loc['Base:'] = len(df)
+
+        # troubleshooting
+        print("table_df_existing index unique?", table_df_existing.index.is_unique)
+        print(table_df_existing.index)
+
+        print("current_quarter_result_df index unique?", current_quarter_result_df.index.is_unique)
+        print(current_quarter_result_df.index)
+
         current_quarter_result_df_combined = pd.concat([table_df_existing, current_quarter_result_df], axis=1).fillna('0%')
         current_quarter_result_df_combined.rename(index=label_sub_dict, inplace=True)
 

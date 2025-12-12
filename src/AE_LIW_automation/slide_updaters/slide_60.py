@@ -11,7 +11,7 @@ from AE_LIW_automation.helper_modules import get_chart_object_by_name, get_chart
 logger = logging.getLogger(__name__)
 
 def slide_60_updater(df, meta, df_labeled, prs) -> object:
-    slide_index = 58
+    slide_index = 61
 
     msg = f"Updating slide {slide_index + 1}"
     width = 40

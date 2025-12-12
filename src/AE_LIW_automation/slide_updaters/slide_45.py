@@ -67,7 +67,7 @@ def slide_45_updater(df, meta, df_labeled, prs) -> object:
     combined_df = combined_df[~last_rows_mask].sort_values(by=current_quarter_col_name, ascending=False)
 
     # concat both dataframes into a single dataframe and clean up the data
-    combined_df_sorted = pd.concat([combined_df, last_rows_df]).replace({np.nan: 0})
+    combined_df_sorted = pd.concat([combined_df, last_rows_df]).fillna(0)
     # drop rows that are all 0 values
     combined_df_sorted = combined_df_sorted[(combined_df_sorted != 0).any(axis=1)]
 

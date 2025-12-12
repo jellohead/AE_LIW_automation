@@ -1,5 +1,5 @@
 # slide_52.py
-# Are there other words you think best describe the program to other potential participants?
+# D12. Are there other words you think best describe the program to other potential participants?
 
 import logging
 from pandas import DataFrame, Series

@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 
 
 def slide_54_updater(meta, df, df_labeled, prs):
-    slide_index = 52
+    slide_index = 55
 
     msg = f"Updating slide {slide_index + 1}"
     width = 40

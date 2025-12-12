@@ -17,8 +17,9 @@ def slide_50_updater(meta, df, df_labeled, prs) -> object:
     print(f"\n{'=' * width}\n{' ' + msg + ' ':=^{width}}\n{'=' * width}\n")
     logger.info(msg)
 
-    slide = prs.slides[slide_index]
     question = 'D11'
+
+    slide = prs.slides[slide_index]
     chart = get_chart_object_by_name(slide, 'Chart 6')
     old_categories = get_chart_categories(chart)
 
