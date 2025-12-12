@@ -150,7 +150,7 @@ def slide_46_updater(meta, df, df_labeled, prs):
     # add styling to the last row of the table
     style_table_cell(table_shape.cell(len(current_quarter_result_df_combined), 0),
                      text=base_row.index[0],
-                     font_size=12,
+                     font_size=13,
                      bold=True,
                      color=header_text_color,
                      bg_color=header_bg_color,
@@ -161,7 +161,7 @@ def slide_46_updater(meta, df, df_labeled, prs):
     for col_number, value in enumerate(current_quarter_result_df_combined.loc['Base:']):
         style_table_cell(table_shape.cell(len(current_quarter_result_df_combined), col_number + 1),
                          font_size=13,
-                         bold=False,
+                         bold=True,
                          color=header_text_color,
                          bg_color=header_bg_color,
                          h_alignment=PP_ALIGN.CENTER,
