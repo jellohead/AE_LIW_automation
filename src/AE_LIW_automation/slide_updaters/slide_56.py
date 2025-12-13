@@ -81,7 +81,51 @@ def slide_56_updater(meta, df, df_labeled, prs):
         print("current_quarter_result_df index unique?", current_quarter_result_df.index.is_unique)
         print(current_quarter_result_df.index)
 
+        # this line of code is failing with pandas.errors.InvalidIndexError: Reindexing only valid with uniquely valued Index objects
         current_quarter_result_df_combined = pd.concat([table_df_existing, current_quarter_result_df], axis=1).fillna('0%')
+
+        # # drop in replacement for failing line of code
+        # # Old (raises InvalidIndexError)
+        # # current_quarter_result_df_combined = pd.concat(
+        # #     [table_df_existing, current_quarter_result_df], axis=1
+        # # ).fillna("0%")
+        #
+        # # New: explicit index union + reindex
+        # all_index = table_df_existing.index.union(current_quarter_result_df.index)
+        #
+        # current_quarter_result_df_combined = pd.DataFrame(index=all_index)
+        #
+        #
+        #
+        #
+        #
+        # print(f"\n--- {table_name} ---")
+        # print("index unique?", table_df_existing.index.is_unique)
+        #
+        # dupes = table_df_existing.index[table_df_existing.index.duplicated(keep=False)]
+        # if len(dupes):
+        #     print("DUPLICATE INDEX LABELS:", list(dupes))
+        #     # show the offending rows
+        #     print(table_df_existing.loc[dupes])
+        #
+        #
+        #
+        #
+        # # bring over the old quarters
+        # for col in table_df_existing.columns:
+        #     current_quarter_result_df_combined[col] = table_df_existing[col].reindex(all_index)
+        #
+        # # add the new quarter column
+        # new_quarter_label = current_quarter_result_df.columns[0]  # "Q2 2025"
+        # current_quarter_result_df_combined[new_quarter_label] = (
+        #     current_quarter_result_df[new_quarter_label].reindex(all_index)
+        # )
+        #
+        # # fill missing with "0%"
+        # current_quarter_result_df_combined = current_quarter_result_df_combined.fillna("0%")
+        # end of drop in code replacement
+
+
         current_quarter_result_df_combined.rename(index=label_sub_dict, inplace=True)
 
         # remove rows where all values are 0
