@@ -10,6 +10,9 @@ from AE_LIW_automation.helper_modules import (get_chart_object_by_name, get_char
 
 logger = logging.getLogger(__name__)
 
+
+# TODO: fix rounding errors for series totals
+
 def slide_7_updater(df, prs) -> object:
     slide_index = 6
 

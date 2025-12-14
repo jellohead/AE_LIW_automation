@@ -1,5 +1,5 @@
-# slide_6.py
-# This file contains the functions for updating the slide 6 of the Powerpoint file
+# slide_17.py
+# 15. Would you recommend Austin Energy’s Home Weatherization Program to a friend or family member?
 
 from pptx.chart.data import CategoryChartData
 from AE_LIW_automation.config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR

@@ -10,6 +10,7 @@ logger = logging.getLogger(__name__)
 
 
 # TODO: refactor
+# TODO: fix rounding in bar total
 
 
 def slide_22_updater(df, prs) -> object:
