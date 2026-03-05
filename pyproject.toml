@@ -1,0 +1,27 @@
+[project]
+name = "ae-liw-automation"
+version = "0.1.0"
+description = "AE LIW PowerPoint report automation"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas",
+    "numpy",
+    "openpyxl",
+    "python-pptx",
+    "pyreadstat",
+    "jupyterlab",
+]
+
+[project.scripts]
+ae-liw-automation = "ae_liw_automation.main:main"
+
+[tool.uv]
+package = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/AE_LIW_automation"]
