@@ -1,16 +1,23 @@
 # slide_1.py
 # This file contains the functions for updating slide 1 of the PowerPoint file.
 
-
+import logging
 from pptx.enum.text import PP_ALIGN
 from pptx.util import Pt
 from ae_liw_automation.config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
 
 
+logger = logging.getLogger(__name__)
+
+
 def slide_1_updater(df, prs) -> object:
-    # global text_holder
-    print('updating slide 1')
     slide_index = 0
+
+    msg = f"Updating slide {slide_index + 1}"
+    width = 40
+    print(f"\n{'=' * width}\n{' ' + msg + ' ':=^{width}}\n{'=' * width}\n")
+    logger.info(msg)
+
     slide = prs.slides[slide_index]
 
     paragraph_strings = [f'Low Income Weatherization Survey\nFY{REPORTING_YEAR} {REPORTING_PERIOD}\n\n',

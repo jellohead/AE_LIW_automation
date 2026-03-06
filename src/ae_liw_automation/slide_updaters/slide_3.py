@@ -1,14 +1,22 @@
 # slide_3.py
-
+import logging
 from pptx.enum.text import PP_ALIGN
 from pptx.util import Pt
 
 from ae_liw_automation.config import REPORTING_PERIOD, REPORTING_YEAR, CURRENT_MONTH_TEXT, CURRENT_YEAR
 
 
+logger = logging.getLogger(__name__)
+
+
 def slide_3_updater(df, prs) -> object:
-    print('updating slide 3')
     slide_index = 2
+
+    msg = f"Updating slide {slide_index + 1}"
+    width = 40
+    print(f"\n{'=' * width}\n{' ' + msg + ' ':=^{width}}\n{'=' * width}\n")
+    logger.info(msg)
+
     slide = prs.slides[slide_index]
 
     q11_topbox_result = (df['Q11']

@@ -99,6 +99,8 @@ def slide_57_updater(meta, df, df_labeled, prs):
 
         final_result_df_combined.rename_axis(index_name, inplace=True)
 
+        print(final_result_df_combined)
+
         base_row = final_result_df_combined[final_result_df_combined.index == 'Base:']
 
         # Step 1: Remove existing table (if any)

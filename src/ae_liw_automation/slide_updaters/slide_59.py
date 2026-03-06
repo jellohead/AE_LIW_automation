@@ -107,6 +107,8 @@ def slide_59_updater(meta, df, df_labeled, prs):
 
         combined_df.rename_axis(index_name, inplace=True)
 
+        print(combined_df)
+
         # Step 1: Remove existing table (if any)
         slide.shapes._spTree.remove(table_shape_element)
 

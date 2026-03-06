@@ -34,6 +34,9 @@ def slide_60_updater(df, meta, df_labeled, prs) -> object:
     new_value = current_quarter_chart_data.values.tolist()
     existing_series_data[new_key] = new_value
 
+    for item in existing_series_data.items():
+        print(item)
+
     # update chart data
     new_chart_data = CategoryChartData()
     new_chart_data.categories = old_categories
